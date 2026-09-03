@@ -1,0 +1,32 @@
+cff-version: 1.2.0
+title: "SymDCT: Symbolic diffusion-tensor computation from atomic-scale jump kinetics in anisotropic crystals"
+type: software
+license: MIT
+
+authors:
+  - family-names: Vladimirov
+    given-names: Pavel V.
+
+repository-code: "https://github.com/vladimirovpv/SymDCT"
+
+abstract: >
+  SymDCT is a symbolic framework for computing diffusion tensors
+  from atomic-scale jump kinetics in anisotropic crystals.
+
+keywords:
+  - diffusion
+  - diffusion tensor
+  - jump kinetics
+  - solid-state diffusion
+  - anisotropic diffusion
+
+version: 0.1.0
+date-released: 2026-MM-DD
+
+preferred-citation:
+  type: article
+  authors:
+    - family-names: Vladimirov
+      given-names: Pavel V.
+  title: "..."
+  journal: "Computer Physics Communications"
