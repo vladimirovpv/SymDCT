@@ -54,6 +54,12 @@ Follows and significantly extends the framework developed by Ishioka and Koiwa i
 
 # Citation
 
+# Author and License
+
+**Author and maintainer:** Pavel V. Vladimirov  
+**Copyright:** Karlsruhe Institute of Technology (KIT)  
+**License:** MIT
+
 # References
 
 [1] S. Ishioka and M. Koiwa, "Diffusion coefficient in crystals with
