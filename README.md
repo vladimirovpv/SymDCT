@@ -54,6 +54,19 @@ Follows and significantly extends the framework developed by Ishioka and Koiwa i
 
 # Citation
 
+If you use SymDCT in your research, please cite the software release:
+
+> P. V. Vladimirov, *SymDCT: Symbolic diffusion-tensor computation from
+> atomic-scale jump kinetics in anisotropic crystals*, version 0.1.0,
+> Karlsruhe Institute of Technology (KIT), 2026.
+> https://github.com/vladimirovpv/SymDCT/releases/tag/symdct-v0.1.0
+
+The method implemented in SymDCT is described in the accompanying paper:
+
+> P. V. Vladimirov, *SymDCT: Symbolic diffusion-tensor computation from
+> atomic-scale jump kinetics in anisotropic crystals*, Computer Physics
+> Communications, to be submitted.
+
 # Author and License
 
 **Author and maintainer:** Pavel V. Vladimirov  
