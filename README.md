@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="../images/SymDCT_logo.png" alt="SymDCT logo" width="100%"/>
+  <img src="./images/SymDCT_logo.png" alt="SymDCT logo" width="100%"/>
 </p>
 
 <p align="center">
