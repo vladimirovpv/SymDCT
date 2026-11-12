@@ -1,0 +1,20 @@
+max_jump_length: 1.45
+fname: prim_int_bcc.poscar
+matrix: ["Al"]
+axes:
+  # First axis: (1, 1, 1) – cubic / bcc [111] direction
+  - - 1.0
+    - 1.0
+    - 1.0
+  # Second axis: (0, 1, 1) – cubic / bcc [0 1 1] direction.
+  # This matches the convention used in the tests for
+  # MatrixStageJumpNetwork.compute_squared_interplanar_distance, where
+  # d^2(0, 1, 1) = 2 * a**2 for a cubic lattice.
+  - - 0.0
+    - 1.0
+    - 1.0
+tweak_transition_rates: {}
+filename_export_results: bcc_int_results
+if_subst_min_arg: True
+if_calc_diffcoeff: False
+if_replace_W_with_subscript: False

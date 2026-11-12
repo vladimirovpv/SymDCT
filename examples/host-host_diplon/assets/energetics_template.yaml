@@ -1,0 +1,61 @@
+settings:
+  length_tolerance: 0.01
+  units:
+    energy: eV
+    length: angstrom
+    frequency: THz
+site frequencies:
+  default_frequency: 10.0
+#  Qx: null
+#  Qy: null
+#  Qz: null
+site energies:
+#  Qx: null
+#  Qy: null
+#  Qz: null
+    {}
+jumps:
+  Qx-Qx:
+    - jump_id:
+        forward: 0
+        backward: 0
+      length: 2.0
+#  energy_sp: null
+  Qx-Qz:
+    - jump_id:
+        forward: 1
+        backward: 8
+      length: 0.0
+#  energy_sp: null
+  Qx-Qy:
+    - jump_id:
+        forward: 2
+        backward: 5
+      length: 0.0
+#  energy_sp: null
+  Qy-Qy:
+    - jump_id:
+        forward: 3
+        backward: 3
+      length: 2.0
+#  energy_sp: null
+  Qy-Qz:
+    - jump_id:
+        forward: 4
+        backward: 7
+      length: 0.0
+#  energy_sp: null
+  Qz-Qz:
+    - jump_id:
+        forward: 6
+        backward: 6
+      length: 2.0
+#  energy_sp: null
+lattice constants:
+  a: 2.0
+  b: 2.0
+  c: 2.0
+symbol_alias_map:
+  Qx: Qx
+  Qy: Qy
+  Qz: Qz

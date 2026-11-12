@@ -1,0 +1,11 @@
+max_jump_length: 2.5
+fname: examples/hcp_int_OT/input/hcp_OT.poscar
+matrix: ["Ti"]
+axes:
+- [2.0, -1.0, 0.0]
+- [0.0, 0.0, 1.0]
+tweak_transition_rates: {}
+filename_export_results: hcp_int_OT_results
+if_subst_min_arg: False
+if_calc_diffcoeff: False
+if_replace_W_with_subscript: True

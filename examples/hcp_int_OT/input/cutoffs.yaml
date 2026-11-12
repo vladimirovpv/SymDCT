@@ -1,0 +1,6 @@
+units:
+  length: angstrom
+bonds:
+  "O-O": 2.5
+  "O-T": 1.9
+  "T-T": 1.3

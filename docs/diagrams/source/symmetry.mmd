@@ -1,0 +1,30 @@
+---
+title: Diffusion Engine — Symmetry Subsystem
+---
+flowchart LR
+    POSCAR[/"POSCAR/CONTCAR"/]
+
+    subgraph jnb ["jump_network_builder"]
+        LOADER["PoscarJumpStructureLoader\nseparates matrix / jump species"]
+    end
+
+    subgraph facade ["symmetry_context.JumpNetworkSymmetryContext  (façade)"]
+        REFINER["JumpStructureSymmetryRefiner\nprimitive cell · spacegroup analyzer"]
+        LABELER["SymmetryNodeLabeler\nper-site symmetry labels"]
+        SMH["SMatrixHandler\nconventional ↔ primitive transformation"]
+    end
+
+    subgraph axis ["Axis analysis"]
+        JAEA["JumpAxisEquivalenceAnalyzer\nfind_equiv_classes_for_axis(hkl)\nWyckoff label + axis-projection grouping"]
+    end
+
+    MB["matrix_builder\nMatrix stage"]
+
+    POSCAR  --> LOADER
+    LOADER  -->|"imported into facade\n(jump_network_builder ⇄ symmetry_context)"| facade
+
+    facade  -->|"whole façade instance"| JAEA
+
+    facade  -->|"site labels · sym. ops."| jnb
+    facade  -->|"site labels · sym. ops."| MB
+    JAEA    -->|"equivalence classes per axis"| MB

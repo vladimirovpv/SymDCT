@@ -1,0 +1,20 @@
+max_jump_length: 1.45
+fname: prim_int_bcc_T-only.poscar
+matrix: ["Al"]
+axes:
+  # First axis: (1, 0, 0) - matches the direction for which Haus and Kehr
+  # (Phys. Rep. 150, 1987, eq. 2.61) give closed-form eigenvalues of the
+  # same 6x6 tetrahedral-site rate matrix, for direct comparison.
+  - - 1.0
+    - 0.0
+    - 0.0
+  # Second axis: (1, 1, 1) - cubic / bcc [111] direction, kept for
+  # consistency with the parent bcc_int example.
+  - - 1.0
+    - 1.0
+    - 1.0
+tweak_transition_rates: {}
+filename_export_results: bcc_int_T-only_results
+if_subst_min_arg: True
+if_calc_diffcoeff: False
+if_replace_W_with_subscript: False

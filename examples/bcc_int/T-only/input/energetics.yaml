@@ -1,0 +1,28 @@
+# T-only variant of examples/bcc_int/output/energetics.yaml, for comparison
+# with Haus and Kehr (Phys. Rep. 150, 1987, section 2.4(ii) and eq. 2.61):
+# the octahedral site is excluded entirely rather than decoupled, since for
+# the species modelled here it is the saddle point of the direct T-T jump,
+# not a separate metastable site.
+settings:
+  length_tolerance: 0.01
+  units:
+    energy: eV
+    length: angstrom
+    frequency: THz
+# optional lattice constants for bcc
+lattice constants:
+  a: 3.165
+  b: 3.165
+  c: 3.165
+site frequencies:
+  default_frequency: 10.0
+#  T: null
+site energies:
+  T: 0.173
+jumps:
+  T-T:
+    - jump_id:
+        forward: 0
+        backward: 0
+      length: 1.431891
+      energy_sp: 0.263

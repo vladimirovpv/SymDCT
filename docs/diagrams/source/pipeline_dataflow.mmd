@@ -1,0 +1,43 @@
+---
+title: Diffusion Engine — Pipeline Data Flow
+---
+flowchart LR
+    POSCAR["Crystal structure\nPOSCAR/CONTCAR"]
+
+    subgraph sym1 ["Symmetry layer"]
+        SYM["Symmetry data\nsite labels · S-matrix · sym. ops."]
+        EQUIV["Site equivalence classes\nper crystallographic axis hkl"]
+    end
+
+    subgraph net ["Graph layer"]
+        GRAPH["Jump network\nMultiDiGraph with jump attributes"]
+    end
+
+    subgraph mat ["Matrix layer"]
+        FULL["Full transition matrix\nn × n symbolic · k-dependent"]
+        AXMAT["Reduced axis matrix\nAxisMatrixResult per axis"]
+    end
+
+    subgraph sol ["Solver layer"]
+        PAYLOAD["Solver payload\nAxisMatrixPayload"]
+        DC["Diffusion coefficients\nsymbolic expressions in W_i"]
+    end
+
+    subgraph eval ["Evaluator layer"]
+        ENERG[/"energetics.yaml\nnumeric site/saddle-point energies"/]
+        NUM["Numeric diffusion coefficients\nD(T)"]
+        PLOT["Arrhenius plots"]
+    end
+
+    POSCAR --> SYM
+    POSCAR --> GRAPH
+    SYM    --> GRAPH
+    SYM    --> EQUIV
+    GRAPH  --> FULL
+    FULL   --> AXMAT
+    EQUIV  --> AXMAT
+    AXMAT  --> PAYLOAD
+    PAYLOAD --> DC
+    DC      --> NUM
+    ENERG   --> NUM
+    NUM     --> PLOT

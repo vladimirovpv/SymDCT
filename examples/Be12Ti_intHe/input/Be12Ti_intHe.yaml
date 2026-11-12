@@ -1,0 +1,10 @@
+max_jump_length: 2.46
+fname: examples/Be12Ti_intHe/input/matrix_with_allHe_rational.poscar
+matrix: ["Be","Ti"]
+axes:
+- [0.0, 0.0, 1.0]
+tweak_transition_rates: {3: null, 5: null, 7: null, 8: null, 9: null, 10: null, 11: null, 12: null, 14: null}
+if_subst_min_arg: False
+filename_export_results: Be12Ti_intHe_results_2026-04-10
+if_calc_diffcoeff: False
+if_replace_W_with_subscript: False

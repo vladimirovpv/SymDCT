@@ -1,0 +1,641 @@
+{
+  "directed": true,
+  "multigraph": true,
+  "graph": {},
+  "nodes": [
+    {
+      "lbl": "A",
+      "id": 0
+    },
+    {
+      "lbl": "B",
+      "id": 1
+    }
+  ],
+  "edges": [
+    {
+      "h": [
+        {
+          "num": 1,
+          "den": 1
+        },
+        {
+          "num": 1,
+          "den": 1
+        },
+        {
+          "num": 0,
+          "den": 1
+        }
+      ],
+      "nn_dist": 2.2619996045033686,
+      "image": [
+        1,
+        1,
+        0
+      ],
+      "glob_jump_cnt": 0,
+      "source": 0,
+      "target": 0,
+      "key": 0
+    },
+    {
+      "h": [
+        {
+          "num": 1,
+          "den": 1
+        },
+        {
+          "num": 0,
+          "den": 1
+        },
+        {
+          "num": 0,
+          "den": 1
+        }
+      ],
+      "nn_dist": 2.2619996045033686,
+      "image": [
+        1,
+        0,
+        0
+      ],
+      "glob_jump_cnt": 0,
+      "source": 0,
+      "target": 0,
+      "key": 1
+    },
+    {
+      "h": [
+        {
+          "num": 0,
+          "den": 1
+        },
+        {
+          "num": -1,
+          "den": 1
+        },
+        {
+          "num": 0,
+          "den": 1
+        }
+      ],
+      "nn_dist": 2.2619996045033686,
+      "image": [
+        0,
+        -1,
+        0
+      ],
+      "glob_jump_cnt": 0,
+      "source": 0,
+      "target": 0,
+      "key": 2
+    },
+    {
+      "h": [
+        {
+          "num": 0,
+          "den": 1
+        },
+        {
+          "num": 1,
+          "den": 1
+        },
+        {
+          "num": 0,
+          "den": 1
+        }
+      ],
+      "nn_dist": 2.2619996045033686,
+      "image": [
+        0,
+        1,
+        0
+      ],
+      "glob_jump_cnt": 0,
+      "source": 0,
+      "target": 0,
+      "key": 3
+    },
+    {
+      "h": [
+        {
+          "num": -1,
+          "den": 1
+        },
+        {
+          "num": 0,
+          "den": 1
+        },
+        {
+          "num": 0,
+          "den": 1
+        }
+      ],
+      "nn_dist": 2.2619996045033686,
+      "image": [
+        -1,
+        0,
+        0
+      ],
+      "glob_jump_cnt": 0,
+      "source": 0,
+      "target": 0,
+      "key": 4
+    },
+    {
+      "h": [
+        {
+          "num": -1,
+          "den": 1
+        },
+        {
+          "num": -1,
+          "den": 1
+        },
+        {
+          "num": 0,
+          "den": 1
+        }
+      ],
+      "nn_dist": 2.2619996045033686,
+      "image": [
+        -1,
+        -1,
+        0
+      ],
+      "glob_jump_cnt": 0,
+      "source": 0,
+      "target": 0,
+      "key": 5
+    },
+    {
+      "h": [
+        {
+          "num": 2,
+          "den": 3
+        },
+        {
+          "num": 1,
+          "den": 3
+        },
+        {
+          "num": 1,
+          "den": 2
+        }
+      ],
+      "nn_dist": 2.211734849257767,
+      "image": [
+        0,
+        0,
+        0
+      ],
+      "glob_jump_cnt": 1,
+      "source": 0,
+      "target": 1,
+      "key": 0
+    },
+    {
+      "h": [
+        {
+          "num": -1,
+          "den": 3
+        },
+        {
+          "num": 1,
+          "den": 3
+        },
+        {
+          "num": 1,
+          "den": 2
+        }
+      ],
+      "nn_dist": 2.2117348492577666,
+      "image": [
+        -1,
+        0,
+        0
+      ],
+      "glob_jump_cnt": 1,
+      "source": 0,
+      "target": 1,
+      "key": 1
+    },
+    {
+      "h": [
+        {
+          "num": -1,
+          "den": 3
+        },
+        {
+          "num": -2,
+          "den": 3
+        },
+        {
+          "num": 1,
+          "den": 2
+        }
+      ],
+      "nn_dist": 2.211734849257767,
+      "image": [
+        -1,
+        -1,
+        0
+      ],
+      "glob_jump_cnt": 1,
+      "source": 0,
+      "target": 1,
+      "key": 2
+    },
+    {
+      "h": [
+        {
+          "num": 2,
+          "den": 3
+        },
+        {
+          "num": 1,
+          "den": 3
+        },
+        {
+          "num": -1,
+          "den": 2
+        }
+      ],
+      "nn_dist": 2.211734849257767,
+      "image": [
+        0,
+        0,
+        -1
+      ],
+      "glob_jump_cnt": 1,
+      "source": 0,
+      "target": 1,
+      "key": 3
+    },
+    {
+      "h": [
+        {
+          "num": -1,
+          "den": 3
+        },
+        {
+          "num": 1,
+          "den": 3
+        },
+        {
+          "num": -1,
+          "den": 2
+        }
+      ],
+      "nn_dist": 2.2117348492577666,
+      "image": [
+        -1,
+        0,
+        -1
+      ],
+      "glob_jump_cnt": 1,
+      "source": 0,
+      "target": 1,
+      "key": 4
+    },
+    {
+      "h": [
+        {
+          "num": -1,
+          "den": 3
+        },
+        {
+          "num": -2,
+          "den": 3
+        },
+        {
+          "num": -1,
+          "den": 2
+        }
+      ],
+      "nn_dist": 2.211734849257767,
+      "image": [
+        -1,
+        -1,
+        -1
+      ],
+      "glob_jump_cnt": 1,
+      "source": 0,
+      "target": 1,
+      "key": 5
+    },
+    {
+      "h": [
+        {
+          "num": 1,
+          "den": 1
+        },
+        {
+          "num": 0,
+          "den": 1
+        },
+        {
+          "num": 0,
+          "den": 1
+        }
+      ],
+      "nn_dist": 2.2619996045033686,
+      "image": [
+        1,
+        0,
+        0
+      ],
+      "glob_jump_cnt": 2,
+      "source": 1,
+      "target": 1,
+      "key": 0
+    },
+    {
+      "h": [
+        {
+          "num": 1,
+          "den": 1
+        },
+        {
+          "num": 1,
+          "den": 1
+        },
+        {
+          "num": 0,
+          "den": 1
+        }
+      ],
+      "nn_dist": 2.2619996045033686,
+      "image": [
+        1,
+        1,
+        0
+      ],
+      "glob_jump_cnt": 2,
+      "source": 1,
+      "target": 1,
+      "key": 1
+    },
+    {
+      "h": [
+        {
+          "num": 0,
+          "den": 1
+        },
+        {
+          "num": 1,
+          "den": 1
+        },
+        {
+          "num": 0,
+          "den": 1
+        }
+      ],
+      "nn_dist": 2.261999604503368,
+      "image": [
+        0,
+        1,
+        0
+      ],
+      "glob_jump_cnt": 2,
+      "source": 1,
+      "target": 1,
+      "key": 2
+    },
+    {
+      "h": [
+        {
+          "num": 0,
+          "den": 1
+        },
+        {
+          "num": -1,
+          "den": 1
+        },
+        {
+          "num": 0,
+          "den": 1
+        }
+      ],
+      "nn_dist": 2.2619996045033686,
+      "image": [
+        0,
+        -1,
+        0
+      ],
+      "glob_jump_cnt": 2,
+      "source": 1,
+      "target": 1,
+      "key": 3
+    },
+    {
+      "h": [
+        {
+          "num": -1,
+          "den": 1
+        },
+        {
+          "num": 0,
+          "den": 1
+        },
+        {
+          "num": 0,
+          "den": 1
+        }
+      ],
+      "nn_dist": 2.261999604503368,
+      "image": [
+        -1,
+        0,
+        0
+      ],
+      "glob_jump_cnt": 2,
+      "source": 1,
+      "target": 1,
+      "key": 4
+    },
+    {
+      "h": [
+        {
+          "num": -1,
+          "den": 1
+        },
+        {
+          "num": -1,
+          "den": 1
+        },
+        {
+          "num": 0,
+          "den": 1
+        }
+      ],
+      "nn_dist": 2.2619996045033686,
+      "image": [
+        -1,
+        -1,
+        0
+      ],
+      "glob_jump_cnt": 2,
+      "source": 1,
+      "target": 1,
+      "key": 5
+    },
+    {
+      "h": [
+        {
+          "num": 1,
+          "den": 3
+        },
+        {
+          "num": 2,
+          "den": 3
+        },
+        {
+          "num": 1,
+          "den": 2
+        }
+      ],
+      "nn_dist": 2.211734849257767,
+      "image": [
+        1,
+        1,
+        1
+      ],
+      "glob_jump_cnt": 3,
+      "source": 1,
+      "target": 0,
+      "key": 0
+    },
+    {
+      "h": [
+        {
+          "num": 1,
+          "den": 3
+        },
+        {
+          "num": 2,
+          "den": 3
+        },
+        {
+          "num": -1,
+          "den": 2
+        }
+      ],
+      "nn_dist": 2.211734849257767,
+      "image": [
+        1,
+        1,
+        0
+      ],
+      "glob_jump_cnt": 3,
+      "source": 1,
+      "target": 0,
+      "key": 1
+    },
+    {
+      "h": [
+        {
+          "num": 1,
+          "den": 3
+        },
+        {
+          "num": -1,
+          "den": 3
+        },
+        {
+          "num": 1,
+          "den": 2
+        }
+      ],
+      "nn_dist": 2.2117348492577666,
+      "image": [
+        1,
+        0,
+        1
+      ],
+      "glob_jump_cnt": 3,
+      "source": 1,
+      "target": 0,
+      "key": 2
+    },
+    {
+      "h": [
+        {
+          "num": 1,
+          "den": 3
+        },
+        {
+          "num": -1,
+          "den": 3
+        },
+        {
+          "num": -1,
+          "den": 2
+        }
+      ],
+      "nn_dist": 2.2117348492577666,
+      "image": [
+        1,
+        0,
+        0
+      ],
+      "glob_jump_cnt": 3,
+      "source": 1,
+      "target": 0,
+      "key": 3
+    },
+    {
+      "h": [
+        {
+          "num": -2,
+          "den": 3
+        },
+        {
+          "num": -1,
+          "den": 3
+        },
+        {
+          "num": 1,
+          "den": 2
+        }
+      ],
+      "nn_dist": 2.211734849257767,
+      "image": [
+        0,
+        0,
+        1
+      ],
+      "glob_jump_cnt": 3,
+      "source": 1,
+      "target": 0,
+      "key": 4
+    },
+    {
+      "h": [
+        {
+          "num": -2,
+          "den": 3
+        },
+        {
+          "num": -1,
+          "den": 3
+        },
+        {
+          "num": -1,
+          "den": 2
+        }
+      ],
+      "nn_dist": 2.211734849257767,
+      "image": [
+        0,
+        0,
+        0
+      ],
+      "glob_jump_cnt": 3,
+      "source": 1,
+      "target": 0,
+      "key": 5
+    }
+  ]
+}

@@ -1,0 +1,45 @@
+---
+title: Diffusion Engine — Package Architecture
+---
+flowchart LR
+    subgraph ext ["External libraries"]
+        pmg["pymatgen"]
+        spg["spglib"]
+        syp["SymPy"]
+        nx["NetworkX"]
+        mpl["matplotlib"]
+    end
+
+    subgraph infra ["Shared infrastructure"]
+        cu["common_utils"]
+        sc["symmetry_context"]
+        jn["jump_network"]
+    end
+
+    subgraph stages ["Pipeline stages"]
+        jnb["jump_network_builder\nStage 1"]
+        mb["matrix_builder\nStage 2"]
+        tcs["transport_coefficient_solver\nStage 3"]
+        tce["transport_coefficient_evaluator\nStage 4"]
+    end
+
+    pmg --> sc
+    spg --> sc
+    syp --> jn
+    nx  --> jn
+    nx  --> jnb
+    mpl --> tce
+
+    cu  --> jnb
+    cu  --> mb
+    cu  --> tcs
+    cu  --> tce
+    sc  --> jnb
+    sc  --> mb
+    jn  --> mb
+
+    jnb <-->|"jnb.loader imported by sc;\nsc.JumpNetworkSymmetryContext imported by jnb\n(circular)"| sc
+
+    jnb -->|"files / objects"| mb
+    mb  -->|"objects / files"| tcs
+    tcs -->|"dc_symbolic_*.txt"| tce

@@ -1,0 +1,54 @@
+---
+title: Diffusion Engine — Stage Interface Contracts
+---
+flowchart TB
+    YAML[/"YAML parameters"/]
+    POSCAR[/"POSCAR file"/]
+
+    subgraph s1 ["Stage 1  ·  jump_network_builder"]
+        API1["build_jump_network_from_poscar(poscar_file, cutoffs_config,\noutput_dir, crystal_matrix=None, max_jump_length=2.5, tol=1e-6)\n→ MultiDiGraph, JumpRegister, Structure"]
+    end
+
+    F1A[/"jump_structure.node_link.json"/]
+    F1B[/"jump_sites.poscar"/]
+    F1C[/"energetics_template.yaml"/]
+
+    subgraph s2 ["Stage 2  ·  matrix_builder"]
+        API2["build_matrices(graph, symmetry_ctx, params)\n→ MatrixBuildResult"]
+    end
+
+    MBR["MatrixBuildResult\nfull_tp_matrix · axis_results"]
+    PKL[/"tc_axis_payload_h_k_l.pickle"/]
+
+    subgraph s3 ["Stage 3  ·  transport_coefficient_solver"]
+        API3A["solve_from_matrix_result(result)"]
+        API3B["solve_from_output_dir(path)"]
+        API3C["solve_from_payloads(payloads)"]
+    end
+
+    DCFILES[/"dc_symbolic_h_k_l.txt"/]
+    ENERG[/"energetics.yaml\n(production, user-authored)"/]
+
+    subgraph s4 ["Stage 4  ·  transport_coefficient_evaluator"]
+        API4A["load_evaluation_context(production_path, template_path)"]
+        API4B["evaluate_dc_file(dc_file, ctx)"]
+    end
+
+    OUT[/"Diffusion coefficients\nDict hkl → SymPy Expr"/]
+    PLOTS[/"Arrhenius plots (PNG)"/]
+
+    YAML    --> s1
+    POSCAR  --> s1
+    s1      --> F1A & F1B & F1C
+    F1A & F1B -->|"file-based"| s2
+    s1      -->|"in-memory objects"| s2
+    s2      --> MBR & PKL
+    MBR     -->|"in-memory"| API3A
+    PKL     -->|"file-based"| API3B
+    s3      --> OUT
+    s3      --> DCFILES
+    DCFILES --> API4B
+    F1C     -.->|"template"| ENERG
+    ENERG   --> API4A
+    API4A   --> API4B
+    s4      --> PLOTS

@@ -1,0 +1,33 @@
+---
+title: Diffusion Engine — Runtime Object Collaboration
+---
+flowchart LR
+    subgraph geometry ["Stage 1 objects"]
+        JNSC["JumpNetworkSymmetryContext\nsite labels · symmetry operations"]
+        JNG["JumpNetworkGraph\nMultiDiGraph · edge attributes"]
+    end
+
+    subgraph symbolic ["Stage 2 objects"]
+        SC["SymbolicContext\nk-vectors · time symbol t"]
+        JP["JumpProbabilities\njump-rate symbols W_i"]
+        TMB["TransitionMatrixBuilder\nassembles n × n symbolic matrix"]
+        MBR["MatrixBuildResult\nfull matrix · axis results"]
+        JAEA["JumpAxisEquivalenceAnalyzer\nfind_equiv_classes_for_axis(hkl)"]
+        AMR["AxisMatrixResult\nreduced matrix · labels per axis"]
+    end
+
+    subgraph solver ["Stage 3 objects"]
+        AMP["AxisMatrixPayload\nfrozen solver contract"]
+        DC["Diffusion coefficients\nSymPy expressions\n(via compute_axis_diffusion_coefficient / solve_all_axes)"]
+    end
+
+    JNSC -->|"site labels"| JNG
+    JNG  -->|"edges, jump attributes"| TMB
+    SC   -->|"k, t"| TMB
+    JP   -->|"W_i"| TMB
+    TMB  -->|"full matrix"| MBR
+    MBR  -->|"per axis"| JAEA
+    JAEA -->|"equivalence classes"| AMR
+    MBR  -->|"per-axis slices"| AMR
+    AMR  -->|"adapters"| AMP
+    AMP  --> DC

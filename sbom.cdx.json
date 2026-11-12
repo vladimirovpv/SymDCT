@@ -1,0 +1,641 @@
+{
+  "bomFormat": "CycloneDX",
+  "specVersion": "1.5",
+  "version": 1,
+  "serialNumber": "urn:uuid:0e9eb42f-f797-47df-9762-87005de5269c",
+  "metadata": {
+    "timestamp": "2026-11-12T06:52:31.784204000Z",
+    "tools": [
+      {
+        "vendor": "Astral Software Inc.",
+        "name": "uv",
+        "version": "0.11.14"
+      }
+    ],
+    "component": {
+      "type": "library",
+      "bom-ref": "symdct-1@0.1.0",
+      "name": "symdct",
+      "version": "0.1.0",
+      "properties": [
+        {
+          "name": "uv:package:is_project_root",
+          "value": "true"
+        }
+      ]
+    }
+  },
+  "components": [
+    {
+      "type": "library",
+      "bom-ref": "bibtexparser-2@1.4.4",
+      "name": "bibtexparser",
+      "version": "1.4.4",
+      "purl": "pkg:pypi/bibtexparser@1.4.4"
+    },
+    {
+      "type": "library",
+      "bom-ref": "certifi-3@2026.2.25",
+      "name": "certifi",
+      "version": "2026.2.25",
+      "purl": "pkg:pypi/certifi@2026.2.25"
+    },
+    {
+      "type": "library",
+      "bom-ref": "charset-normalizer-4@3.4.7",
+      "name": "charset-normalizer",
+      "version": "3.4.7",
+      "purl": "pkg:pypi/charset-normalizer@3.4.7"
+    },
+    {
+      "type": "library",
+      "bom-ref": "colorama-5@0.4.6",
+      "name": "colorama",
+      "version": "0.4.6",
+      "purl": "pkg:pypi/colorama@0.4.6",
+      "properties": [
+        {
+          "name": "uv:package:marker",
+          "value": "sys_platform == 'win32'"
+        }
+      ]
+    },
+    {
+      "type": "library",
+      "bom-ref": "contourpy-6@1.3.3",
+      "name": "contourpy",
+      "version": "1.3.3",
+      "purl": "pkg:pypi/contourpy@1.3.3"
+    },
+    {
+      "type": "library",
+      "bom-ref": "cycler-7@0.12.1",
+      "name": "cycler",
+      "version": "0.12.1",
+      "purl": "pkg:pypi/cycler@0.12.1"
+    },
+    {
+      "type": "library",
+      "bom-ref": "flexcache-8@0.3",
+      "name": "flexcache",
+      "version": "0.3",
+      "purl": "pkg:pypi/flexcache@0.3"
+    },
+    {
+      "type": "library",
+      "bom-ref": "flexparser-9@0.4",
+      "name": "flexparser",
+      "version": "0.4",
+      "purl": "pkg:pypi/flexparser@0.4"
+    },
+    {
+      "type": "library",
+      "bom-ref": "fonttools-10@4.62.1",
+      "name": "fonttools",
+      "version": "4.62.1",
+      "purl": "pkg:pypi/fonttools@4.62.1"
+    },
+    {
+      "type": "library",
+      "bom-ref": "idna-11@3.11",
+      "name": "idna",
+      "version": "3.11",
+      "purl": "pkg:pypi/idna@3.11"
+    },
+    {
+      "type": "library",
+      "bom-ref": "iniconfig-12@2.3.0",
+      "name": "iniconfig",
+      "version": "2.3.0",
+      "purl": "pkg:pypi/iniconfig@2.3.0"
+    },
+    {
+      "type": "library",
+      "bom-ref": "joblib-13@1.5.3",
+      "name": "joblib",
+      "version": "1.5.3",
+      "purl": "pkg:pypi/joblib@1.5.3"
+    },
+    {
+      "type": "library",
+      "bom-ref": "kiwisolver-14@1.5.0",
+      "name": "kiwisolver",
+      "version": "1.5.0",
+      "purl": "pkg:pypi/kiwisolver@1.5.0"
+    },
+    {
+      "type": "library",
+      "bom-ref": "matplotlib-15@3.10.8",
+      "name": "matplotlib",
+      "version": "3.10.8",
+      "purl": "pkg:pypi/matplotlib@3.10.8"
+    },
+    {
+      "type": "library",
+      "bom-ref": "monty-16@2026.2.18",
+      "name": "monty",
+      "version": "2026.2.18",
+      "purl": "pkg:pypi/monty@2026.2.18"
+    },
+    {
+      "type": "library",
+      "bom-ref": "mpmath-17@1.3.0",
+      "name": "mpmath",
+      "version": "1.3.0",
+      "purl": "pkg:pypi/mpmath@1.3.0"
+    },
+    {
+      "type": "library",
+      "bom-ref": "narwhals-18@2.19.0",
+      "name": "narwhals",
+      "version": "2.19.0",
+      "purl": "pkg:pypi/narwhals@2.19.0"
+    },
+    {
+      "type": "library",
+      "bom-ref": "networkx-19@3.6.1",
+      "name": "networkx",
+      "version": "3.6.1",
+      "purl": "pkg:pypi/networkx@3.6.1"
+    },
+    {
+      "type": "library",
+      "bom-ref": "numpy-20@2.4.4",
+      "name": "numpy",
+      "version": "2.4.4",
+      "purl": "pkg:pypi/numpy@2.4.4"
+    },
+    {
+      "type": "library",
+      "bom-ref": "orjson-21@3.11.8",
+      "name": "orjson",
+      "version": "3.11.8",
+      "purl": "pkg:pypi/orjson@3.11.8"
+    },
+    {
+      "type": "library",
+      "bom-ref": "packaging-22@26.1",
+      "name": "packaging",
+      "version": "26.1",
+      "purl": "pkg:pypi/packaging@26.1"
+    },
+    {
+      "type": "library",
+      "bom-ref": "palettable-23@3.3.3",
+      "name": "palettable",
+      "version": "3.3.3",
+      "purl": "pkg:pypi/palettable@3.3.3"
+    },
+    {
+      "type": "library",
+      "bom-ref": "pandas-24@3.0.2",
+      "name": "pandas",
+      "version": "3.0.2",
+      "purl": "pkg:pypi/pandas@3.0.2"
+    },
+    {
+      "type": "library",
+      "bom-ref": "pillow-25@12.2.0",
+      "name": "pillow",
+      "version": "12.2.0",
+      "purl": "pkg:pypi/pillow@12.2.0"
+    },
+    {
+      "type": "library",
+      "bom-ref": "pint-26@0.25.3",
+      "name": "pint",
+      "version": "0.25.3",
+      "purl": "pkg:pypi/pint@0.25.3"
+    },
+    {
+      "type": "library",
+      "bom-ref": "platformdirs-27@4.9.6",
+      "name": "platformdirs",
+      "version": "4.9.6",
+      "purl": "pkg:pypi/platformdirs@4.9.6"
+    },
+    {
+      "type": "library",
+      "bom-ref": "plotly-28@6.7.0",
+      "name": "plotly",
+      "version": "6.7.0",
+      "purl": "pkg:pypi/plotly@6.7.0"
+    },
+    {
+      "type": "library",
+      "bom-ref": "pluggy-29@1.6.0",
+      "name": "pluggy",
+      "version": "1.6.0",
+      "purl": "pkg:pypi/pluggy@1.6.0"
+    },
+    {
+      "type": "library",
+      "bom-ref": "pygments-30@2.20.0",
+      "name": "pygments",
+      "version": "2.20.0",
+      "purl": "pkg:pypi/pygments@2.20.0"
+    },
+    {
+      "type": "library",
+      "bom-ref": "pymatgen-31@2026.3.23",
+      "name": "pymatgen",
+      "version": "2026.3.23",
+      "purl": "pkg:pypi/pymatgen@2026.3.23"
+    },
+    {
+      "type": "library",
+      "bom-ref": "pymatgen-core-32@2026.4.7",
+      "name": "pymatgen-core",
+      "version": "2026.4.7",
+      "purl": "pkg:pypi/pymatgen-core@2026.4.7"
+    },
+    {
+      "type": "library",
+      "bom-ref": "pyparsing-33@3.3.2",
+      "name": "pyparsing",
+      "version": "3.3.2",
+      "purl": "pkg:pypi/pyparsing@3.3.2"
+    },
+    {
+      "type": "library",
+      "bom-ref": "pytest-34@9.0.3",
+      "name": "pytest",
+      "version": "9.0.3",
+      "purl": "pkg:pypi/pytest@9.0.3"
+    },
+    {
+      "type": "library",
+      "bom-ref": "python-dateutil-35@2.9.0.post0",
+      "name": "python-dateutil",
+      "version": "2.9.0.post0",
+      "purl": "pkg:pypi/python-dateutil@2.9.0.post0"
+    },
+    {
+      "type": "library",
+      "bom-ref": "requests-36@2.33.1",
+      "name": "requests",
+      "version": "2.33.1",
+      "purl": "pkg:pypi/requests@2.33.1"
+    },
+    {
+      "type": "library",
+      "bom-ref": "ruamel-yaml-37@0.19.1",
+      "name": "ruamel-yaml",
+      "version": "0.19.1",
+      "purl": "pkg:pypi/ruamel-yaml@0.19.1"
+    },
+    {
+      "type": "library",
+      "bom-ref": "scipy-38@1.17.1",
+      "name": "scipy",
+      "version": "1.17.1",
+      "purl": "pkg:pypi/scipy@1.17.1"
+    },
+    {
+      "type": "library",
+      "bom-ref": "six-39@1.17.0",
+      "name": "six",
+      "version": "1.17.0",
+      "purl": "pkg:pypi/six@1.17.0"
+    },
+    {
+      "type": "library",
+      "bom-ref": "spglib-40@2.7.0",
+      "name": "spglib",
+      "version": "2.7.0",
+      "purl": "pkg:pypi/spglib@2.7.0"
+    },
+    {
+      "type": "library",
+      "bom-ref": "sympy-41@1.14.0",
+      "name": "sympy",
+      "version": "1.14.0",
+      "purl": "pkg:pypi/sympy@1.14.0"
+    },
+    {
+      "type": "library",
+      "bom-ref": "tabulate-42@0.10.0",
+      "name": "tabulate",
+      "version": "0.10.0",
+      "purl": "pkg:pypi/tabulate@0.10.0"
+    },
+    {
+      "type": "library",
+      "bom-ref": "tqdm-43@4.67.3",
+      "name": "tqdm",
+      "version": "4.67.3",
+      "purl": "pkg:pypi/tqdm@4.67.3"
+    },
+    {
+      "type": "library",
+      "bom-ref": "typing-extensions-44@4.15.0",
+      "name": "typing-extensions",
+      "version": "4.15.0",
+      "purl": "pkg:pypi/typing-extensions@4.15.0"
+    },
+    {
+      "type": "library",
+      "bom-ref": "tzdata-45@2026.1",
+      "name": "tzdata",
+      "version": "2026.1",
+      "purl": "pkg:pypi/tzdata@2026.1",
+      "properties": [
+        {
+          "name": "uv:package:marker",
+          "value": "sys_platform == 'emscripten' or sys_platform == 'win32'"
+        }
+      ]
+    },
+    {
+      "type": "library",
+      "bom-ref": "uncertainties-46@3.2.3",
+      "name": "uncertainties",
+      "version": "3.2.3",
+      "purl": "pkg:pypi/uncertainties@3.2.3"
+    },
+    {
+      "type": "library",
+      "bom-ref": "urllib3-47@2.6.3",
+      "name": "urllib3",
+      "version": "2.6.3",
+      "purl": "pkg:pypi/urllib3@2.6.3"
+    }
+  ],
+  "dependencies": [
+    {
+      "ref": "bibtexparser-2@1.4.4",
+      "dependsOn": [
+        "pyparsing-33@3.3.2"
+      ]
+    },
+    {
+      "ref": "certifi-3@2026.2.25",
+      "dependsOn": []
+    },
+    {
+      "ref": "charset-normalizer-4@3.4.7",
+      "dependsOn": []
+    },
+    {
+      "ref": "colorama-5@0.4.6",
+      "dependsOn": []
+    },
+    {
+      "ref": "contourpy-6@1.3.3",
+      "dependsOn": [
+        "numpy-20@2.4.4"
+      ]
+    },
+    {
+      "ref": "cycler-7@0.12.1",
+      "dependsOn": []
+    },
+    {
+      "ref": "flexcache-8@0.3",
+      "dependsOn": [
+        "typing-extensions-44@4.15.0"
+      ]
+    },
+    {
+      "ref": "flexparser-9@0.4",
+      "dependsOn": [
+        "typing-extensions-44@4.15.0"
+      ]
+    },
+    {
+      "ref": "fonttools-10@4.62.1",
+      "dependsOn": []
+    },
+    {
+      "ref": "idna-11@3.11",
+      "dependsOn": []
+    },
+    {
+      "ref": "iniconfig-12@2.3.0",
+      "dependsOn": []
+    },
+    {
+      "ref": "joblib-13@1.5.3",
+      "dependsOn": []
+    },
+    {
+      "ref": "kiwisolver-14@1.5.0",
+      "dependsOn": []
+    },
+    {
+      "ref": "matplotlib-15@3.10.8",
+      "dependsOn": [
+        "contourpy-6@1.3.3",
+        "cycler-7@0.12.1",
+        "fonttools-10@4.62.1",
+        "kiwisolver-14@1.5.0",
+        "numpy-20@2.4.4",
+        "packaging-22@26.1",
+        "pillow-25@12.2.0",
+        "pyparsing-33@3.3.2",
+        "python-dateutil-35@2.9.0.post0"
+      ]
+    },
+    {
+      "ref": "monty-16@2026.2.18",
+      "dependsOn": [
+        "numpy-20@2.4.4",
+        "ruamel-yaml-37@0.19.1"
+      ]
+    },
+    {
+      "ref": "mpmath-17@1.3.0",
+      "dependsOn": []
+    },
+    {
+      "ref": "narwhals-18@2.19.0",
+      "dependsOn": []
+    },
+    {
+      "ref": "networkx-19@3.6.1",
+      "dependsOn": []
+    },
+    {
+      "ref": "numpy-20@2.4.4",
+      "dependsOn": []
+    },
+    {
+      "ref": "orjson-21@3.11.8",
+      "dependsOn": []
+    },
+    {
+      "ref": "packaging-22@26.1",
+      "dependsOn": []
+    },
+    {
+      "ref": "palettable-23@3.3.3",
+      "dependsOn": []
+    },
+    {
+      "ref": "pandas-24@3.0.2",
+      "dependsOn": [
+        "numpy-20@2.4.4",
+        "python-dateutil-35@2.9.0.post0",
+        "tzdata-45@2026.1"
+      ]
+    },
+    {
+      "ref": "pillow-25@12.2.0",
+      "dependsOn": []
+    },
+    {
+      "ref": "pint-26@0.25.3",
+      "dependsOn": [
+        "flexcache-8@0.3",
+        "flexparser-9@0.4",
+        "platformdirs-27@4.9.6",
+        "typing-extensions-44@4.15.0"
+      ]
+    },
+    {
+      "ref": "platformdirs-27@4.9.6",
+      "dependsOn": []
+    },
+    {
+      "ref": "plotly-28@6.7.0",
+      "dependsOn": [
+        "narwhals-18@2.19.0",
+        "packaging-22@26.1"
+      ]
+    },
+    {
+      "ref": "pluggy-29@1.6.0",
+      "dependsOn": []
+    },
+    {
+      "ref": "pygments-30@2.20.0",
+      "dependsOn": []
+    },
+    {
+      "ref": "pymatgen-31@2026.3.23",
+      "dependsOn": [
+        "pymatgen-core-32@2026.4.7"
+      ]
+    },
+    {
+      "ref": "pymatgen-core-32@2026.4.7",
+      "dependsOn": [
+        "bibtexparser-2@1.4.4",
+        "joblib-13@1.5.3",
+        "matplotlib-15@3.10.8",
+        "monty-16@2026.2.18",
+        "networkx-19@3.6.1",
+        "numpy-20@2.4.4",
+        "orjson-21@3.11.8",
+        "palettable-23@3.3.3",
+        "pandas-24@3.0.2",
+        "plotly-28@6.7.0",
+        "requests-36@2.33.1",
+        "scipy-38@1.17.1",
+        "spglib-40@2.7.0",
+        "sympy-41@1.14.0",
+        "tabulate-42@0.10.0",
+        "tqdm-43@4.67.3",
+        "uncertainties-46@3.2.3"
+      ]
+    },
+    {
+      "ref": "pyparsing-33@3.3.2",
+      "dependsOn": []
+    },
+    {
+      "ref": "pytest-34@9.0.3",
+      "dependsOn": [
+        "colorama-5@0.4.6",
+        "iniconfig-12@2.3.0",
+        "packaging-22@26.1",
+        "pluggy-29@1.6.0",
+        "pygments-30@2.20.0"
+      ]
+    },
+    {
+      "ref": "python-dateutil-35@2.9.0.post0",
+      "dependsOn": [
+        "six-39@1.17.0"
+      ]
+    },
+    {
+      "ref": "requests-36@2.33.1",
+      "dependsOn": [
+        "certifi-3@2026.2.25",
+        "charset-normalizer-4@3.4.7",
+        "idna-11@3.11",
+        "urllib3-47@2.6.3"
+      ]
+    },
+    {
+      "ref": "ruamel-yaml-37@0.19.1",
+      "dependsOn": []
+    },
+    {
+      "ref": "scipy-38@1.17.1",
+      "dependsOn": [
+        "numpy-20@2.4.4"
+      ]
+    },
+    {
+      "ref": "six-39@1.17.0",
+      "dependsOn": []
+    },
+    {
+      "ref": "spglib-40@2.7.0",
+      "dependsOn": [
+        "numpy-20@2.4.4",
+        "typing-extensions-44@4.15.0"
+      ]
+    },
+    {
+      "ref": "symdct-1@0.1.0",
+      "dependsOn": [
+        "matplotlib-15@3.10.8",
+        "networkx-19@3.6.1",
+        "numpy-20@2.4.4",
+        "pint-26@0.25.3",
+        "pymatgen-31@2026.3.23",
+        "pytest-34@9.0.3",
+        "ruamel-yaml-37@0.19.1",
+        "scipy-38@1.17.1",
+        "spglib-40@2.7.0",
+        "sympy-41@1.14.0",
+        "tqdm-43@4.67.3"
+      ]
+    },
+    {
+      "ref": "sympy-41@1.14.0",
+      "dependsOn": [
+        "mpmath-17@1.3.0"
+      ]
+    },
+    {
+      "ref": "tabulate-42@0.10.0",
+      "dependsOn": []
+    },
+    {
+      "ref": "tqdm-43@4.67.3",
+      "dependsOn": [
+        "colorama-5@0.4.6"
+      ]
+    },
+    {
+      "ref": "typing-extensions-44@4.15.0",
+      "dependsOn": []
+    },
+    {
+      "ref": "tzdata-45@2026.1",
+      "dependsOn": []
+    },
+    {
+      "ref": "uncertainties-46@3.2.3",
+      "dependsOn": []
+    },
+    {
+      "ref": "urllib3-47@2.6.3",
+      "dependsOn": []
+    }
+  ]
+}

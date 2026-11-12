@@ -1,0 +1,10 @@
+max_jump_length: 1.14
+fname: Be2Ti_matrix_with_allH_primitive_corrected.poscar
+matrix: ["Be","Ti"]
+axes:
+- [1.0, 1.0, 1.0]
+tweak_transition_rates: {1: 0}
+if_subst_min_arg: False
+filename_export_results: Be2Ti_intH_results
+if_calc_diffcoeff: False
+if_replace_W_with_subscript: False

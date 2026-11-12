@@ -1,0 +1,52 @@
+settings:
+  length_tolerance: 0.01
+  units:
+    energy: eV
+    length: angstrom
+    frequency: THz
+site frequencies:
+  default_frequency: 10.0
+#  A: null
+#  C: null
+site energies:
+  A: 0.0
+  C: 0.09
+jumps:
+  A-C:
+    - jump_id:
+        forward: 0
+        backward: 5
+      length: 3.825738
+      energy_sp: 0.76
+    - jump_id:
+        forward: 2
+        backward: 7
+      length: 3.788015
+      energy_sp: 10. # should be treated as forbidden jump
+    - jump_id:
+        forward: 1
+        backward: 6
+      length: 3.67252
+      energy_sp: 0.71
+  A-A:
+    - jump_id:
+        forward: 3
+        backward: 3
+      length: 1.383757
+      energy_sp: 0.67
+    - jump_id:
+        forward: 4
+        backward: 4
+      length: 0.691879
+      energy_sp: 0.36
+  C-C:
+    - jump_id:
+        forward: 8
+        backward: 8
+      length: 2.90589
+      energy_sp: 0.85
+    - jump_id:
+        forward: 9
+        backward: 9
+      length: 1.245381
+      energy_sp: 0.53

@@ -1,0 +1,13 @@
+# Geometric cutoffs for jump network construction
+# All distances in angstrom
+
+units:
+  length: angstrom
+
+# Bond cutoffs: "TYPE1-TYPE2" keys are order-independent (A-B == B-A).
+# The code normalises pairs alphabetically before lookup.
+# Any pair not listed is treated as unconnected.
+bonds:
+  "A-A": 1.4
+  "A-C": 3.84
+  "C-C": 3.00

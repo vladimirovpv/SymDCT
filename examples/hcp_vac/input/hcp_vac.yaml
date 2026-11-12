@@ -1,0 +1,15 @@
+max_jump_length: 2.27
+fname: examples/hcp_vac/input/hcp_Be.poscar
+matrix: []
+axes:
+- [2.0, -1.0, 0.0]
+- [-1.0, 2.0, 0.0]
+- [0.0, 0.0, 1.0]
+# tweak_transition_rates: {2: 0, 3: 1}
+tweak_transition_rates:
+  "A->A: all": "B->B"      # map all A->A jumps to behave like B->B jumps
+  "A->B: length=2.212": "B->A"      # map A->B to B->A (sublattice symmetry)
+if_replace_W_with_subscript: True
+if_subst_min_arg: False
+filename_export_results: hcp_vac_results
+if_calc_diffcoeff: True

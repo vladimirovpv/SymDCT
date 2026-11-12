@@ -1,0 +1,140 @@
+\documentclass[a4paper, 11pt]{article}
+\usepackage{mathptmx} % Adobe Times as Standard Font
+\usepackage{amsmath}
+
+\usepackage[english]{babel}
+\usepackage{pdflscape}
+% \usepackage[showframe]{geometry}
+\usepackage{tabularx}
+\usepackage{flafter}
+\usepackage{booktabs} % various rule-drawing macros
+
+% preparation for variable substitution
+\newcommand{\VAR}[1]{}
+\newcommand{\BLOCK}[1]{}
+
+
+\begin{document}
+
+
+\section{Diffusion coefficient }
+\footnotesize
+
+
+\subsection{Diffusion along axis: $\left[		0 		\, 0 		\, 0 \right]$}
+
+\clearpage
+\begin{landscape}
+
+\footnotesize
+	% \centering
+\renewcommand{\arraystretch}{1.8}
+\begin{table}[htpb]
+	\begin{tabularx}{\linewidth}{ p{15pt} | >{\raggedright\arraybackslash}X  >{\raggedright\arraybackslash}X }
+		\toprule
+   &  A &  B\\ \midrule
+
+ A &  $W_{AA} e^{i (- 4 \theta_{1} / a - 4 \theta_{2} / a)} + W_{AA} e^{i (4 \theta_{1} / a + 4 \theta_{2} / a)} + W_{AA} e^{4 i \theta_{1} / a} + W_{AA} e^{4 i \theta_{2} / a} - 6 W_{AA} + W_{AA} e^{- 4 i \theta_{2} / a} + W_{AA} e^{- 4 i \theta_{1} / a} - 6 W_{AB}$ &  $W_{AB} e^{i (- 8 \theta_{1} / 3 a - 4 \theta_{2} / 3 a - 2 \theta_{3} / a)} + W_{AB} e^{i (- 8 \theta_{1} / 3 a - 4 \theta_{2} / 3 a + 2 \theta_{3} / a)} + W_{AB} e^{i (4 \theta_{1} / 3 a - 4 \theta_{2} / 3 a - 2 \theta_{3} / a)} + W_{AB} e^{i (4 \theta_{1} / 3 a - 4 \theta_{2} / 3 a + 2 \theta_{3} / a)} + W_{AB} e^{i (4 \theta_{1} / 3 a + 8 \theta_{2} / 3 a - 2 \theta_{3} / a)} + W_{AB} e^{i (4 \theta_{1} / 3 a + 8 \theta_{2} / 3 a + 2 \theta_{3} / a)}$  \\
+ B &  $W_{AB} e^{i (- 4 \theta_{1} / 3 a - 8 \theta_{2} / 3 a - 2 \theta_{3} / a)} + W_{AB} e^{i (- 4 \theta_{1} / 3 a - 8 \theta_{2} / 3 a + 2 \theta_{3} / a)} + W_{AB} e^{i (- 4 \theta_{1} / 3 a + 4 \theta_{2} / 3 a - 2 \theta_{3} / a)} + W_{AB} e^{i (- 4 \theta_{1} / 3 a + 4 \theta_{2} / 3 a + 2 \theta_{3} / a)} + W_{AB} e^{i (8 \theta_{1} / 3 a + 4 \theta_{2} / 3 a - 2 \theta_{3} / a)} + W_{AB} e^{i (8 \theta_{1} / 3 a + 4 \theta_{2} / 3 a + 2 \theta_{3} / a)}$ &  $W_{AA} e^{i (- 4 \theta_{1} / a - 4 \theta_{2} / a)} + W_{AA} e^{i (4 \theta_{1} / a + 4 \theta_{2} / a)} + W_{AA} e^{4 i \theta_{1} / a} + W_{AA} e^{4 i \theta_{2} / a} - 6 W_{AA} + W_{AA} e^{- 4 i \theta_{2} / a} + W_{AA} e^{- 4 i \theta_{1} / a} - 6 W_{AB}$  \\
+ \bottomrule
+
+    \end{tabularx}
+\caption{\label{demo-table}Transition matrix.}
+\end{table}
+\end{landscape}
+\clearpage
+
+\normalsize
+Diffusion coefficient along this axis\\
+		\begin{equation*}
+			D_{11} = 
+		\end{equation*}
+
+\subsection{Diffusion along axis: $\left[		2 		\, \bar{1} 		\, 0 \right]$}
+
+\clearpage
+\begin{landscape}
+
+\footnotesize
+	% \centering
+\renewcommand{\arraystretch}{1.8}
+\begin{table}[htpb]
+	\begin{tabularx}{\linewidth}{ p{15pt} | >{\raggedright\arraybackslash}X  >{\raggedright\arraybackslash}X }
+		\toprule
+   &  A &  B\\ \midrule
+
+ A &  $W_{AA} e^{2 \sqrt{5} i t / 5} + 2 W_{AA} e^{\sqrt{5} i t / 5} - 6 W_{AA} + 2 W_{AA} e^{- \sqrt{5} i t / 5} + W_{AA} e^{- 2 \sqrt{5} i t / 5} - 6 W_{AB}$ &  $2 W_{AB} e^{\sqrt{5} i t / 5} + 2 W_{AB} + 2 W_{AB} e^{- \sqrt{5} i t / 5}$  \\
+ B &  $2 W_{AB} e^{\sqrt{5} i t / 5} + 2 W_{AB} + 2 W_{AB} e^{- \sqrt{5} i t / 5}$ &  $W_{AA} e^{2 \sqrt{5} i t / 5} + 2 W_{AA} e^{\sqrt{5} i t / 5} - 6 W_{AA} + 2 W_{AA} e^{- \sqrt{5} i t / 5} + W_{AA} e^{- 2 \sqrt{5} i t / 5} - 6 W_{AB}$  \\
+ \bottomrule
+
+    \end{tabularx}
+\caption{\label{demo-table}Transition matrix.}
+\end{table}
+\end{landscape}
+\clearpage
+
+\normalsize
+Diffusion coefficient along this axis\\
+		\begin{equation*}
+			D_{22} = \frac{a^{2} \left(3 W_{AA} + W_{AB}\right)}{2}
+		\end{equation*}
+
+\subsection{Diffusion along axis: $\left[		\bar{1} 		\, 2 		\, 0 \right]$}
+
+\clearpage
+\begin{landscape}
+
+\footnotesize
+	% \centering
+\renewcommand{\arraystretch}{1.8}
+\begin{table}[htpb]
+	\begin{tabularx}{\linewidth}{ p{15pt} | >{\raggedright\arraybackslash}X  >{\raggedright\arraybackslash}X }
+		\toprule
+   &  A &  B\\ \midrule
+
+ A &  $W_{AA} e^{2 \sqrt{5} i t / 5} + 2 W_{AA} e^{\sqrt{5} i t / 5} - 6 W_{AA} + 2 W_{AA} e^{- \sqrt{5} i t / 5} + W_{AA} e^{- 2 \sqrt{5} i t / 5} - 6 W_{AB}$ &  $2 W_{AB} e^{\sqrt{5} i t / 5} + 2 W_{AB} + 2 W_{AB} e^{- \sqrt{5} i t / 5}$  \\
+ B &  $2 W_{AB} e^{\sqrt{5} i t / 5} + 2 W_{AB} + 2 W_{AB} e^{- \sqrt{5} i t / 5}$ &  $W_{AA} e^{2 \sqrt{5} i t / 5} + 2 W_{AA} e^{\sqrt{5} i t / 5} - 6 W_{AA} + 2 W_{AA} e^{- \sqrt{5} i t / 5} + W_{AA} e^{- 2 \sqrt{5} i t / 5} - 6 W_{AB}$  \\
+ \bottomrule
+
+    \end{tabularx}
+\caption{\label{demo-table}Transition matrix.}
+\end{table}
+\end{landscape}
+\clearpage
+
+\normalsize
+Diffusion coefficient along this axis\\
+		\begin{equation*}
+			D_{33} = \frac{a^{2} \left(3 W_{AA} + W_{AB}\right)}{2}
+		\end{equation*}
+
+\subsection{Diffusion along axis: $\left[		0 		\, 0 		\, 1 \right]$}
+
+\clearpage
+\begin{landscape}
+
+\footnotesize
+	% \centering
+\renewcommand{\arraystretch}{1.8}
+\begin{table}[htpb]
+	\begin{tabularx}{\linewidth}{ p{15pt} | >{\raggedright\arraybackslash}X  >{\raggedright\arraybackslash}X }
+		\toprule
+   &  A &  B\\ \midrule
+
+ A &  $- 6 W_{AB}$ &  $3 W_{AB} e^{i t / 2} + 3 W_{AB} e^{- i t / 2}$  \\
+ B &  $3 W_{AB} e^{i t / 2} + 3 W_{AB} e^{- i t / 2}$ &  $- 6 W_{AB}$  \\
+ \bottomrule
+
+    \end{tabularx}
+\caption{\label{demo-table}Transition matrix.}
+\end{table}
+\end{landscape}
+\clearpage
+
+\normalsize
+Diffusion coefficient along this axis\\
+		\begin{equation*}
+			D_{44} = \frac{3 W_{AB} c^{2}}{4}
+		\end{equation*}
+
+\end{document}

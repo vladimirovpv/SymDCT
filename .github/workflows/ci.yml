@@ -1,0 +1,39 @@
+name: CI
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+  release:
+    types: [published]
+
+permissions:
+  contents: read
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: astral-sh/setup-uv@v6
+      - name: Install dependencies
+        run: uv sync --locked
+      - name: Run tests
+        run: uv run pytest -q
+
+  sbom:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write   # needed to attach the SBOM to a release
+    steps:
+      - uses: actions/checkout@v4
+      - uses: astral-sh/setup-uv@v6
+      - name: Export SBOM from uv.lock
+        run: uv export --locked --format cyclonedx1.5 --output-file sbom.new.json
+      - name: Compare with the committed SBOM
+        run: uv run --no-project python scripts/check_sbom.py sbom.cdx.json sbom.new.json
+      - name: Attach SBOM to the release
+        if: github.event_name == 'release'
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: gh release upload "${{ github.event.release.tag_name }}" sbom.cdx.json --clobber

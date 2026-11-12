@@ -1,0 +1,546 @@
+{
+  "yaml_file": "examples/Be12Ti_intHe/input/Be12Ti_intHe.yaml",
+  "lattice_parameters": [
+    4.151272,
+    5.579417116569077,
+    5.579417116569079
+  ],
+  "jumps": [
+    {
+      "start": "A",
+      "end": "I",
+      "jump_length": 1.506,
+      "jump_index": 0,
+      "barrier": null,
+      "frequency": null
+    },
+    {
+      "start": "B",
+      "end": "F",
+      "jump_length": 1.027,
+      "jump_index": 1,
+      "barrier": null,
+      "frequency": null
+    },
+    {
+      "start": "B",
+      "end": "H",
+      "jump_length": 0.837,
+      "jump_index": 2,
+      "barrier": null,
+      "frequency": null
+    },
+    {
+      "start": "B",
+      "end": "C",
+      "jump_length": 0.783,
+      "jump_index": 3,
+      "barrier": null,
+      "frequency": null
+    },
+    {
+      "start": "C",
+      "end": "I",
+      "jump_length": 0.989,
+      "jump_index": 4,
+      "barrier": null,
+      "frequency": null
+    },
+    {
+      "start": "C",
+      "end": "B",
+      "jump_length": 0.783,
+      "jump_index": 5,
+      "barrier": null,
+      "frequency": null
+    },
+    {
+      "start": "C",
+      "end": "G",
+      "jump_length": 0.976,
+      "jump_index": 6,
+      "barrier": null,
+      "frequency": null
+    },
+    {
+      "start": "D",
+      "end": "G",
+      "jump_length": 2.4,
+      "jump_index": 7,
+      "barrier": null,
+      "frequency": null
+    },
+    {
+      "start": "D",
+      "end": "G",
+      "jump_length": 1.395,
+      "jump_index": 8,
+      "barrier": null,
+      "frequency": null
+    },
+    {
+      "start": "D",
+      "end": "J",
+      "jump_length": 0.837,
+      "jump_index": 9,
+      "barrier": null,
+      "frequency": null
+    },
+    {
+      "start": "D",
+      "end": "F",
+      "jump_length": 1.448,
+      "jump_index": 10,
+      "barrier": null,
+      "frequency": null
+    },
+    {
+      "start": "D",
+      "end": "I",
+      "jump_length": 1.423,
+      "jump_index": 11,
+      "barrier": null,
+      "frequency": null
+    },
+    {
+      "start": "D",
+      "end": "F",
+      "jump_length": 0.976,
+      "jump_index": 12,
+      "barrier": null,
+      "frequency": null
+    },
+    {
+      "start": "D",
+      "end": "E",
+      "jump_length": 0.705,
+      "jump_index": 13,
+      "barrier": null,
+      "frequency": null
+    },
+    {
+      "start": "D",
+      "end": "F",
+      "jump_length": 2.734,
+      "jump_index": 14,
+      "barrier": null,
+      "frequency": null
+    },
+    {
+      "start": "D",
+      "end": "F",
+      "jump_length": 2.515,
+      "jump_index": 15,
+      "barrier": null,
+      "frequency": null
+    },
+    {
+      "start": "D",
+      "end": "G",
+      "jump_length": 2.684,
+      "jump_index": 16,
+      "barrier": null,
+      "frequency": null
+    },
+    {
+      "start": "E",
+      "end": "I",
+      "jump_length": 0.922,
+      "jump_index": 17,
+      "barrier": null,
+      "frequency": null
+    },
+    {
+      "start": "E",
+      "end": "J",
+      "jump_length": 1.408,
+      "jump_index": 18,
+      "barrier": null,
+      "frequency": null
+    },
+    {
+      "start": "E",
+      "end": "D",
+      "jump_length": 0.705,
+      "jump_index": 19,
+      "barrier": null,
+      "frequency": null
+    },
+    {
+      "start": "E",
+      "end": "G",
+      "jump_length": 2.806,
+      "jump_index": 20,
+      "barrier": null,
+      "frequency": null
+    },
+    {
+      "start": "E",
+      "end": "G",
+      "jump_length": 2.515,
+      "jump_index": 21,
+      "barrier": null,
+      "frequency": null
+    },
+    {
+      "start": "E",
+      "end": "F",
+      "jump_length": 2.073,
+      "jump_index": 22,
+      "barrier": null,
+      "frequency": null
+    },
+    {
+      "start": "E",
+      "end": "G",
+      "jump_length": 1.877,
+      "jump_index": 23,
+      "barrier": null,
+      "frequency": null
+    },
+    {
+      "start": "E",
+      "end": "F",
+      "jump_length": 1.506,
+      "jump_index": 24,
+      "barrier": null,
+      "frequency": null
+    },
+    {
+      "start": "E",
+      "end": "G",
+      "jump_length": 0.896,
+      "jump_index": 25,
+      "barrier": null,
+      "frequency": null
+    },
+    {
+      "start": "F",
+      "end": "F",
+      "jump_length": 2.835,
+      "jump_index": 26,
+      "barrier": null,
+      "frequency": null
+    },
+    {
+      "start": "F",
+      "end": "F",
+      "jump_length": 2.734,
+      "jump_index": 27,
+      "barrier": null,
+      "frequency": null
+    },
+    {
+      "start": "F",
+      "end": "F",
+      "jump_length": 0.783,
+      "jump_index": 28,
+      "barrier": null,
+      "frequency": null
+    },
+    {
+      "start": "F",
+      "end": "G",
+      "jump_length": 2.421,
+      "jump_index": 29,
+      "barrier": null,
+      "frequency": null
+    },
+    {
+      "start": "F",
+      "end": "J",
+      "jump_length": 1.327,
+      "jump_index": 30,
+      "barrier": null,
+      "frequency": null
+    },
+    {
+      "start": "F",
+      "end": "D",
+      "jump_length": 0.976,
+      "jump_index": 31,
+      "barrier": null,
+      "frequency": null
+    },
+    {
+      "start": "F",
+      "end": "H",
+      "jump_length": 1.296,
+      "jump_index": 32,
+      "barrier": null,
+      "frequency": null
+    },
+    {
+      "start": "F",
+      "end": "G",
+      "jump_length": 1.762,
+      "jump_index": 33,
+      "barrier": null,
+      "frequency": null
+    },
+    {
+      "start": "F",
+      "end": "B",
+      "jump_length": 1.027,
+      "jump_index": 34,
+      "barrier": null,
+      "frequency": null
+    },
+    {
+      "start": "F",
+      "end": "G",
+      "jump_length": 2.754,
+      "jump_index": 35,
+      "barrier": null,
+      "frequency": null
+    },
+    {
+      "start": "F",
+      "end": "F",
+      "jump_length": 2.784,
+      "jump_index": 36,
+      "barrier": null,
+      "frequency": null
+    },
+    {
+      "start": "F",
+      "end": "F",
+      "jump_length": 2.673,
+      "jump_index": 37,
+      "barrier": null,
+      "frequency": null
+    },
+    {
+      "start": "G",
+      "end": "G",
+      "jump_length": 2.638,
+      "jump_index": 38,
+      "barrier": null,
+      "frequency": null
+    },
+    {
+      "start": "G",
+      "end": "C",
+      "jump_length": 0.976,
+      "jump_index": 39,
+      "barrier": null,
+      "frequency": null
+    },
+    {
+      "start": "G",
+      "end": "G",
+      "jump_length": 2.754,
+      "jump_index": 40,
+      "barrier": null,
+      "frequency": null
+    },
+    {
+      "start": "G",
+      "end": "F",
+      "jump_length": 2.421,
+      "jump_index": 41,
+      "barrier": null,
+      "frequency": null
+    },
+    {
+      "start": "G",
+      "end": "I",
+      "jump_length": 1.346,
+      "jump_index": 42,
+      "barrier": null,
+      "frequency": null
+    },
+    {
+      "start": "G",
+      "end": "F",
+      "jump_length": 1.762,
+      "jump_index": 43,
+      "barrier": null,
+      "frequency": null
+    },
+    {
+      "start": "G",
+      "end": "E",
+      "jump_length": 0.896,
+      "jump_index": 44,
+      "barrier": null,
+      "frequency": null
+    },
+    {
+      "start": "G",
+      "end": "G",
+      "jump_length": 1.327,
+      "jump_index": 45,
+      "barrier": null,
+      "frequency": null
+    },
+    {
+      "start": "G",
+      "end": "F",
+      "jump_length": 2.754,
+      "jump_index": 46,
+      "barrier": null,
+      "frequency": null
+    },
+    {
+      "start": "H",
+      "end": "F",
+      "jump_length": 2.39,
+      "jump_index": 47,
+      "barrier": null,
+      "frequency": null
+    },
+    {
+      "start": "H",
+      "end": "F",
+      "jump_length": 1.296,
+      "jump_index": 48,
+      "barrier": null,
+      "frequency": null
+    },
+    {
+      "start": "H",
+      "end": "G",
+      "jump_length": 2.284,
+      "jump_index": 49,
+      "barrier": null,
+      "frequency": null
+    },
+    {
+      "start": "H",
+      "end": "B",
+      "jump_length": 0.837,
+      "jump_index": 50,
+      "barrier": null,
+      "frequency": null
+    },
+    {
+      "start": "H",
+      "end": "G",
+      "jump_length": 2.815,
+      "jump_index": 51,
+      "barrier": null,
+      "frequency": null
+    },
+    {
+      "start": "I",
+      "end": "G",
+      "jump_length": 2.411,
+      "jump_index": 52,
+      "barrier": null,
+      "frequency": null
+    },
+    {
+      "start": "I",
+      "end": "G",
+      "jump_length": 2.515,
+      "jump_index": 53,
+      "barrier": null,
+      "frequency": null
+    },
+    {
+      "start": "I",
+      "end": "F",
+      "jump_length": 2.638,
+      "jump_index": 54,
+      "barrier": null,
+      "frequency": null
+    },
+    {
+      "start": "I",
+      "end": "F",
+      "jump_length": 2.253,
+      "jump_index": 55,
+      "barrier": null,
+      "frequency": null
+    },
+    {
+      "start": "I",
+      "end": "G",
+      "jump_length": 1.573,
+      "jump_index": 56,
+      "barrier": null,
+      "frequency": null
+    },
+    {
+      "start": "I",
+      "end": "C",
+      "jump_length": 0.989,
+      "jump_index": 57,
+      "barrier": null,
+      "frequency": null
+    },
+    {
+      "start": "I",
+      "end": "G",
+      "jump_length": 1.346,
+      "jump_index": 58,
+      "barrier": null,
+      "frequency": null
+    },
+    {
+      "start": "I",
+      "end": "F",
+      "jump_length": 2.622,
+      "jump_index": 59,
+      "barrier": null,
+      "frequency": null
+    },
+    {
+      "start": "I",
+      "end": "A",
+      "jump_length": 1.506,
+      "jump_index": 60,
+      "barrier": null,
+      "frequency": null
+    },
+    {
+      "start": "I",
+      "end": "F",
+      "jump_length": 2.235,
+      "jump_index": 61,
+      "barrier": null,
+      "frequency": null
+    },
+    {
+      "start": "I",
+      "end": "E",
+      "jump_length": 0.922,
+      "jump_index": 62,
+      "barrier": null,
+      "frequency": null
+    },
+    {
+      "start": "J",
+      "end": "D",
+      "jump_length": 0.837,
+      "jump_index": 63,
+      "barrier": null,
+      "frequency": null
+    },
+    {
+      "start": "J",
+      "end": "F",
+      "jump_length": 2.351,
+      "jump_index": 64,
+      "barrier": null,
+      "frequency": null
+    },
+    {
+      "start": "J",
+      "end": "G",
+      "jump_length": 2.172,
+      "jump_index": 65,
+      "barrier": null,
+      "frequency": null
+    },
+    {
+      "start": "J",
+      "end": "F",
+      "jump_length": 1.327,
+      "jump_index": 66,
+      "barrier": null,
+      "frequency": null
+    }
+  ]
+}

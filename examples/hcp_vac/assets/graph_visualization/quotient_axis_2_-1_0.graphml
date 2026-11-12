@@ -1,0 +1,87 @@
+<?xml version='1.0' encoding='utf-8'?>
+<graphml xmlns="http://graphml.graphdrawing.org/xmlns" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://graphml.graphdrawing.org/xmlns http://graphml.graphdrawing.org/xmlns/1.0/graphml.xsd">
+  <key id="d17" for="edge" attr.name="label" attr.type="string" />
+  <key id="d16" for="edge" attr.name="endpoints" attr.type="string" />
+  <key id="d15" for="edge" attr.name="images" attr.type="string" />
+  <key id="d14" for="edge" attr.name="lengths" attr.type="string" />
+  <key id="d13" for="edge" attr.name="delta_s" attr.type="string" />
+  <key id="d12" for="edge" attr.name="pair_keys" attr.type="string" />
+  <key id="d11" for="edge" attr.name="rate_symbols" attr.type="string" />
+  <key id="d10" for="edge" attr.name="jump_indices" attr.type="string" />
+  <key id="d9" for="edge" attr.name="count" attr.type="long" />
+  <key id="d8" for="node" attr.name="member_site_labels" attr.type="string" />
+  <key id="d7" for="node" attr.name="member_site_ids" attr.type="string" />
+  <key id="d6" for="node" attr.name="label" attr.type="string" />
+  <key id="d5" for="graph" attr.name="oriented_uc_transform" attr.type="string" />
+  <key id="d4" for="graph" attr.name="equivalence_relation" attr.type="string" />
+  <key id="d3" for="graph" attr.name="interplanar_spacing_d_hkl" attr.type="double" />
+  <key id="d2" for="graph" attr.name="transport_xi_hat_cartesian" attr.type="string" />
+  <key id="d1" for="graph" attr.name="transport_hkl_structure" attr.type="string" />
+  <key id="d0" for="graph" attr.name="transport_hkl_conventional" attr.type="string" />
+  <graph edgedefault="directed">
+    <node id="0">
+      <data key="d6">A0</data>
+      <data key="d7">[0]</data>
+      <data key="d8">["A0"]</data>
+    </node>
+    <node id="1">
+      <data key="d6">B0</data>
+      <data key="d7">[1]</data>
+      <data key="d8">["B0"]</data>
+    </node>
+    <edge source="0" target="0" id="0">
+      <data key="d9">6</data>
+      <data key="d10">[0, 0, 0, 0, 0, 0]</data>
+      <data key="d11">["W0", "W0", "W0", "W0", "W0", "W0"]</data>
+      <data key="d12">["A-&gt;A"]</data>
+      <data key="d13">[1.130999802, 2.261999605, 1.130999802, -1.130999802, -2.261999605, -1.130999802]</data>
+      <data key="d14">[2.261999605, 2.261999605, 2.261999605, 2.261999605, 2.261999605, 2.261999605]</data>
+      <data key="d15">[[1, 1, 0], [1, 0, 0], [0, -1, 0], [0, 1, 0], [-1, 0, 0], [-1, -1, 0]]</data>
+      <data key="d16">[[0, 0], [0, 0], [0, 0], [0, 0], [0, 0], [0, 0]]</data>
+      <data key="d17">6x W_AA
+Δs = [+1.131, +2.262, +1.131, -1.131, -2.262, -1.131]</data>
+    </edge>
+    <edge source="0" target="1" id="0">
+      <data key="d9">6</data>
+      <data key="d10">[1, 1, 1, 1, 1, 1]</data>
+      <data key="d11">["W1", "W1", "W1", "W1", "W1", "W1"]</data>
+      <data key="d12">["A-&gt;B"]</data>
+      <data key="d13">[1.130999802, -1.130999802, -0.0, 1.130999802, -1.130999802, -0.0]</data>
+      <data key="d14">[2.211734849, 2.211734849, 2.211734849, 2.211734849, 2.211734849, 2.211734849]</data>
+      <data key="d15">[[0, 0, 0], [-1, 0, 0], [-1, -1, 0], [0, 0, -1], [-1, 0, -1], [-1, -1, -1]]</data>
+      <data key="d16">[[0, 1], [0, 1], [0, 1], [0, 1], [0, 1], [0, 1]]</data>
+      <data key="d17">6x W_AB
+Δs = [+1.131, -1.131, -0.000, +1.131, -1.131, -0.000]</data>
+    </edge>
+    <edge source="1" target="0" id="0">
+      <data key="d9">6</data>
+      <data key="d10">[3, 3, 3, 3, 3, 3]</data>
+      <data key="d11">["W3", "W3", "W3", "W3", "W3", "W3"]</data>
+      <data key="d12">["B-&gt;A"]</data>
+      <data key="d13">[0.0, 0.0, 1.130999802, 1.130999802, -1.130999802, -1.130999802]</data>
+      <data key="d14">[2.211734849, 2.211734849, 2.211734849, 2.211734849, 2.211734849, 2.211734849]</data>
+      <data key="d15">[[1, 1, 1], [1, 1, 0], [1, 0, 1], [1, 0, 0], [0, 0, 1], [0, 0, 0]]</data>
+      <data key="d16">[[1, 0], [1, 0], [1, 0], [1, 0], [1, 0], [1, 0]]</data>
+      <data key="d17">6x W_BA
+Δs = [+0.000, +0.000, +1.131, +1.131, -1.131, -1.131]</data>
+    </edge>
+    <edge source="1" target="1" id="0">
+      <data key="d9">6</data>
+      <data key="d10">[2, 2, 2, 2, 2, 2]</data>
+      <data key="d11">["W2", "W2", "W2", "W2", "W2", "W2"]</data>
+      <data key="d12">["B-&gt;B"]</data>
+      <data key="d13">[2.261999605, 1.130999802, -1.130999802, 1.130999802, -2.261999605, -1.130999802]</data>
+      <data key="d14">[2.261999605, 2.261999605, 2.261999605, 2.261999605, 2.261999605, 2.261999605]</data>
+      <data key="d15">[[1, 0, 0], [1, 1, 0], [0, 1, 0], [0, -1, 0], [-1, 0, 0], [-1, -1, 0]]</data>
+      <data key="d16">[[1, 1], [1, 1], [1, 1], [1, 1], [1, 1], [1, 1]]</data>
+      <data key="d17">6x W_BB
+Δs = [+2.262, +1.131, -1.131, +1.131, -2.262, -1.131]</data>
+    </edge>
+    <data key="d0">[2, -1, 0]</data>
+    <data key="d1">[2, -1, 0]</data>
+    <data key="d2">[-0.5, -0.866025404, 0.0]</data>
+    <data key="d3">1.1309998022516843</data>
+    <data key="d4">Two sites are equivalent iff they share the same Wyckoff label and have equal projection (hkl . frac_coords) onto the transport axis within tolerance (JumpAxisEquivalenceAnalyzer.find_equiv_classes_for_axis).</data>
+    <data key="d5">oriented_unit_cell_for_axis(structure, hkl_structure): exact-integer extended-GCD plane basis + metric-aware 2-D Gauss/Lagrange reduction + brute-force minimal transverse vector, validated against area(u,v)*height(w) == primitive_cell_volume and |det([w,u,v])| == 1 (not pymatgen.core.surface.SlabGenerator, which was found to produce a non-minimal, non-primitive oriented cell for some {hkl} in body-centered tetragonal structures).</data>
+  </graph>
+</graphml>
