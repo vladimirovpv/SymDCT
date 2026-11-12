@@ -1,0 +1,629 @@
+<?xml version='1.0' encoding='utf-8'?>
+<graphml xmlns="http://graphml.graphdrawing.org/xmlns" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:y="http://www.yworks.com/xml/graphml" xsi:schemaLocation="http://graphml.graphdrawing.org/xmlns http://graphml.graphdrawing.org/xmlns/1.0/graphml.xsd">
+  <key id="d14" for="edge" attr.name="label" attr.type="string" />
+  <key id="d13" for="edge" attr.name="delta_r_cart" attr.type="string" />
+  <key id="d12" for="edge" attr.name="image" attr.type="string" />
+  <key id="d11" for="edge" attr.name="delta_s" attr.type="double" />
+  <key id="d10" for="edge" attr.name="length" attr.type="double" />
+  <key id="d9" for="edge" attr.name="rate_symbol" attr.type="string" />
+  <key id="d8" for="edge" attr.name="pair_key" attr.type="string" />
+  <key id="d7" for="edge" attr.name="glob_jump_cnt" attr.type="int" />
+  <key id="d6" for="node" attr.name="label" attr.type="string" />
+  <key id="d5" for="graph" attr.name="oriented_uc_transform" attr.type="string" />
+  <key id="d4" for="graph" attr.name="equivalence_relation" attr.type="string" />
+  <key id="d3" for="graph" attr.name="interplanar_spacing_d_hkl" attr.type="double" />
+  <key id="d2" for="graph" attr.name="transport_xi_hat_cartesian" attr.type="string" />
+  <key id="d1" for="graph" attr.name="transport_hkl_structure" attr.type="string" />
+  <key id="d0" for="graph" attr.name="transport_hkl_conventional" attr.type="string" />
+  <key for="node" id="d_node_gfx" yfiles.type="nodegraphics" /><key for="edge" id="d_edge_gfx" yfiles.type="edgegraphics" /><graph edgedefault="directed">
+    <node id="0">
+      <data key="d6">T₁</data>
+    <data key="d_node_gfx"><y:ShapeNode><y:Geometry x="210.00" y="402.00" width="60.00" height="60.00" /><y:Fill color="#B9DCFF" transparent="false" /><y:BorderStyle color="#000000" type="line" width="1.0" /><y:NodeLabel fontSize="20">T₁</y:NodeLabel><y:Shape type="ellipse" /></y:ShapeNode></data></node>
+    <node id="1">
+      <data key="d6">T₃</data>
+    <data key="d_node_gfx"><y:ShapeNode><y:Geometry x="690.00" y="-174.00" width="60.00" height="60.00" /><y:Fill color="#B9DCFF" transparent="false" /><y:BorderStyle color="#000000" type="line" width="1.0" /><y:NodeLabel fontSize="20">T₃</y:NodeLabel><y:Shape type="ellipse" /></y:ShapeNode></data></node>
+    <node id="2">
+      <data key="d6">T₁</data>
+    <data key="d_node_gfx"><y:ShapeNode><y:Geometry x="210.00" y="114.00" width="60.00" height="60.00" /><y:Fill color="#B9DCFF" transparent="false" /><y:BorderStyle color="#000000" type="line" width="1.0" /><y:NodeLabel fontSize="20">T₁</y:NodeLabel><y:Shape type="ellipse" /></y:ShapeNode></data></node>
+    <node id="3">
+      <data key="d6">T₃</data>
+    <data key="d_node_gfx"><y:ShapeNode><y:Geometry x="690.00" y="114.00" width="60.00" height="60.00" /><y:Fill color="#B9DCFF" transparent="false" /><y:BorderStyle color="#000000" type="line" width="1.0" /><y:NodeLabel fontSize="20">T₃</y:NodeLabel><y:Shape type="ellipse" /></y:ShapeNode></data></node>
+    <node id="4">
+      <data key="d6">T₂</data>
+    <data key="d_node_gfx"><y:ShapeNode><y:Geometry x="450.00" y="-174.00" width="60.00" height="60.00" /><y:Fill color="#B9DCFF" transparent="false" /><y:BorderStyle color="#000000" type="line" width="1.0" /><y:NodeLabel fontSize="20">T₂</y:NodeLabel><y:Shape type="ellipse" /></y:ShapeNode></data></node>
+    <node id="5">
+      <data key="d6">T₂</data>
+    <data key="d_node_gfx"><y:ShapeNode><y:Geometry x="450.00" y="402.00" width="60.00" height="60.00" /><y:Fill color="#B9DCFF" transparent="false" /><y:BorderStyle color="#000000" type="line" width="1.0" /><y:NodeLabel fontSize="20">T₂</y:NodeLabel><y:Shape type="ellipse" /></y:ShapeNode></data></node>
+    <node id="6">
+      <data key="d6">O₂</data>
+    <data key="d_node_gfx"><y:ShapeNode><y:Geometry x="450.00" y="-30.00" width="60.00" height="60.00" /><y:Fill color="#B9DCFF" transparent="false" /><y:BorderStyle color="#000000" type="line" width="1.0" /><y:NodeLabel fontSize="20">O₂</y:NodeLabel><y:Shape type="ellipse" /></y:ShapeNode></data></node>
+    <node id="7">
+      <data key="d6">O₂</data>
+    <data key="d_node_gfx"><y:ShapeNode><y:Geometry x="450.00" y="-318.00" width="60.00" height="60.00" /><y:Fill color="#B9DCFF" transparent="false" /><y:BorderStyle color="#000000" type="line" width="1.0" /><y:NodeLabel fontSize="20">O₂</y:NodeLabel><y:Shape type="ellipse" /></y:ShapeNode></data></node>
+    <node id="8">
+      <data key="d6">O₀</data>
+    <data key="d_node_gfx"><y:ShapeNode><y:Geometry x="-30.00" y="258.00" width="60.00" height="60.00" /><y:Fill color="#B9DCFF" transparent="false" /><y:BorderStyle color="#000000" type="line" width="1.0" /><y:NodeLabel fontSize="20">O₀</y:NodeLabel><y:Shape type="ellipse" /></y:ShapeNode></data></node>
+    <edge source="0" target="3" id="e0">
+      <data key="d7">0</data>
+      <data key="d8">T-&gt;T</data>
+      <data key="d9">W0</data>
+      <data key="d10">1.4318912319027592</data>
+      <data key="d11">-1.4318912319027584</data>
+      <data key="d12">[-1, 0, 0]</data>
+      <data key="d13">[-1.0125, -1.0125, 0.0]</data>
+      <data key="d14">W0
+Δs = -1.432</data>
+    <data key="d_edge_gfx"><y:BezierEdge><y:Path sx="0.0" sy="0.0" tx="0.0" ty="0.0"><y:Point x="569.00" y="436.33" /></y:Path><y:LineStyle color="#000000" type="line" width="1.0" /><y:Arrows source="none" target="standard" /><y:EdgeLabel fontSize="20">W0
+Δs = -1.432<y:LabelModel><y:SmartEdgeLabelModel autoRotationEnabled="false" /></y:LabelModel><y:ModelParameter><y:SmartEdgeLabelModelParameter segment="0" ratio="1.00" distance="15.00" /></y:ModelParameter></y:EdgeLabel></y:BezierEdge></data></edge>
+    <edge source="0" target="8" id="e1">
+      <data key="d7">1</data>
+      <data key="d8">T-&gt;O</data>
+      <data key="d9">W1</data>
+      <data key="d10">1.0125</data>
+      <data key="d11">-0.7159456159513793</data>
+      <data key="d12">[0, 0, 0]</data>
+      <data key="d13">[-1.0125, 0.0, 0.0]</data>
+      <data key="d14">W1
+Δs = -0.716</data>
+    <data key="d_edge_gfx"><y:BezierEdge><y:Path sx="0.0" sy="0.0" tx="0.0" ty="0.0"><y:Point x="164.50" y="285.84" /></y:Path><y:LineStyle color="#000000" type="line" width="1.0" /><y:Arrows source="none" target="standard" /><y:EdgeLabel fontSize="20">W1
+Δs = -0.716<y:LabelModel><y:SmartEdgeLabelModel autoRotationEnabled="false" /></y:LabelModel><y:ModelParameter><y:SmartEdgeLabelModelParameter segment="0" ratio="1.00" distance="15.00" /></y:ModelParameter></y:EdgeLabel></y:BezierEdge></data></edge>
+    <edge source="0" target="2" id="e2">
+      <data key="d7">0</data>
+      <data key="d8">T-&gt;T</data>
+      <data key="d9">W0</data>
+      <data key="d10">1.4318912319027588</data>
+      <data key="d11">-1.474850380429815e-17</data>
+      <data key="d12">[0, 0, 0]</data>
+      <data key="d13">[-1.0125, 1.0125, 0.0]</data>
+      <data key="d14">W0
+Δs = -0.000</data>
+    <data key="d_edge_gfx"><y:BezierEdge><y:Path sx="0.0" sy="0.0" tx="0.0" ty="0.0"><y:Point x="329.00" y="288.00" /></y:Path><y:LineStyle color="#000000" type="line" width="1.0" /><y:Arrows source="none" target="standard" /><y:EdgeLabel fontSize="20">W0
+Δs = -0.000<y:LabelModel><y:SmartEdgeLabelModel autoRotationEnabled="false" /></y:LabelModel><y:ModelParameter><y:SmartEdgeLabelModelParameter segment="0" ratio="1.00" distance="15.00" /></y:ModelParameter></y:EdgeLabel></y:BezierEdge></data></edge>
+    <edge source="0" target="4" id="e3">
+      <data key="d7">0</data>
+      <data key="d8">T-&gt;T</data>
+      <data key="d9">W0</data>
+      <data key="d10">1.431891231902759</data>
+      <data key="d11">0.7159456159513791</data>
+      <data key="d12">[0, 1, 0]</data>
+      <data key="d13">[1.0125, 0.0, -1.0125]</data>
+      <data key="d14">W0
+Δs = +0.716</data>
+    <data key="d_edge_gfx"><y:BezierEdge><y:Path sx="0.0" sy="0.0" tx="0.0" ty="0.0"><y:Point x="537.99" y="218.16" /></y:Path><y:LineStyle color="#000000" type="line" width="1.0" /><y:Arrows source="none" target="standard" /><y:EdgeLabel fontSize="20">W0
+Δs = +0.716<y:LabelModel><y:SmartEdgeLabelModel autoRotationEnabled="false" /></y:LabelModel><y:ModelParameter><y:SmartEdgeLabelModelParameter segment="0" ratio="1.00" distance="15.00" /></y:ModelParameter></y:EdgeLabel></y:BezierEdge></data></edge>
+    <edge source="0" target="7" id="e4">
+      <data key="d7">1</data>
+      <data key="d8">T-&gt;O</data>
+      <data key="d9">W1</data>
+      <data key="d10">1.0125000000000002</data>
+      <data key="d11">0.7159456159513793</data>
+      <data key="d12">[0, 1, 0]</data>
+      <data key="d13">[1.0125, 0.0, 0.0]</data>
+      <data key="d14">W1
+Δs = +0.716</data>
+    <data key="d_edge_gfx"><y:BezierEdge><y:Path sx="0.0" sy="0.0" tx="0.0" ty="0.0"><y:Point x="582.49" y="146.16" /></y:Path><y:LineStyle color="#000000" type="line" width="1.0" /><y:Arrows source="none" target="standard" /><y:EdgeLabel fontSize="20">W1
+Δs = +0.716<y:LabelModel><y:SmartEdgeLabelModel autoRotationEnabled="false" /></y:LabelModel><y:ModelParameter><y:SmartEdgeLabelModelParameter segment="0" ratio="1.00" distance="15.00" /></y:ModelParameter></y:EdgeLabel></y:BezierEdge></data></edge>
+    <edge source="0" target="5" id="e5">
+      <data key="d7">0</data>
+      <data key="d8">T-&gt;T</data>
+      <data key="d9">W0</data>
+      <data key="d10">1.4318912319027588</data>
+      <data key="d11">0.7159456159513793</data>
+      <data key="d12">[0, 0, 0]</data>
+      <data key="d13">[1.0125, 0.0, 1.0125]</data>
+      <data key="d14">W0
+Δs = +0.716</data>
+    <data key="d_edge_gfx"><y:BezierEdge><y:Path sx="0.0" sy="0.0" tx="0.0" ty="0.0"><y:Point x="360.00" y="506.16" /></y:Path><y:LineStyle color="#000000" type="line" width="1.0" /><y:Arrows source="none" target="standard" /><y:EdgeLabel fontSize="20">W0
+Δs = +0.716<y:LabelModel><y:SmartEdgeLabelModel autoRotationEnabled="false" /></y:LabelModel><y:ModelParameter><y:SmartEdgeLabelModelParameter segment="0" ratio="1.00" distance="15.00" /></y:ModelParameter></y:EdgeLabel></y:BezierEdge></data></edge>
+    <edge source="1" target="4" id="e6">
+      <data key="d7">0</data>
+      <data key="d8">T-&gt;T</data>
+      <data key="d9">W0</data>
+      <data key="d10">1.431891231902759</data>
+      <data key="d11">-0.7159456159513793</data>
+      <data key="d12">[0, 0, 0]</data>
+      <data key="d13">[-1.0125, 0.0, -1.0125]</data>
+      <data key="d14">W0
+Δs = -0.716</data>
+    <data key="d_edge_gfx"><y:BezierEdge><y:Path sx="0.0" sy="0.0" tx="0.0" ty="0.0"><y:Point x="600.00" y="-218.16" /></y:Path><y:LineStyle color="#000000" type="line" width="1.0" /><y:Arrows source="none" target="standard" /><y:EdgeLabel fontSize="20">W0
+Δs = -0.716<y:LabelModel><y:SmartEdgeLabelModel autoRotationEnabled="false" /></y:LabelModel><y:ModelParameter><y:SmartEdgeLabelModelParameter segment="0" ratio="1.00" distance="15.00" /></y:ModelParameter></y:EdgeLabel></y:BezierEdge></data></edge>
+    <edge source="1" target="7" id="e7">
+      <data key="d7">1</data>
+      <data key="d8">T-&gt;O</data>
+      <data key="d9">W1</data>
+      <data key="d10">1.0125000000000002</data>
+      <data key="d11">-0.7159456159513793</data>
+      <data key="d12">[0, 0, 0]</data>
+      <data key="d13">[-1.0125, 0.0, 0.0]</data>
+      <data key="d14">W1
+Δs = -0.716</data>
+    <data key="d_edge_gfx"><y:BezierEdge><y:Path sx="0.0" sy="0.0" tx="0.0" ty="0.0"><y:Point x="644.50" y="-290.16" /></y:Path><y:LineStyle color="#000000" type="line" width="1.0" /><y:Arrows source="none" target="standard" /><y:EdgeLabel fontSize="20">W1
+Δs = -0.716<y:LabelModel><y:SmartEdgeLabelModel autoRotationEnabled="false" /></y:LabelModel><y:ModelParameter><y:SmartEdgeLabelModelParameter segment="0" ratio="1.00" distance="15.00" /></y:ModelParameter></y:EdgeLabel></y:BezierEdge></data></edge>
+    <edge source="1" target="5" id="e8">
+      <data key="d7">0</data>
+      <data key="d8">T-&gt;T</data>
+      <data key="d9">W0</data>
+      <data key="d10">1.4318912319027592</data>
+      <data key="d11">-0.7159456159513791</data>
+      <data key="d12">[0, -1, 0]</data>
+      <data key="d13">[-1.0125, 0.0, 1.0125]</data>
+      <data key="d14">W0
+Δs = -0.716</data>
+    <data key="d_edge_gfx"><y:BezierEdge><y:Path sx="0.0" sy="0.0" tx="0.0" ty="0.0"><y:Point x="422.01" y="69.84" /></y:Path><y:LineStyle color="#000000" type="line" width="1.0" /><y:Arrows source="none" target="standard" /><y:EdgeLabel fontSize="20">W0
+Δs = -0.716<y:LabelModel><y:SmartEdgeLabelModel autoRotationEnabled="false" /></y:LabelModel><y:ModelParameter><y:SmartEdgeLabelModelParameter segment="0" ratio="1.00" distance="15.00" /></y:ModelParameter></y:EdgeLabel></y:BezierEdge></data></edge>
+    <edge source="1" target="3" id="e9">
+      <data key="d7">0</data>
+      <data key="d8">T-&gt;T</data>
+      <data key="d9">W0</data>
+      <data key="d10">1.4318912319027588</data>
+      <data key="d11">1.474850380429815e-17</data>
+      <data key="d12">[0, 0, 0]</data>
+      <data key="d13">[1.0125, -1.0125, 0.0]</data>
+      <data key="d14">W0
+Δs = +0.000</data>
+    <data key="d_edge_gfx"><y:BezierEdge><y:Path sx="0.0" sy="0.0" tx="0.0" ty="0.0"><y:Point x="631.00" y="0.00" /></y:Path><y:LineStyle color="#000000" type="line" width="1.0" /><y:Arrows source="none" target="standard" /><y:EdgeLabel fontSize="20">W0
+Δs = +0.000<y:LabelModel><y:SmartEdgeLabelModel autoRotationEnabled="false" /></y:LabelModel><y:ModelParameter><y:SmartEdgeLabelModelParameter segment="0" ratio="1.00" distance="15.00" /></y:ModelParameter></y:EdgeLabel></y:BezierEdge></data></edge>
+    <edge source="1" target="8" id="e10">
+      <data key="d7">1</data>
+      <data key="d8">T-&gt;O</data>
+      <data key="d9">W1</data>
+      <data key="d10">1.0125000000000002</data>
+      <data key="d11">0.7159456159513793</data>
+      <data key="d12">[1, 0, 0]</data>
+      <data key="d13">[1.0125, 0.0, 0.0]</data>
+      <data key="d14">W1
+Δs = +0.716</data>
+    <data key="d_edge_gfx"><y:BezierEdge><y:Path sx="0.0" sy="0.0" tx="0.0" ty="0.0"><y:Point x="226.50" y="-150.49" /></y:Path><y:LineStyle color="#000000" type="line" width="1.0" /><y:Arrows source="none" target="standard" /><y:EdgeLabel fontSize="20">W1
+Δs = +0.716<y:LabelModel><y:SmartEdgeLabelModel autoRotationEnabled="false" /></y:LabelModel><y:ModelParameter><y:SmartEdgeLabelModelParameter segment="0" ratio="1.00" distance="15.00" /></y:ModelParameter></y:EdgeLabel></y:BezierEdge></data></edge>
+    <edge source="1" target="2" id="e11">
+      <data key="d7">0</data>
+      <data key="d8">T-&gt;T</data>
+      <data key="d9">W0</data>
+      <data key="d10">1.431891231902759</data>
+      <data key="d11">1.4318912319027584</data>
+      <data key="d12">[1, 0, 0]</data>
+      <data key="d13">[1.0125, 1.0125, 0.0]</data>
+      <data key="d14">W0
+Δs = +1.432</data>
+    <data key="d_edge_gfx"><y:BezierEdge><y:Path sx="0.0" sy="0.0" tx="0.0" ty="0.0"><y:Point x="391.00" y="-148.33" /></y:Path><y:LineStyle color="#000000" type="line" width="1.0" /><y:Arrows source="none" target="standard" /><y:EdgeLabel fontSize="20">W0
+Δs = +1.432<y:LabelModel><y:SmartEdgeLabelModel autoRotationEnabled="false" /></y:LabelModel><y:ModelParameter><y:SmartEdgeLabelModelParameter segment="0" ratio="1.00" distance="15.00" /></y:ModelParameter></y:EdgeLabel></y:BezierEdge></data></edge>
+    <edge source="2" target="1" id="e12">
+      <data key="d7">0</data>
+      <data key="d8">T-&gt;T</data>
+      <data key="d9">W0</data>
+      <data key="d10">1.4318912319027592</data>
+      <data key="d11">-1.4318912319027584</data>
+      <data key="d12">[-1, 0, 0]</data>
+      <data key="d13">[-1.0125, -1.0125, 0.0]</data>
+      <data key="d14">W0
+Δs = -1.432</data>
+    <data key="d_edge_gfx"><y:BezierEdge><y:Path sx="0.0" sy="0.0" tx="0.0" ty="0.0"><y:Point x="569.00" y="148.33" /></y:Path><y:LineStyle color="#000000" type="line" width="1.0" /><y:Arrows source="none" target="standard" /><y:EdgeLabel fontSize="20">W0
+Δs = -1.432<y:LabelModel><y:SmartEdgeLabelModel autoRotationEnabled="false" /></y:LabelModel><y:ModelParameter><y:SmartEdgeLabelModelParameter segment="0" ratio="1.00" distance="-15.00" /></y:ModelParameter></y:EdgeLabel></y:BezierEdge></data></edge>
+    <edge source="2" target="8" id="e13">
+      <data key="d7">1</data>
+      <data key="d8">T-&gt;O</data>
+      <data key="d9">W1</data>
+      <data key="d10">1.0125000000000002</data>
+      <data key="d11">-0.7159456159513793</data>
+      <data key="d12">[0, 0, 0]</data>
+      <data key="d13">[0.0, -1.0125, 0.0]</data>
+      <data key="d14">W1
+Δs = -0.716</data>
+    <data key="d_edge_gfx"><y:BezierEdge><y:Path sx="0.0" sy="0.0" tx="0.0" ty="0.0"><y:Point x="75.50" y="141.84" /></y:Path><y:LineStyle color="#000000" type="line" width="1.0" /><y:Arrows source="none" target="standard" /><y:EdgeLabel fontSize="20">W1
+Δs = -0.716<y:LabelModel><y:SmartEdgeLabelModel autoRotationEnabled="false" /></y:LabelModel><y:ModelParameter><y:SmartEdgeLabelModelParameter segment="0" ratio="1.00" distance="15.00" /></y:ModelParameter></y:EdgeLabel></y:BezierEdge></data></edge>
+    <edge source="2" target="0" id="e14">
+      <data key="d7">0</data>
+      <data key="d8">T-&gt;T</data>
+      <data key="d9">W0</data>
+      <data key="d10">1.4318912319027588</data>
+      <data key="d11">1.474850380429815e-17</data>
+      <data key="d12">[0, 0, 0]</data>
+      <data key="d13">[1.0125, -1.0125, 0.0]</data>
+      <data key="d14">W0
+Δs = +0.000</data>
+    <data key="d_edge_gfx"><y:BezierEdge><y:Path sx="0.0" sy="0.0" tx="0.0" ty="0.0"><y:Point x="151.00" y="288.00" /></y:Path><y:LineStyle color="#000000" type="line" width="1.0" /><y:Arrows source="none" target="standard" /><y:EdgeLabel fontSize="20">W0
+Δs = +0.000<y:LabelModel><y:SmartEdgeLabelModel autoRotationEnabled="false" /></y:LabelModel><y:ModelParameter><y:SmartEdgeLabelModelParameter segment="0" ratio="1.00" distance="-15.00" /></y:ModelParameter></y:EdgeLabel></y:BezierEdge></data></edge>
+    <edge source="2" target="5" id="e15">
+      <data key="d7">0</data>
+      <data key="d8">T-&gt;T</data>
+      <data key="d9">W0</data>
+      <data key="d10">1.431891231902759</data>
+      <data key="d11">0.7159456159513793</data>
+      <data key="d12">[0, 0, 1]</data>
+      <data key="d13">[0.0, 1.0125, -1.0125]</data>
+      <data key="d14">W0
+Δs = +0.716</data>
+    <data key="d_edge_gfx"><y:BezierEdge><y:Path sx="0.0" sy="0.0" tx="0.0" ty="0.0"><y:Point x="271.00" y="362.16" /></y:Path><y:LineStyle color="#000000" type="line" width="1.0" /><y:Arrows source="none" target="standard" /><y:EdgeLabel fontSize="20">W0
+Δs = +0.716<y:LabelModel><y:SmartEdgeLabelModel autoRotationEnabled="false" /></y:LabelModel><y:ModelParameter><y:SmartEdgeLabelModelParameter segment="0" ratio="1.00" distance="15.00" /></y:ModelParameter></y:EdgeLabel></y:BezierEdge></data></edge>
+    <edge source="2" target="6" id="e16">
+      <data key="d7">1</data>
+      <data key="d8">T-&gt;O</data>
+      <data key="d9">W1</data>
+      <data key="d10">1.0124999999999997</data>
+      <data key="d11">0.7159456159513793</data>
+      <data key="d12">[0, 0, 0]</data>
+      <data key="d13">[0.0, 1.0125, 0.0]</data>
+      <data key="d14">W1
+Δs = +0.716</data>
+    <data key="d_edge_gfx"><y:BezierEdge><y:Path sx="0.0" sy="0.0" tx="0.0" ty="0.0"><y:Point x="404.50" y="146.16" /></y:Path><y:LineStyle color="#000000" type="line" width="1.0" /><y:Arrows source="none" target="standard" /><y:EdgeLabel fontSize="20">W1
+Δs = +0.716<y:LabelModel><y:SmartEdgeLabelModel autoRotationEnabled="false" /></y:LabelModel><y:ModelParameter><y:SmartEdgeLabelModelParameter segment="0" ratio="1.00" distance="15.00" /></y:ModelParameter></y:EdgeLabel></y:BezierEdge></data></edge>
+    <edge source="2" target="4" id="e17">
+      <data key="d7">0</data>
+      <data key="d8">T-&gt;T</data>
+      <data key="d9">W0</data>
+      <data key="d10">1.4318912319027588</data>
+      <data key="d11">0.7159456159513793</data>
+      <data key="d12">[0, 0, 0]</data>
+      <data key="d13">[0.0, 1.0125, 1.0125]</data>
+      <data key="d14">W0
+Δs = +0.716</data>
+    <data key="d_edge_gfx"><y:BezierEdge><y:Path sx="0.0" sy="0.0" tx="0.0" ty="0.0"><y:Point x="449.00" y="74.16" /></y:Path><y:LineStyle color="#000000" type="line" width="1.0" /><y:Arrows source="none" target="standard" /><y:EdgeLabel fontSize="20">W0
+Δs = +0.716<y:LabelModel><y:SmartEdgeLabelModel autoRotationEnabled="false" /></y:LabelModel><y:ModelParameter><y:SmartEdgeLabelModelParameter segment="0" ratio="1.00" distance="15.00" /></y:ModelParameter></y:EdgeLabel></y:BezierEdge></data></edge>
+    <edge source="3" target="1" id="e18">
+      <data key="d7">0</data>
+      <data key="d8">T-&gt;T</data>
+      <data key="d9">W0</data>
+      <data key="d10">1.4318912319027586</data>
+      <data key="d11">-1.474850380429815e-17</data>
+      <data key="d12">[0, 0, 0]</data>
+      <data key="d13">[-1.0125, 1.0125, 0.0]</data>
+      <data key="d14">W0
+Δs = -0.000</data>
+    <data key="d_edge_gfx"><y:BezierEdge><y:Path sx="0.0" sy="0.0" tx="0.0" ty="0.0"><y:Point x="809.00" y="0.00" /></y:Path><y:LineStyle color="#000000" type="line" width="1.0" /><y:Arrows source="none" target="standard" /><y:EdgeLabel fontSize="20">W0
+Δs = -0.000<y:LabelModel><y:SmartEdgeLabelModel autoRotationEnabled="false" /></y:LabelModel><y:ModelParameter><y:SmartEdgeLabelModelParameter segment="0" ratio="1.00" distance="-15.00" /></y:ModelParameter></y:EdgeLabel></y:BezierEdge></data></edge>
+    <edge source="3" target="5" id="e19">
+      <data key="d7">0</data>
+      <data key="d8">T-&gt;T</data>
+      <data key="d9">W0</data>
+      <data key="d10">1.431891231902759</data>
+      <data key="d11">-0.7159456159513793</data>
+      <data key="d12">[0, 0, 0]</data>
+      <data key="d13">[0.0, -1.0125, -1.0125]</data>
+      <data key="d14">W0
+Δs = -0.716</data>
+    <data key="d_edge_gfx"><y:BezierEdge><y:Path sx="0.0" sy="0.0" tx="0.0" ty="0.0"><y:Point x="511.00" y="213.84" /></y:Path><y:LineStyle color="#000000" type="line" width="1.0" /><y:Arrows source="none" target="standard" /><y:EdgeLabel fontSize="20">W0
+Δs = -0.716<y:LabelModel><y:SmartEdgeLabelModel autoRotationEnabled="false" /></y:LabelModel><y:ModelParameter><y:SmartEdgeLabelModelParameter segment="0" ratio="1.00" distance="15.00" /></y:ModelParameter></y:EdgeLabel></y:BezierEdge></data></edge>
+    <edge source="3" target="6" id="e20">
+      <data key="d7">1</data>
+      <data key="d8">T-&gt;O</data>
+      <data key="d9">W1</data>
+      <data key="d10">1.0125000000000006</data>
+      <data key="d11">-0.7159456159513793</data>
+      <data key="d12">[0, 0, -1]</data>
+      <data key="d13">[0.0, -1.0125, 0.0]</data>
+      <data key="d14">W1
+Δs = -0.716</data>
+    <data key="d_edge_gfx"><y:BezierEdge><y:Path sx="0.0" sy="0.0" tx="0.0" ty="0.0"><y:Point x="644.50" y="-2.16" /></y:Path><y:LineStyle color="#000000" type="line" width="1.0" /><y:Arrows source="none" target="standard" /><y:EdgeLabel fontSize="20">W1
+Δs = -0.716<y:LabelModel><y:SmartEdgeLabelModel autoRotationEnabled="false" /></y:LabelModel><y:ModelParameter><y:SmartEdgeLabelModelParameter segment="0" ratio="1.00" distance="15.00" /></y:ModelParameter></y:EdgeLabel></y:BezierEdge></data></edge>
+    <edge source="3" target="4" id="e21">
+      <data key="d7">0</data>
+      <data key="d8">T-&gt;T</data>
+      <data key="d9">W0</data>
+      <data key="d10">1.4318912319027592</data>
+      <data key="d11">-0.7159456159513793</data>
+      <data key="d12">[0, 0, -1]</data>
+      <data key="d13">[0.0, -1.0125, 1.0125]</data>
+      <data key="d14">W0
+Δs = -0.716</data>
+    <data key="d_edge_gfx"><y:BezierEdge><y:Path sx="0.0" sy="0.0" tx="0.0" ty="0.0"><y:Point x="689.00" y="-74.16" /></y:Path><y:LineStyle color="#000000" type="line" width="1.0" /><y:Arrows source="none" target="standard" /><y:EdgeLabel fontSize="20">W0
+Δs = -0.716<y:LabelModel><y:SmartEdgeLabelModel autoRotationEnabled="false" /></y:LabelModel><y:ModelParameter><y:SmartEdgeLabelModelParameter segment="0" ratio="1.00" distance="15.00" /></y:ModelParameter></y:EdgeLabel></y:BezierEdge></data></edge>
+    <edge source="3" target="8" id="e22">
+      <data key="d7">1</data>
+      <data key="d8">T-&gt;O</data>
+      <data key="d9">W1</data>
+      <data key="d10">1.0125000000000002</data>
+      <data key="d11">0.7159456159513793</data>
+      <data key="d12">[1, 0, 0]</data>
+      <data key="d13">[0.0, 1.0125, 0.0]</data>
+      <data key="d14">W1
+Δs = +0.716</data>
+    <data key="d_edge_gfx"><y:BezierEdge><y:Path sx="0.0" sy="0.0" tx="0.0" ty="0.0"><y:Point x="315.50" y="-6.49" /></y:Path><y:LineStyle color="#000000" type="line" width="1.0" /><y:Arrows source="none" target="standard" /><y:EdgeLabel fontSize="20">W1
+Δs = +0.716<y:LabelModel><y:SmartEdgeLabelModel autoRotationEnabled="false" /></y:LabelModel><y:ModelParameter><y:SmartEdgeLabelModelParameter segment="0" ratio="1.00" distance="15.00" /></y:ModelParameter></y:EdgeLabel></y:BezierEdge></data></edge>
+    <edge source="3" target="0" id="e23">
+      <data key="d7">0</data>
+      <data key="d8">T-&gt;T</data>
+      <data key="d9">W0</data>
+      <data key="d10">1.431891231902759</data>
+      <data key="d11">1.4318912319027584</data>
+      <data key="d12">[1, 0, 0]</data>
+      <data key="d13">[1.0125, 1.0125, 0.0]</data>
+      <data key="d14">W0
+Δs = +1.432</data>
+    <data key="d_edge_gfx"><y:BezierEdge><y:Path sx="0.0" sy="0.0" tx="0.0" ty="0.0"><y:Point x="391.00" y="139.67" /></y:Path><y:LineStyle color="#000000" type="line" width="1.0" /><y:Arrows source="none" target="standard" /><y:EdgeLabel fontSize="20">W0
+Δs = +1.432<y:LabelModel><y:SmartEdgeLabelModel autoRotationEnabled="false" /></y:LabelModel><y:ModelParameter><y:SmartEdgeLabelModelParameter segment="0" ratio="1.00" distance="-15.00" /></y:ModelParameter></y:EdgeLabel></y:BezierEdge></data></edge>
+    <edge source="4" target="0" id="e24">
+      <data key="d7">0</data>
+      <data key="d8">T-&gt;T</data>
+      <data key="d9">W0</data>
+      <data key="d10">1.4318912319027595</data>
+      <data key="d11">-0.7159456159513791</data>
+      <data key="d12">[0, -1, 0]</data>
+      <data key="d13">[-1.0125, 0.0, 1.0125]</data>
+      <data key="d14">W0
+Δs = -0.716</data>
+    <data key="d_edge_gfx"><y:BezierEdge><y:Path sx="0.0" sy="0.0" tx="0.0" ty="0.0"><y:Point x="182.01" y="69.84" /></y:Path><y:LineStyle color="#000000" type="line" width="1.0" /><y:Arrows source="none" target="standard" /><y:EdgeLabel fontSize="20">W0
+Δs = -0.716<y:LabelModel><y:SmartEdgeLabelModel autoRotationEnabled="false" /></y:LabelModel><y:ModelParameter><y:SmartEdgeLabelModelParameter segment="0" ratio="1.00" distance="-15.00" /></y:ModelParameter></y:EdgeLabel></y:BezierEdge></data></edge>
+    <edge source="4" target="2" id="e25">
+      <data key="d7">0</data>
+      <data key="d8">T-&gt;T</data>
+      <data key="d9">W0</data>
+      <data key="d10">1.4318912319027588</data>
+      <data key="d11">-0.7159456159513793</data>
+      <data key="d12">[0, 0, 0]</data>
+      <data key="d13">[0.0, -1.0125, -1.0125]</data>
+      <data key="d14">W0
+Δs = -0.716</data>
+    <data key="d_edge_gfx"><y:BezierEdge><y:Path sx="0.0" sy="0.0" tx="0.0" ty="0.0"><y:Point x="271.00" y="-74.16" /></y:Path><y:LineStyle color="#000000" type="line" width="1.0" /><y:Arrows source="none" target="standard" /><y:EdgeLabel fontSize="20">W0
+Δs = -0.716<y:LabelModel><y:SmartEdgeLabelModel autoRotationEnabled="false" /></y:LabelModel><y:ModelParameter><y:SmartEdgeLabelModelParameter segment="0" ratio="1.00" distance="-15.00" /></y:ModelParameter></y:EdgeLabel></y:BezierEdge></data></edge>
+    <edge source="4" target="6" id="e26">
+      <data key="d7">1</data>
+      <data key="d8">T-&gt;O</data>
+      <data key="d9">W1</data>
+      <data key="d10">1.0125000000000002</data>
+      <data key="d11">0.0</data>
+      <data key="d12">[0, 0, 0]</data>
+      <data key="d13">[0.0, 0.0, -1.0125]</data>
+      <data key="d14">W1
+Δs = +0.000</data>
+    <data key="d_edge_gfx"><y:BezierEdge><y:Path sx="0.0" sy="0.0" tx="0.0" ty="0.0"><y:Point x="435.50" y="-72.00" /></y:Path><y:LineStyle color="#000000" type="line" width="1.0" /><y:Arrows source="none" target="standard" /><y:EdgeLabel fontSize="20">W1
+Δs = +0.000<y:LabelModel><y:SmartEdgeLabelModel autoRotationEnabled="false" /></y:LabelModel><y:ModelParameter><y:SmartEdgeLabelModelParameter segment="0" ratio="1.00" distance="15.00" /></y:ModelParameter></y:EdgeLabel></y:BezierEdge></data></edge>
+    <edge source="4" target="7" id="e27">
+      <data key="d7">1</data>
+      <data key="d8">T-&gt;O</data>
+      <data key="d9">W1</data>
+      <data key="d10">1.0125000000000002</data>
+      <data key="d11">0.0</data>
+      <data key="d12">[0, 0, 0]</data>
+      <data key="d13">[0.0, 0.0, 1.0125]</data>
+      <data key="d14">W1
+Δs = +0.000</data>
+    <data key="d_edge_gfx"><y:BezierEdge><y:Path sx="0.0" sy="0.0" tx="0.0" ty="0.0"><y:Point x="524.50" y="-216.00" /></y:Path><y:LineStyle color="#000000" type="line" width="1.0" /><y:Arrows source="none" target="standard" /><y:EdgeLabel fontSize="20">W1
+Δs = +0.000<y:LabelModel><y:SmartEdgeLabelModel autoRotationEnabled="false" /></y:LabelModel><y:ModelParameter><y:SmartEdgeLabelModelParameter segment="0" ratio="1.00" distance="15.00" /></y:ModelParameter></y:EdgeLabel></y:BezierEdge></data></edge>
+    <edge source="4" target="1" id="e28">
+      <data key="d7">0</data>
+      <data key="d8">T-&gt;T</data>
+      <data key="d9">W0</data>
+      <data key="d10">1.4318912319027592</data>
+      <data key="d11">0.7159456159513793</data>
+      <data key="d12">[0, 0, 0]</data>
+      <data key="d13">[1.0125, 0.0, 1.0125]</data>
+      <data key="d14">W0
+Δs = +0.716</data>
+    <data key="d_edge_gfx"><y:BezierEdge><y:Path sx="0.0" sy="0.0" tx="0.0" ty="0.0"><y:Point x="600.00" y="-69.84" /></y:Path><y:LineStyle color="#000000" type="line" width="1.0" /><y:Arrows source="none" target="standard" /><y:EdgeLabel fontSize="20">W0
+Δs = +0.716<y:LabelModel><y:SmartEdgeLabelModel autoRotationEnabled="false" /></y:LabelModel><y:ModelParameter><y:SmartEdgeLabelModelParameter segment="0" ratio="1.00" distance="-15.00" /></y:ModelParameter></y:EdgeLabel></y:BezierEdge></data></edge>
+    <edge source="4" target="3" id="e29">
+      <data key="d7">0</data>
+      <data key="d8">T-&gt;T</data>
+      <data key="d9">W0</data>
+      <data key="d10">1.431891231902759</data>
+      <data key="d11">0.7159456159513793</data>
+      <data key="d12">[0, 0, 1]</data>
+      <data key="d13">[0.0, 1.0125, -1.0125]</data>
+      <data key="d14">W0
+Δs = +0.716</data>
+    <data key="d_edge_gfx"><y:BezierEdge><y:Path sx="0.0" sy="0.0" tx="0.0" ty="0.0"><y:Point x="511.00" y="74.16" /></y:Path><y:LineStyle color="#000000" type="line" width="1.0" /><y:Arrows source="none" target="standard" /><y:EdgeLabel fontSize="20">W0
+Δs = +0.716<y:LabelModel><y:SmartEdgeLabelModel autoRotationEnabled="false" /></y:LabelModel><y:ModelParameter><y:SmartEdgeLabelModelParameter segment="0" ratio="1.00" distance="-15.00" /></y:ModelParameter></y:EdgeLabel></y:BezierEdge></data></edge>
+    <edge source="5" target="0" id="e30">
+      <data key="d7">0</data>
+      <data key="d8">T-&gt;T</data>
+      <data key="d9">W0</data>
+      <data key="d10">1.4318912319027588</data>
+      <data key="d11">-0.7159456159513793</data>
+      <data key="d12">[0, 0, 0]</data>
+      <data key="d13">[-1.0125, 0.0, -1.0125]</data>
+      <data key="d14">W0
+Δs = -0.716</data>
+    <data key="d_edge_gfx"><y:BezierEdge><y:Path sx="0.0" sy="0.0" tx="0.0" ty="0.0"><y:Point x="360.00" y="357.84" /></y:Path><y:LineStyle color="#000000" type="line" width="1.0" /><y:Arrows source="none" target="standard" /><y:EdgeLabel fontSize="20">W0
+Δs = -0.716<y:LabelModel><y:SmartEdgeLabelModel autoRotationEnabled="false" /></y:LabelModel><y:ModelParameter><y:SmartEdgeLabelModelParameter segment="0" ratio="1.00" distance="-15.00" /></y:ModelParameter></y:EdgeLabel></y:BezierEdge></data></edge>
+    <edge source="5" target="2" id="e31">
+      <data key="d7">0</data>
+      <data key="d8">T-&gt;T</data>
+      <data key="d9">W0</data>
+      <data key="d10">1.4318912319027595</data>
+      <data key="d11">-0.7159456159513793</data>
+      <data key="d12">[0, 0, -1]</data>
+      <data key="d13">[0.0, -1.0125, 1.0125]</data>
+      <data key="d14">W0
+Δs = -0.716</data>
+    <data key="d_edge_gfx"><y:BezierEdge><y:Path sx="0.0" sy="0.0" tx="0.0" ty="0.0"><y:Point x="449.00" y="213.84" /></y:Path><y:LineStyle color="#000000" type="line" width="1.0" /><y:Arrows source="none" target="standard" /><y:EdgeLabel fontSize="20">W0
+Δs = -0.716<y:LabelModel><y:SmartEdgeLabelModel autoRotationEnabled="false" /></y:LabelModel><y:ModelParameter><y:SmartEdgeLabelModelParameter segment="0" ratio="1.00" distance="-15.00" /></y:ModelParameter></y:EdgeLabel></y:BezierEdge></data></edge>
+    <edge source="5" target="7" id="e32">
+      <data key="d7">1</data>
+      <data key="d8">T-&gt;O</data>
+      <data key="d9">W1</data>
+      <data key="d10">1.0125000000000002</data>
+      <data key="d11">0.0</data>
+      <data key="d12">[0, 1, 0]</data>
+      <data key="d13">[0.0, 0.0, -1.0125]</data>
+      <data key="d14">W1
+Δs = +0.000</data>
+    <data key="d_edge_gfx"><y:BezierEdge><y:Path sx="0.0" sy="0.0" tx="0.0" ty="0.0"><y:Point x="702.49" y="72.00" /></y:Path><y:LineStyle color="#000000" type="line" width="1.0" /><y:Arrows source="none" target="standard" /><y:EdgeLabel fontSize="20">W1
+Δs = +0.000<y:LabelModel><y:SmartEdgeLabelModel autoRotationEnabled="false" /></y:LabelModel><y:ModelParameter><y:SmartEdgeLabelModelParameter segment="0" ratio="1.00" distance="15.00" /></y:ModelParameter></y:EdgeLabel></y:BezierEdge></data></edge>
+    <edge source="5" target="3" id="e33">
+      <data key="d7">0</data>
+      <data key="d8">T-&gt;T</data>
+      <data key="d9">W0</data>
+      <data key="d10">1.431891231902759</data>
+      <data key="d11">0.7159456159513793</data>
+      <data key="d12">[0, 0, 0]</data>
+      <data key="d13">[0.0, 1.0125, 1.0125]</data>
+      <data key="d14">W0
+Δs = +0.716</data>
+    <data key="d_edge_gfx"><y:BezierEdge><y:Path sx="0.0" sy="0.0" tx="0.0" ty="0.0"><y:Point x="689.00" y="362.16" /></y:Path><y:LineStyle color="#000000" type="line" width="1.0" /><y:Arrows source="none" target="standard" /><y:EdgeLabel fontSize="20">W0
+Δs = +0.716<y:LabelModel><y:SmartEdgeLabelModel autoRotationEnabled="false" /></y:LabelModel><y:ModelParameter><y:SmartEdgeLabelModelParameter segment="0" ratio="1.00" distance="-15.00" /></y:ModelParameter></y:EdgeLabel></y:BezierEdge></data></edge>
+    <edge source="5" target="6" id="e34">
+      <data key="d7">1</data>
+      <data key="d8">T-&gt;O</data>
+      <data key="d9">W1</data>
+      <data key="d10">1.0125000000000002</data>
+      <data key="d11">0.0</data>
+      <data key="d12">[0, 0, -1]</data>
+      <data key="d13">[0.0, 0.0, 1.0125]</data>
+      <data key="d14">W1
+Δs = +0.000</data>
+    <data key="d_edge_gfx"><y:BezierEdge><y:Path sx="0.0" sy="0.0" tx="0.0" ty="0.0"><y:Point x="613.50" y="216.00" /></y:Path><y:LineStyle color="#000000" type="line" width="1.0" /><y:Arrows source="none" target="standard" /><y:EdgeLabel fontSize="20">W1
+Δs = +0.000<y:LabelModel><y:SmartEdgeLabelModel autoRotationEnabled="false" /></y:LabelModel><y:ModelParameter><y:SmartEdgeLabelModelParameter segment="0" ratio="1.00" distance="15.00" /></y:ModelParameter></y:EdgeLabel></y:BezierEdge></data></edge>
+    <edge source="5" target="1" id="e35">
+      <data key="d7">0</data>
+      <data key="d8">T-&gt;T</data>
+      <data key="d9">W0</data>
+      <data key="d10">1.431891231902759</data>
+      <data key="d11">0.7159456159513791</data>
+      <data key="d12">[0, 1, 0]</data>
+      <data key="d13">[1.0125, 0.0, -1.0125]</data>
+      <data key="d14">W0
+Δs = +0.716</data>
+    <data key="d_edge_gfx"><y:BezierEdge><y:Path sx="0.0" sy="0.0" tx="0.0" ty="0.0"><y:Point x="777.99" y="218.16" /></y:Path><y:LineStyle color="#000000" type="line" width="1.0" /><y:Arrows source="none" target="standard" /><y:EdgeLabel fontSize="20">W0
+Δs = +0.716<y:LabelModel><y:SmartEdgeLabelModel autoRotationEnabled="false" /></y:LabelModel><y:ModelParameter><y:SmartEdgeLabelModelParameter segment="0" ratio="1.00" distance="-15.00" /></y:ModelParameter></y:EdgeLabel></y:BezierEdge></data></edge>
+    <edge source="6" target="2" id="e36">
+      <data key="d7">2</data>
+      <data key="d8">O-&gt;T</data>
+      <data key="d9">W2</data>
+      <data key="d10">1.0125000000000004</data>
+      <data key="d11">-0.7159456159513793</data>
+      <data key="d12">[0, 0, 0]</data>
+      <data key="d13">[0.0, -1.0125, 0.0]</data>
+      <data key="d14">W2
+Δs = -0.716</data>
+    <data key="d_edge_gfx"><y:BezierEdge><y:Path sx="0.0" sy="0.0" tx="0.0" ty="0.0"><y:Point x="315.50" y="-2.16" /></y:Path><y:LineStyle color="#000000" type="line" width="1.0" /><y:Arrows source="none" target="standard" /><y:EdgeLabel fontSize="20">W2
+Δs = -0.716<y:LabelModel><y:SmartEdgeLabelModel autoRotationEnabled="false" /></y:LabelModel><y:ModelParameter><y:SmartEdgeLabelModelParameter segment="0" ratio="1.00" distance="-15.00" /></y:ModelParameter></y:EdgeLabel></y:BezierEdge></data></edge>
+    <edge source="6" target="5" id="e37">
+      <data key="d7">2</data>
+      <data key="d8">O-&gt;T</data>
+      <data key="d9">W2</data>
+      <data key="d10">1.0125000000000002</data>
+      <data key="d11">0.0</data>
+      <data key="d12">[0, 0, 1]</data>
+      <data key="d13">[0.0, 0.0, -1.0125]</data>
+      <data key="d14">W2
+Δs = +0.000</data>
+    <data key="d_edge_gfx"><y:BezierEdge><y:Path sx="0.0" sy="0.0" tx="0.0" ty="0.0"><y:Point x="346.50" y="216.00" /></y:Path><y:LineStyle color="#000000" type="line" width="1.0" /><y:Arrows source="none" target="standard" /><y:EdgeLabel fontSize="20">W2
+Δs = +0.000<y:LabelModel><y:SmartEdgeLabelModel autoRotationEnabled="false" /></y:LabelModel><y:ModelParameter><y:SmartEdgeLabelModelParameter segment="0" ratio="1.00" distance="-15.00" /></y:ModelParameter></y:EdgeLabel></y:BezierEdge></data></edge>
+    <edge source="6" target="4" id="e38">
+      <data key="d7">2</data>
+      <data key="d8">O-&gt;T</data>
+      <data key="d9">W2</data>
+      <data key="d10">1.0125000000000002</data>
+      <data key="d11">0.0</data>
+      <data key="d12">[0, 0, 0]</data>
+      <data key="d13">[0.0, 0.0, 1.0125]</data>
+      <data key="d14">W2
+Δs = +0.000</data>
+    <data key="d_edge_gfx"><y:BezierEdge><y:Path sx="0.0" sy="0.0" tx="0.0" ty="0.0"><y:Point x="524.50" y="-72.00" /></y:Path><y:LineStyle color="#000000" type="line" width="1.0" /><y:Arrows source="none" target="standard" /><y:EdgeLabel fontSize="20">W2
+Δs = +0.000<y:LabelModel><y:SmartEdgeLabelModel autoRotationEnabled="false" /></y:LabelModel><y:ModelParameter><y:SmartEdgeLabelModelParameter segment="0" ratio="1.00" distance="-15.00" /></y:ModelParameter></y:EdgeLabel></y:BezierEdge></data></edge>
+    <edge source="6" target="3" id="e39">
+      <data key="d7">2</data>
+      <data key="d8">O-&gt;T</data>
+      <data key="d9">W2</data>
+      <data key="d10">1.0125000000000002</data>
+      <data key="d11">0.7159456159513793</data>
+      <data key="d12">[0, 0, 1]</data>
+      <data key="d13">[0.0, 1.0125, 0.0]</data>
+      <data key="d14">W2
+Δs = +0.716</data>
+    <data key="d_edge_gfx"><y:BezierEdge><y:Path sx="0.0" sy="0.0" tx="0.0" ty="0.0"><y:Point x="555.50" y="146.16" /></y:Path><y:LineStyle color="#000000" type="line" width="1.0" /><y:Arrows source="none" target="standard" /><y:EdgeLabel fontSize="20">W2
+Δs = +0.716<y:LabelModel><y:SmartEdgeLabelModel autoRotationEnabled="false" /></y:LabelModel><y:ModelParameter><y:SmartEdgeLabelModelParameter segment="0" ratio="1.00" distance="-15.00" /></y:ModelParameter></y:EdgeLabel></y:BezierEdge></data></edge>
+    <edge source="7" target="0" id="e40">
+      <data key="d7">2</data>
+      <data key="d8">O-&gt;T</data>
+      <data key="d9">W2</data>
+      <data key="d10">1.0125000000000004</data>
+      <data key="d11">-0.7159456159513793</data>
+      <data key="d12">[0, -1, 0]</data>
+      <data key="d13">[-1.0125, 0.0, 0.0]</data>
+      <data key="d14">W2
+Δs = -0.716</data>
+    <data key="d_edge_gfx"><y:BezierEdge><y:Path sx="0.0" sy="0.0" tx="0.0" ty="0.0"><y:Point x="137.51" y="-2.16" /></y:Path><y:LineStyle color="#000000" type="line" width="1.0" /><y:Arrows source="none" target="standard" /><y:EdgeLabel fontSize="20">W2
+Δs = -0.716<y:LabelModel><y:SmartEdgeLabelModel autoRotationEnabled="false" /></y:LabelModel><y:ModelParameter><y:SmartEdgeLabelModelParameter segment="0" ratio="1.00" distance="-15.00" /></y:ModelParameter></y:EdgeLabel></y:BezierEdge></data></edge>
+    <edge source="7" target="4" id="e41">
+      <data key="d7">2</data>
+      <data key="d8">O-&gt;T</data>
+      <data key="d9">W2</data>
+      <data key="d10">1.0125000000000002</data>
+      <data key="d11">0.0</data>
+      <data key="d12">[0, 0, 0]</data>
+      <data key="d13">[0.0, 0.0, -1.0125]</data>
+      <data key="d14">W2
+Δs = +0.000</data>
+    <data key="d_edge_gfx"><y:BezierEdge><y:Path sx="0.0" sy="0.0" tx="0.0" ty="0.0"><y:Point x="435.50" y="-216.00" /></y:Path><y:LineStyle color="#000000" type="line" width="1.0" /><y:Arrows source="none" target="standard" /><y:EdgeLabel fontSize="20">W2
+Δs = +0.000<y:LabelModel><y:SmartEdgeLabelModel autoRotationEnabled="false" /></y:LabelModel><y:ModelParameter><y:SmartEdgeLabelModelParameter segment="0" ratio="1.00" distance="-15.00" /></y:ModelParameter></y:EdgeLabel></y:BezierEdge></data></edge>
+    <edge source="7" target="1" id="e42">
+      <data key="d7">2</data>
+      <data key="d8">O-&gt;T</data>
+      <data key="d9">W2</data>
+      <data key="d10">1.0125000000000004</data>
+      <data key="d11">0.7159456159513793</data>
+      <data key="d12">[0, 0, 0]</data>
+      <data key="d13">[1.0125, 0.0, 0.0]</data>
+      <data key="d14">W2
+Δs = +0.716</data>
+    <data key="d_edge_gfx"><y:BezierEdge><y:Path sx="0.0" sy="0.0" tx="0.0" ty="0.0"><y:Point x="555.50" y="-141.84" /></y:Path><y:LineStyle color="#000000" type="line" width="1.0" /><y:Arrows source="none" target="standard" /><y:EdgeLabel fontSize="20">W2
+Δs = +0.716<y:LabelModel><y:SmartEdgeLabelModel autoRotationEnabled="false" /></y:LabelModel><y:ModelParameter><y:SmartEdgeLabelModelParameter segment="0" ratio="1.00" distance="-15.00" /></y:ModelParameter></y:EdgeLabel></y:BezierEdge></data></edge>
+    <edge source="7" target="5" id="e43">
+      <data key="d7">2</data>
+      <data key="d8">O-&gt;T</data>
+      <data key="d9">W2</data>
+      <data key="d10">1.0125000000000002</data>
+      <data key="d11">0.0</data>
+      <data key="d12">[0, -1, 0]</data>
+      <data key="d13">[0.0, 0.0, 1.0125]</data>
+      <data key="d14">W2
+Δs = +0.000</data>
+    <data key="d_edge_gfx"><y:BezierEdge><y:Path sx="0.0" sy="0.0" tx="0.0" ty="0.0"><y:Point x="257.51" y="72.00" /></y:Path><y:LineStyle color="#000000" type="line" width="1.0" /><y:Arrows source="none" target="standard" /><y:EdgeLabel fontSize="20">W2
+Δs = +0.000<y:LabelModel><y:SmartEdgeLabelModel autoRotationEnabled="false" /></y:LabelModel><y:ModelParameter><y:SmartEdgeLabelModelParameter segment="0" ratio="1.00" distance="-15.00" /></y:ModelParameter></y:EdgeLabel></y:BezierEdge></data></edge>
+    <edge source="8" target="1" id="e44">
+      <data key="d7">2</data>
+      <data key="d8">O-&gt;T</data>
+      <data key="d9">W2</data>
+      <data key="d10">1.0125</data>
+      <data key="d11">-0.7159456159513793</data>
+      <data key="d12">[-1, 0, 0]</data>
+      <data key="d13">[-1.0125, 0.0, 0.0]</data>
+      <data key="d14">W2
+Δs = -0.716</data>
+    <data key="d_edge_gfx"><y:BezierEdge><y:Path sx="0.0" sy="0.0" tx="0.0" ty="0.0"><y:Point x="493.50" y="294.49" /></y:Path><y:LineStyle color="#000000" type="line" width="1.0" /><y:Arrows source="none" target="standard" /><y:EdgeLabel fontSize="20">W2
+Δs = -0.716<y:LabelModel><y:SmartEdgeLabelModel autoRotationEnabled="false" /></y:LabelModel><y:ModelParameter><y:SmartEdgeLabelModelParameter segment="0" ratio="1.00" distance="-15.00" /></y:ModelParameter></y:EdgeLabel></y:BezierEdge></data></edge>
+    <edge source="8" target="3" id="e45">
+      <data key="d7">2</data>
+      <data key="d8">O-&gt;T</data>
+      <data key="d9">W2</data>
+      <data key="d10">1.0125000000000002</data>
+      <data key="d11">-0.7159456159513793</data>
+      <data key="d12">[-1, 0, 0]</data>
+      <data key="d13">[0.0, -1.0125, 0.0]</data>
+      <data key="d14">W2
+Δs = -0.716</data>
+    <data key="d_edge_gfx"><y:BezierEdge><y:Path sx="0.0" sy="0.0" tx="0.0" ty="0.0"><y:Point x="404.50" y="438.49" /></y:Path><y:LineStyle color="#000000" type="line" width="1.0" /><y:Arrows source="none" target="standard" /><y:EdgeLabel fontSize="20">W2
+Δs = -0.716<y:LabelModel><y:SmartEdgeLabelModel autoRotationEnabled="false" /></y:LabelModel><y:ModelParameter><y:SmartEdgeLabelModelParameter segment="0" ratio="1.00" distance="-15.00" /></y:ModelParameter></y:EdgeLabel></y:BezierEdge></data></edge>
+    <edge source="8" target="2" id="e46">
+      <data key="d7">2</data>
+      <data key="d8">O-&gt;T</data>
+      <data key="d9">W2</data>
+      <data key="d10">1.0125</data>
+      <data key="d11">0.7159456159513793</data>
+      <data key="d12">[0, 0, 0]</data>
+      <data key="d13">[0.0, 1.0125, 0.0]</data>
+      <data key="d14">W2
+Δs = +0.716</data>
+    <data key="d_edge_gfx"><y:BezierEdge><y:Path sx="0.0" sy="0.0" tx="0.0" ty="0.0"><y:Point x="164.50" y="290.16" /></y:Path><y:LineStyle color="#000000" type="line" width="1.0" /><y:Arrows source="none" target="standard" /><y:EdgeLabel fontSize="20">W2
+Δs = +0.716<y:LabelModel><y:SmartEdgeLabelModel autoRotationEnabled="false" /></y:LabelModel><y:ModelParameter><y:SmartEdgeLabelModelParameter segment="0" ratio="1.00" distance="-15.00" /></y:ModelParameter></y:EdgeLabel></y:BezierEdge></data></edge>
+    <edge source="8" target="0" id="e47">
+      <data key="d7">2</data>
+      <data key="d8">O-&gt;T</data>
+      <data key="d9">W2</data>
+      <data key="d10">1.0125</data>
+      <data key="d11">0.7159456159513793</data>
+      <data key="d12">[0, 0, 0]</data>
+      <data key="d13">[1.0125, 0.0, 0.0]</data>
+      <data key="d14">W2
+Δs = +0.716</data>
+    <data key="d_edge_gfx"><y:BezierEdge><y:Path sx="0.0" sy="0.0" tx="0.0" ty="0.0"><y:Point x="75.50" y="434.16" /></y:Path><y:LineStyle color="#000000" type="line" width="1.0" /><y:Arrows source="none" target="standard" /><y:EdgeLabel fontSize="20">W2
+Δs = +0.716<y:LabelModel><y:SmartEdgeLabelModel autoRotationEnabled="false" /></y:LabelModel><y:ModelParameter><y:SmartEdgeLabelModelParameter segment="0" ratio="1.00" distance="-15.00" /></y:ModelParameter></y:EdgeLabel></y:BezierEdge></data></edge>
+    <data key="d0">[0, 1, 1]</data>
+    <data key="d1">[1, 0, 0]</data>
+    <data key="d2">[0.707106781, 0.707106781, 0.0]</data>
+    <data key="d3">2.8637824638055176</data>
+    <data key="d4">Two sites are equivalent iff they share the same Wyckoff label and have equal projection (hkl . frac_coords) onto the transport axis within tolerance (JumpAxisEquivalenceAnalyzer.find_equiv_classes_for_axis).</data>
+    <data key="d5">oriented_unit_cell_for_axis(structure, hkl_structure): exact-integer extended-GCD plane basis + metric-aware 2-D Gauss/Lagrange reduction + brute-force minimal transverse vector, validated against area(u,v)*height(w) == primitive_cell_volume and |det([w,u,v])| == 1 (not pymatgen.core.surface.SlabGenerator, which was found to produce a non-minimal, non-primitive oriented cell for some {hkl} in body-centered tetragonal structures).</data>
+  </graph>
+</graphml>

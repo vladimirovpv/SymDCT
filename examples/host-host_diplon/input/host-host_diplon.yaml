@@ -1,0 +1,10 @@
+max_jump_length: 2.0
+fname: examples/host-host_diplon/input/host-host_diplon.poscar
+matrix: []
+axes:
+- [1.0, 1.0, 1.0]
+tweak_transition_rates: {}
+filename_export_results: host-host_diplon_results
+if_subst_min_arg: False
+if_calc_diffcoeff: True
+if_replace_W_with_subscript: True

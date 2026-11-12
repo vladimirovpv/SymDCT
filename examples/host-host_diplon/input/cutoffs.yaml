@@ -1,0 +1,26 @@
+# Geometric cutoffs for the host-host diplon jump network.
+# All distances in angstrom.
+#
+# Simplifying model (see README.md): rotation (in-place reorientation, w_R)
+# and translation (hop to a neighbouring site, w_T) are treated as
+# decoupled -- translation is isotropic over the six simple-cubic nearest
+# neighbours and always preserves orientation; rotation only ever changes
+# orientation at the same site. This differs from the literal fcc
+# interstitialcy geometry in Ishioka & Koiwa (1985), Fig. 6-7, but
+# reproduces the same qualitative structure (diffusion coefficient
+# independent of the rotation rate) and is enough to test whether the
+# "coincident orientation-species" technique works end to end in the code.
+
+units:
+  length: angstrom
+
+bonds:
+  # Rotation: same site (distance 0), different orientation.
+  "Qx-Qy": 0.05
+  "Qx-Qz": 0.05
+  "Qy-Qz": 0.05
+  # Translation: nearest-neighbour site (distance 2.0 = the cell edge),
+  # same orientation preserved.
+  "Qx-Qx": 2.0
+  "Qy-Qy": 2.0
+  "Qz-Qz": 2.0

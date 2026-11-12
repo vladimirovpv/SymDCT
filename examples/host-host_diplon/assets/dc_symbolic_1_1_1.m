@@ -1,0 +1,1 @@
+a^2*(W_{QxQx} + W_{QyQy} + W_{QzQz})/3

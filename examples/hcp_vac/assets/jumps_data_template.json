@@ -1,0 +1,42 @@
+{
+  "yaml_file": "examples/hcp_vac/input/hcp_vac.yaml",
+  "lattice_parameters": [
+    2.2619996045033686,
+    2.2619996045033686,
+    3.569999238
+  ],
+  "jumps": [
+    {
+      "start": "A",
+      "end": "A",
+      "jump_length": 2.262,
+      "jump_index": 0,
+      "barrier": null,
+      "frequency": null
+    },
+    {
+      "start": "A",
+      "end": "B",
+      "jump_length": 2.212,
+      "jump_index": 1,
+      "barrier": null,
+      "frequency": null
+    },
+    {
+      "start": "B",
+      "end": "B",
+      "jump_length": 2.262,
+      "jump_index": 2,
+      "barrier": null,
+      "frequency": null
+    },
+    {
+      "start": "B",
+      "end": "A",
+      "jump_length": 2.212,
+      "jump_index": 3,
+      "barrier": null,
+      "frequency": null
+    }
+  ]
+}

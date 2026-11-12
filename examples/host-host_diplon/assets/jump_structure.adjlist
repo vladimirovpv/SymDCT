@@ -1,0 +1,30 @@
+#main.py examples/host-host_diplon/input/host-host_diplon.yaml
+# GMT Fri Aug 28 18:06:16 2026
+# 
+0 8
+0 {'h': [{'num': -1, 'den': 1}, {'num': 0, 'den': 1}, {'num': 0, 'den': 1}], 'nn_dist': 2.0, 'image': [-1, 0, 0], 'glob_jump_cnt': 0}
+0 {'h': [{'num': 0, 'den': 1}, {'num': -1, 'den': 1}, {'num': 0, 'den': 1}], 'nn_dist': 2.0, 'image': [0, -1, 0], 'glob_jump_cnt': 0}
+0 {'h': [{'num': 0, 'den': 1}, {'num': 0, 'den': 1}, {'num': -1, 'den': 1}], 'nn_dist': 2.0, 'image': [0, 0, -1], 'glob_jump_cnt': 0}
+0 {'h': [{'num': 0, 'den': 1}, {'num': 0, 'den': 1}, {'num': 1, 'den': 1}], 'nn_dist': 2.0, 'image': [0, 0, 1], 'glob_jump_cnt': 0}
+0 {'h': [{'num': 0, 'den': 1}, {'num': 1, 'den': 1}, {'num': 0, 'den': 1}], 'nn_dist': 2.0, 'image': [0, 1, 0], 'glob_jump_cnt': 0}
+0 {'h': [{'num': 1, 'den': 1}, {'num': 0, 'den': 1}, {'num': 0, 'den': 1}], 'nn_dist': 2.0, 'image': [1, 0, 0], 'glob_jump_cnt': 0}
+2 {'h': [{'num': 0, 'den': 1}, {'num': 0, 'den': 1}, {'num': 0, 'den': 1}], 'nn_dist': 0.0, 'image': [0, 0, 0], 'glob_jump_cnt': 1}
+1 {'h': [{'num': 0, 'den': 1}, {'num': 0, 'den': 1}, {'num': 0, 'den': 1}], 'nn_dist': 0.0, 'image': [0, 0, 0], 'glob_jump_cnt': 2}
+1 8
+1 {'h': [{'num': -1, 'den': 1}, {'num': 0, 'den': 1}, {'num': 0, 'den': 1}], 'nn_dist': 2.0, 'image': [-1, 0, 0], 'glob_jump_cnt': 3}
+1 {'h': [{'num': 0, 'den': 1}, {'num': -1, 'den': 1}, {'num': 0, 'den': 1}], 'nn_dist': 2.0, 'image': [0, -1, 0], 'glob_jump_cnt': 3}
+1 {'h': [{'num': 0, 'den': 1}, {'num': 0, 'den': 1}, {'num': -1, 'den': 1}], 'nn_dist': 2.0, 'image': [0, 0, -1], 'glob_jump_cnt': 3}
+1 {'h': [{'num': 0, 'den': 1}, {'num': 0, 'den': 1}, {'num': 1, 'den': 1}], 'nn_dist': 2.0, 'image': [0, 0, 1], 'glob_jump_cnt': 3}
+1 {'h': [{'num': 0, 'den': 1}, {'num': 1, 'den': 1}, {'num': 0, 'den': 1}], 'nn_dist': 2.0, 'image': [0, 1, 0], 'glob_jump_cnt': 3}
+1 {'h': [{'num': 1, 'den': 1}, {'num': 0, 'den': 1}, {'num': 0, 'den': 1}], 'nn_dist': 2.0, 'image': [1, 0, 0], 'glob_jump_cnt': 3}
+2 {'h': [{'num': 0, 'den': 1}, {'num': 0, 'den': 1}, {'num': 0, 'den': 1}], 'nn_dist': 0.0, 'image': [0, 0, 0], 'glob_jump_cnt': 4}
+0 {'h': [{'num': 0, 'den': 1}, {'num': 0, 'den': 1}, {'num': 0, 'den': 1}], 'nn_dist': 0.0, 'image': [0, 0, 0], 'glob_jump_cnt': 5}
+2 8
+2 {'h': [{'num': -1, 'den': 1}, {'num': 0, 'den': 1}, {'num': 0, 'den': 1}], 'nn_dist': 2.0, 'image': [-1, 0, 0], 'glob_jump_cnt': 6}
+2 {'h': [{'num': 0, 'den': 1}, {'num': -1, 'den': 1}, {'num': 0, 'den': 1}], 'nn_dist': 2.0, 'image': [0, -1, 0], 'glob_jump_cnt': 6}
+2 {'h': [{'num': 0, 'den': 1}, {'num': 0, 'den': 1}, {'num': -1, 'den': 1}], 'nn_dist': 2.0, 'image': [0, 0, -1], 'glob_jump_cnt': 6}
+2 {'h': [{'num': 0, 'den': 1}, {'num': 0, 'den': 1}, {'num': 1, 'den': 1}], 'nn_dist': 2.0, 'image': [0, 0, 1], 'glob_jump_cnt': 6}
+2 {'h': [{'num': 0, 'den': 1}, {'num': 1, 'den': 1}, {'num': 0, 'den': 1}], 'nn_dist': 2.0, 'image': [0, 1, 0], 'glob_jump_cnt': 6}
+2 {'h': [{'num': 1, 'den': 1}, {'num': 0, 'den': 1}, {'num': 0, 'den': 1}], 'nn_dist': 2.0, 'image': [1, 0, 0], 'glob_jump_cnt': 6}
+1 {'h': [{'num': 0, 'den': 1}, {'num': 0, 'den': 1}, {'num': 0, 'den': 1}], 'nn_dist': 0.0, 'image': [0, 0, 0], 'glob_jump_cnt': 7}
+0 {'h': [{'num': 0, 'den': 1}, {'num': 0, 'den': 1}, {'num': 0, 'den': 1}], 'nn_dist': 0.0, 'image': [0, 0, 0], 'glob_jump_cnt': 8}

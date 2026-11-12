@@ -1,0 +1,645 @@
+{
+  "directed": true,
+  "multigraph": true,
+  "graph": {},
+  "nodes": [
+    {
+      "lbl": "Qx",
+      "id": 0
+    },
+    {
+      "lbl": "Qy",
+      "id": 1
+    },
+    {
+      "lbl": "Qz",
+      "id": 2
+    }
+  ],
+  "edges": [
+    {
+      "h": [
+        {
+          "num": -1,
+          "den": 1
+        },
+        {
+          "num": 0,
+          "den": 1
+        },
+        {
+          "num": 0,
+          "den": 1
+        }
+      ],
+      "nn_dist": 2.0,
+      "image": [
+        -1,
+        0,
+        0
+      ],
+      "glob_jump_cnt": 0,
+      "source": 0,
+      "target": 0,
+      "key": 0
+    },
+    {
+      "h": [
+        {
+          "num": 0,
+          "den": 1
+        },
+        {
+          "num": -1,
+          "den": 1
+        },
+        {
+          "num": 0,
+          "den": 1
+        }
+      ],
+      "nn_dist": 2.0,
+      "image": [
+        0,
+        -1,
+        0
+      ],
+      "glob_jump_cnt": 0,
+      "source": 0,
+      "target": 0,
+      "key": 1
+    },
+    {
+      "h": [
+        {
+          "num": 0,
+          "den": 1
+        },
+        {
+          "num": 0,
+          "den": 1
+        },
+        {
+          "num": -1,
+          "den": 1
+        }
+      ],
+      "nn_dist": 2.0,
+      "image": [
+        0,
+        0,
+        -1
+      ],
+      "glob_jump_cnt": 0,
+      "source": 0,
+      "target": 0,
+      "key": 2
+    },
+    {
+      "h": [
+        {
+          "num": 0,
+          "den": 1
+        },
+        {
+          "num": 0,
+          "den": 1
+        },
+        {
+          "num": 1,
+          "den": 1
+        }
+      ],
+      "nn_dist": 2.0,
+      "image": [
+        0,
+        0,
+        1
+      ],
+      "glob_jump_cnt": 0,
+      "source": 0,
+      "target": 0,
+      "key": 3
+    },
+    {
+      "h": [
+        {
+          "num": 0,
+          "den": 1
+        },
+        {
+          "num": 1,
+          "den": 1
+        },
+        {
+          "num": 0,
+          "den": 1
+        }
+      ],
+      "nn_dist": 2.0,
+      "image": [
+        0,
+        1,
+        0
+      ],
+      "glob_jump_cnt": 0,
+      "source": 0,
+      "target": 0,
+      "key": 4
+    },
+    {
+      "h": [
+        {
+          "num": 1,
+          "den": 1
+        },
+        {
+          "num": 0,
+          "den": 1
+        },
+        {
+          "num": 0,
+          "den": 1
+        }
+      ],
+      "nn_dist": 2.0,
+      "image": [
+        1,
+        0,
+        0
+      ],
+      "glob_jump_cnt": 0,
+      "source": 0,
+      "target": 0,
+      "key": 5
+    },
+    {
+      "h": [
+        {
+          "num": 0,
+          "den": 1
+        },
+        {
+          "num": 0,
+          "den": 1
+        },
+        {
+          "num": 0,
+          "den": 1
+        }
+      ],
+      "nn_dist": 0.0,
+      "image": [
+        0,
+        0,
+        0
+      ],
+      "glob_jump_cnt": 1,
+      "source": 0,
+      "target": 2,
+      "key": 0
+    },
+    {
+      "h": [
+        {
+          "num": 0,
+          "den": 1
+        },
+        {
+          "num": 0,
+          "den": 1
+        },
+        {
+          "num": 0,
+          "den": 1
+        }
+      ],
+      "nn_dist": 0.0,
+      "image": [
+        0,
+        0,
+        0
+      ],
+      "glob_jump_cnt": 2,
+      "source": 0,
+      "target": 1,
+      "key": 0
+    },
+    {
+      "h": [
+        {
+          "num": -1,
+          "den": 1
+        },
+        {
+          "num": 0,
+          "den": 1
+        },
+        {
+          "num": 0,
+          "den": 1
+        }
+      ],
+      "nn_dist": 2.0,
+      "image": [
+        -1,
+        0,
+        0
+      ],
+      "glob_jump_cnt": 3,
+      "source": 1,
+      "target": 1,
+      "key": 0
+    },
+    {
+      "h": [
+        {
+          "num": 0,
+          "den": 1
+        },
+        {
+          "num": -1,
+          "den": 1
+        },
+        {
+          "num": 0,
+          "den": 1
+        }
+      ],
+      "nn_dist": 2.0,
+      "image": [
+        0,
+        -1,
+        0
+      ],
+      "glob_jump_cnt": 3,
+      "source": 1,
+      "target": 1,
+      "key": 1
+    },
+    {
+      "h": [
+        {
+          "num": 0,
+          "den": 1
+        },
+        {
+          "num": 0,
+          "den": 1
+        },
+        {
+          "num": -1,
+          "den": 1
+        }
+      ],
+      "nn_dist": 2.0,
+      "image": [
+        0,
+        0,
+        -1
+      ],
+      "glob_jump_cnt": 3,
+      "source": 1,
+      "target": 1,
+      "key": 2
+    },
+    {
+      "h": [
+        {
+          "num": 0,
+          "den": 1
+        },
+        {
+          "num": 0,
+          "den": 1
+        },
+        {
+          "num": 1,
+          "den": 1
+        }
+      ],
+      "nn_dist": 2.0,
+      "image": [
+        0,
+        0,
+        1
+      ],
+      "glob_jump_cnt": 3,
+      "source": 1,
+      "target": 1,
+      "key": 3
+    },
+    {
+      "h": [
+        {
+          "num": 0,
+          "den": 1
+        },
+        {
+          "num": 1,
+          "den": 1
+        },
+        {
+          "num": 0,
+          "den": 1
+        }
+      ],
+      "nn_dist": 2.0,
+      "image": [
+        0,
+        1,
+        0
+      ],
+      "glob_jump_cnt": 3,
+      "source": 1,
+      "target": 1,
+      "key": 4
+    },
+    {
+      "h": [
+        {
+          "num": 1,
+          "den": 1
+        },
+        {
+          "num": 0,
+          "den": 1
+        },
+        {
+          "num": 0,
+          "den": 1
+        }
+      ],
+      "nn_dist": 2.0,
+      "image": [
+        1,
+        0,
+        0
+      ],
+      "glob_jump_cnt": 3,
+      "source": 1,
+      "target": 1,
+      "key": 5
+    },
+    {
+      "h": [
+        {
+          "num": 0,
+          "den": 1
+        },
+        {
+          "num": 0,
+          "den": 1
+        },
+        {
+          "num": 0,
+          "den": 1
+        }
+      ],
+      "nn_dist": 0.0,
+      "image": [
+        0,
+        0,
+        0
+      ],
+      "glob_jump_cnt": 4,
+      "source": 1,
+      "target": 2,
+      "key": 0
+    },
+    {
+      "h": [
+        {
+          "num": 0,
+          "den": 1
+        },
+        {
+          "num": 0,
+          "den": 1
+        },
+        {
+          "num": 0,
+          "den": 1
+        }
+      ],
+      "nn_dist": 0.0,
+      "image": [
+        0,
+        0,
+        0
+      ],
+      "glob_jump_cnt": 5,
+      "source": 1,
+      "target": 0,
+      "key": 0
+    },
+    {
+      "h": [
+        {
+          "num": -1,
+          "den": 1
+        },
+        {
+          "num": 0,
+          "den": 1
+        },
+        {
+          "num": 0,
+          "den": 1
+        }
+      ],
+      "nn_dist": 2.0,
+      "image": [
+        -1,
+        0,
+        0
+      ],
+      "glob_jump_cnt": 6,
+      "source": 2,
+      "target": 2,
+      "key": 0
+    },
+    {
+      "h": [
+        {
+          "num": 0,
+          "den": 1
+        },
+        {
+          "num": -1,
+          "den": 1
+        },
+        {
+          "num": 0,
+          "den": 1
+        }
+      ],
+      "nn_dist": 2.0,
+      "image": [
+        0,
+        -1,
+        0
+      ],
+      "glob_jump_cnt": 6,
+      "source": 2,
+      "target": 2,
+      "key": 1
+    },
+    {
+      "h": [
+        {
+          "num": 0,
+          "den": 1
+        },
+        {
+          "num": 0,
+          "den": 1
+        },
+        {
+          "num": -1,
+          "den": 1
+        }
+      ],
+      "nn_dist": 2.0,
+      "image": [
+        0,
+        0,
+        -1
+      ],
+      "glob_jump_cnt": 6,
+      "source": 2,
+      "target": 2,
+      "key": 2
+    },
+    {
+      "h": [
+        {
+          "num": 0,
+          "den": 1
+        },
+        {
+          "num": 0,
+          "den": 1
+        },
+        {
+          "num": 1,
+          "den": 1
+        }
+      ],
+      "nn_dist": 2.0,
+      "image": [
+        0,
+        0,
+        1
+      ],
+      "glob_jump_cnt": 6,
+      "source": 2,
+      "target": 2,
+      "key": 3
+    },
+    {
+      "h": [
+        {
+          "num": 0,
+          "den": 1
+        },
+        {
+          "num": 1,
+          "den": 1
+        },
+        {
+          "num": 0,
+          "den": 1
+        }
+      ],
+      "nn_dist": 2.0,
+      "image": [
+        0,
+        1,
+        0
+      ],
+      "glob_jump_cnt": 6,
+      "source": 2,
+      "target": 2,
+      "key": 4
+    },
+    {
+      "h": [
+        {
+          "num": 1,
+          "den": 1
+        },
+        {
+          "num": 0,
+          "den": 1
+        },
+        {
+          "num": 0,
+          "den": 1
+        }
+      ],
+      "nn_dist": 2.0,
+      "image": [
+        1,
+        0,
+        0
+      ],
+      "glob_jump_cnt": 6,
+      "source": 2,
+      "target": 2,
+      "key": 5
+    },
+    {
+      "h": [
+        {
+          "num": 0,
+          "den": 1
+        },
+        {
+          "num": 0,
+          "den": 1
+        },
+        {
+          "num": 0,
+          "den": 1
+        }
+      ],
+      "nn_dist": 0.0,
+      "image": [
+        0,
+        0,
+        0
+      ],
+      "glob_jump_cnt": 7,
+      "source": 2,
+      "target": 1,
+      "key": 0
+    },
+    {
+      "h": [
+        {
+          "num": 0,
+          "den": 1
+        },
+        {
+          "num": 0,
+          "den": 1
+        },
+        {
+          "num": 0,
+          "den": 1
+        }
+      ],
+      "nn_dist": 0.0,
+      "image": [
+        0,
+        0,
+        0
+      ],
+      "glob_jump_cnt": 8,
+      "source": 2,
+      "target": 0,
+      "key": 0
+    }
+  ]
+}

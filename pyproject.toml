@@ -1,0 +1,44 @@
+[project]
+name = "symdct"
+version = "0.1.0"
+description = "SymDCT: symbolic diffusion coefficient tensors for crystalline solids from jump networks."
+readme = "README.md"
+requires-python = ">=3.12"
+license = "MIT"
+license-files = ["LICENSE"]
+authors = [
+    { name = "Pavel Vladimirov", email = "pavel.vladimirov@kit.edu" },
+]
+maintainers = [
+    { name = "Pavel Vladimirov", email = "pavel.vladimirov@kit.edu" },
+]
+dependencies = [
+    "matplotlib>=3.10.8",
+    "networkx>=3.6.1",
+    "numpy>=2.4.4",
+    "pint>=0.25.3",
+    "pymatgen>=2026.3.23",
+    "ruamel-yaml>=0.19.1",
+    "scipy>=1.17.1",
+    "spglib>=2.7.0",
+    "sympy>=1.14.0",
+    "tqdm>=4.67.3",
+]
+
+[project.urls]
+Homepage = "https://github.com/vladimirovpv/SymDCT"
+Repository = "https://github.com/vladimirovpv/SymDCT"
+Releases = "https://github.com/vladimirovpv/SymDCT/releases"
+
+[dependency-groups]
+dev = [
+    "pytest>=9.0.3",
+]
+
+[tool.pytest.ini_options]
+addopts = "-ra"
+pythonpath = ["."]
+testpaths = [
+    "src",
+    "tests",
+]

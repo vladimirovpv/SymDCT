@@ -1,0 +1,11 @@
+Host-host diplon: one diplon site per simple-cubic cell (Qx/Qy/Qz coincident orientations)
+1.0
+2.0 0.0 0.0
+0.0 2.0 0.0
+0.0 0.0 2.0
+Qx Qy Qz
+1 1 1
+direct
+0.0 0.0 0.0
+0.0 0.0 0.0
+0.0 0.0 0.0

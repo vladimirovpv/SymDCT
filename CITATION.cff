@@ -1,4 +1,5 @@
 cff-version: 1.2.0
+message: "If you use this software, please cite it as below."
 title: "SymDCT: Symbolic diffusion-tensor computation from atomic-scale jump kinetics in anisotropic crystals"
 type: software
 license: MIT
@@ -6,6 +7,9 @@ license: MIT
 authors:
   - family-names: Vladimirov
     given-names: Pavel V.
+    affiliation: "Karlsruhe Institute of Technology, Karlsruhe, Germany"
+    email: pavel.vladimirov@kit.edu
+    orcid: "https://orcid.org/0000-0003-2358-6043"
 
 repository-code: "https://github.com/vladimirovpv/SymDCT"
 
@@ -21,12 +25,16 @@ keywords:
   - anisotropic diffusion
 
 version: 0.1.0
-date-released: 2026-MM-DD
+date-released: 2026-11-11
 
 preferred-citation:
   type: article
+  status: in-preparation
   authors:
     - family-names: Vladimirov
       given-names: Pavel V.
-  title: "..."
+      affiliation: "Karlsruhe Institute of Technology, Karlsruhe, Germany"
+      orcid: "https://orcid.org/0000-0003-2358-6043"
+  title: "SymDCT: Symbolic diffusion-tensor computation from atomic-scale jump kinetics in anisotropic crystals"
   journal: "Computer Physics Communications"
+  year: 2026

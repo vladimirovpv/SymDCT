@@ -1,0 +1,32 @@
+# Python
+__pycache__/
+*.py[cod]
+.venv/
+.pytest_cache/
+
+# OS and editor files
+.DS_Store
+
+# Temporary and build artifacts
+tmp/
+out/
+tmp-pdfcrop-*.pdf
+*.aux
+*.fdb_latexmk
+*.fls
+*.synctex.gz
+*.log
+
+# Results of local runs. Reference results are kept in examples/<name>/assets/.
+examples/*/output/
+*.pickle
+
+# Backups made before publication
+*.bak*
+
+# Reference results that the repository-wide rules (*.m, *.adjlist) would hide
+!examples/*/assets/dc_symbolic_*.m
+!examples/*/assets/tp_matrix_axis_*.m
+!examples/*/assets/tc_axis_meta_*.m
+!examples/*/assets/jump_structure.adjlist
+!.python-version

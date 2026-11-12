@@ -1,0 +1,296 @@
+<?xml version='1.0' encoding='utf-8'?>
+<graphml xmlns="http://graphml.graphdrawing.org/xmlns" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://graphml.graphdrawing.org/xmlns http://graphml.graphdrawing.org/xmlns/1.0/graphml.xsd">
+  <key id="d14" for="edge" attr.name="label" attr.type="string" />
+  <key id="d13" for="edge" attr.name="delta_r_cart" attr.type="string" />
+  <key id="d12" for="edge" attr.name="image" attr.type="string" />
+  <key id="d11" for="edge" attr.name="delta_s" attr.type="double" />
+  <key id="d10" for="edge" attr.name="length" attr.type="double" />
+  <key id="d9" for="edge" attr.name="rate_symbol" attr.type="string" />
+  <key id="d8" for="edge" attr.name="pair_key" attr.type="string" />
+  <key id="d7" for="edge" attr.name="glob_jump_cnt" attr.type="long" />
+  <key id="d6" for="node" attr.name="label" attr.type="string" />
+  <key id="d5" for="graph" attr.name="oriented_uc_transform" attr.type="string" />
+  <key id="d4" for="graph" attr.name="equivalence_relation" attr.type="string" />
+  <key id="d3" for="graph" attr.name="interplanar_spacing_d_hkl" attr.type="double" />
+  <key id="d2" for="graph" attr.name="transport_xi_hat_cartesian" attr.type="string" />
+  <key id="d1" for="graph" attr.name="transport_hkl_structure" attr.type="string" />
+  <key id="d0" for="graph" attr.name="transport_hkl_conventional" attr.type="string" />
+  <graph edgedefault="directed">
+    <node id="0">
+      <data key="d6">A0</data>
+    </node>
+    <node id="1">
+      <data key="d6">B0</data>
+    </node>
+    <edge source="0" target="0" id="0">
+      <data key="d7">0</data>
+      <data key="d8">A-&gt;A</data>
+      <data key="d9">W0</data>
+      <data key="d10">2.2619996045033686</data>
+      <data key="d11">0.0</data>
+      <data key="d12">[1, 1, 0]</data>
+      <data key="d13">[-2.261999605, 0.0, 0.0]</data>
+      <data key="d14">W0
+Δs = +0.000</data>
+    </edge>
+    <edge source="0" target="0" id="1">
+      <data key="d7">0</data>
+      <data key="d8">A-&gt;A</data>
+      <data key="d9">W0</data>
+      <data key="d10">2.2619996045033686</data>
+      <data key="d11">0.0</data>
+      <data key="d12">[1, 0, 0]</data>
+      <data key="d13">[-1.130999802, -1.958949121, 0.0]</data>
+      <data key="d14">W0
+Δs = +0.000</data>
+    </edge>
+    <edge source="0" target="0" id="2">
+      <data key="d7">0</data>
+      <data key="d8">A-&gt;A</data>
+      <data key="d9">W0</data>
+      <data key="d10">2.2619996045033686</data>
+      <data key="d11">0.0</data>
+      <data key="d12">[0, -1, 0]</data>
+      <data key="d13">[1.130999802, -1.958949121, 0.0]</data>
+      <data key="d14">W0
+Δs = +0.000</data>
+    </edge>
+    <edge source="0" target="0" id="3">
+      <data key="d7">0</data>
+      <data key="d8">A-&gt;A</data>
+      <data key="d9">W0</data>
+      <data key="d10">2.2619996045033686</data>
+      <data key="d11">0.0</data>
+      <data key="d12">[0, 1, 0]</data>
+      <data key="d13">[-1.130999802, 1.958949121, 0.0]</data>
+      <data key="d14">W0
+Δs = +0.000</data>
+    </edge>
+    <edge source="0" target="0" id="4">
+      <data key="d7">0</data>
+      <data key="d8">A-&gt;A</data>
+      <data key="d9">W0</data>
+      <data key="d10">2.2619996045033686</data>
+      <data key="d11">0.0</data>
+      <data key="d12">[-1, 0, 0]</data>
+      <data key="d13">[1.130999802, 1.958949121, 0.0]</data>
+      <data key="d14">W0
+Δs = +0.000</data>
+    </edge>
+    <edge source="0" target="0" id="5">
+      <data key="d7">0</data>
+      <data key="d8">A-&gt;A</data>
+      <data key="d9">W0</data>
+      <data key="d10">2.2619996045033686</data>
+      <data key="d11">0.0</data>
+      <data key="d12">[-1, -1, 0]</data>
+      <data key="d13">[2.261999605, 0.0, 0.0]</data>
+      <data key="d14">W0
+Δs = +0.000</data>
+    </edge>
+    <edge source="0" target="1" id="0">
+      <data key="d7">1</data>
+      <data key="d8">A-&gt;B</data>
+      <data key="d9">W1</data>
+      <data key="d10">2.211734849257767</data>
+      <data key="d11">1.784999619</data>
+      <data key="d12">[0, 0, 0]</data>
+      <data key="d13">[-1.130999802, -0.65298304, -1.784999619]</data>
+      <data key="d14">W1
+Δs = +1.785</data>
+    </edge>
+    <edge source="0" target="1" id="1">
+      <data key="d7">1</data>
+      <data key="d8">A-&gt;B</data>
+      <data key="d9">W1</data>
+      <data key="d10">2.2117348492577666</data>
+      <data key="d11">1.784999619</data>
+      <data key="d12">[-1, 0, 0]</data>
+      <data key="d13">[0.0, 1.305966081, -1.784999619]</data>
+      <data key="d14">W1
+Δs = +1.785</data>
+    </edge>
+    <edge source="0" target="1" id="2">
+      <data key="d7">1</data>
+      <data key="d8">A-&gt;B</data>
+      <data key="d9">W1</data>
+      <data key="d10">2.211734849257767</data>
+      <data key="d11">1.784999619</data>
+      <data key="d12">[-1, -1, 0]</data>
+      <data key="d13">[1.130999802, -0.65298304, -1.784999619]</data>
+      <data key="d14">W1
+Δs = +1.785</data>
+    </edge>
+    <edge source="0" target="1" id="3">
+      <data key="d7">1</data>
+      <data key="d8">A-&gt;B</data>
+      <data key="d9">W1</data>
+      <data key="d10">2.211734849257767</data>
+      <data key="d11">-1.784999619</data>
+      <data key="d12">[0, 0, -1]</data>
+      <data key="d13">[-1.130999802, -0.65298304, 1.784999619]</data>
+      <data key="d14">W1
+Δs = -1.785</data>
+    </edge>
+    <edge source="0" target="1" id="4">
+      <data key="d7">1</data>
+      <data key="d8">A-&gt;B</data>
+      <data key="d9">W1</data>
+      <data key="d10">2.2117348492577666</data>
+      <data key="d11">-1.784999619</data>
+      <data key="d12">[-1, 0, -1]</data>
+      <data key="d13">[0.0, 1.305966081, 1.784999619]</data>
+      <data key="d14">W1
+Δs = -1.785</data>
+    </edge>
+    <edge source="0" target="1" id="5">
+      <data key="d7">1</data>
+      <data key="d8">A-&gt;B</data>
+      <data key="d9">W1</data>
+      <data key="d10">2.211734849257767</data>
+      <data key="d11">-1.784999619</data>
+      <data key="d12">[-1, -1, -1]</data>
+      <data key="d13">[1.130999802, -0.65298304, 1.784999619]</data>
+      <data key="d14">W1
+Δs = -1.785</data>
+    </edge>
+    <edge source="1" target="1" id="0">
+      <data key="d7">2</data>
+      <data key="d8">B-&gt;B</data>
+      <data key="d9">W2</data>
+      <data key="d10">2.2619996045033686</data>
+      <data key="d11">0.0</data>
+      <data key="d12">[1, 0, 0]</data>
+      <data key="d13">[-1.130999802, -1.958949121, 0.0]</data>
+      <data key="d14">W2
+Δs = +0.000</data>
+    </edge>
+    <edge source="1" target="1" id="1">
+      <data key="d7">2</data>
+      <data key="d8">B-&gt;B</data>
+      <data key="d9">W2</data>
+      <data key="d10">2.2619996045033686</data>
+      <data key="d11">0.0</data>
+      <data key="d12">[1, 1, 0]</data>
+      <data key="d13">[-2.261999605, 0.0, 0.0]</data>
+      <data key="d14">W2
+Δs = +0.000</data>
+    </edge>
+    <edge source="1" target="1" id="2">
+      <data key="d7">2</data>
+      <data key="d8">B-&gt;B</data>
+      <data key="d9">W2</data>
+      <data key="d10">2.261999604503368</data>
+      <data key="d11">0.0</data>
+      <data key="d12">[0, 1, 0]</data>
+      <data key="d13">[-1.130999802, 1.958949121, 0.0]</data>
+      <data key="d14">W2
+Δs = +0.000</data>
+    </edge>
+    <edge source="1" target="1" id="3">
+      <data key="d7">2</data>
+      <data key="d8">B-&gt;B</data>
+      <data key="d9">W2</data>
+      <data key="d10">2.2619996045033686</data>
+      <data key="d11">0.0</data>
+      <data key="d12">[0, -1, 0]</data>
+      <data key="d13">[1.130999802, -1.958949121, 0.0]</data>
+      <data key="d14">W2
+Δs = +0.000</data>
+    </edge>
+    <edge source="1" target="1" id="4">
+      <data key="d7">2</data>
+      <data key="d8">B-&gt;B</data>
+      <data key="d9">W2</data>
+      <data key="d10">2.261999604503368</data>
+      <data key="d11">0.0</data>
+      <data key="d12">[-1, 0, 0]</data>
+      <data key="d13">[1.130999802, 1.958949121, 0.0]</data>
+      <data key="d14">W2
+Δs = +0.000</data>
+    </edge>
+    <edge source="1" target="1" id="5">
+      <data key="d7">2</data>
+      <data key="d8">B-&gt;B</data>
+      <data key="d9">W2</data>
+      <data key="d10">2.2619996045033686</data>
+      <data key="d11">0.0</data>
+      <data key="d12">[-1, -1, 0]</data>
+      <data key="d13">[2.261999605, 0.0, 0.0]</data>
+      <data key="d14">W2
+Δs = +0.000</data>
+    </edge>
+    <edge source="1" target="0" id="0">
+      <data key="d7">3</data>
+      <data key="d8">B-&gt;A</data>
+      <data key="d9">W3</data>
+      <data key="d10">2.211734849257767</data>
+      <data key="d11">1.784999619</data>
+      <data key="d12">[1, 1, 1]</data>
+      <data key="d13">[-1.130999802, 0.65298304, -1.784999619]</data>
+      <data key="d14">W3
+Δs = +1.785</data>
+    </edge>
+    <edge source="1" target="0" id="1">
+      <data key="d7">3</data>
+      <data key="d8">B-&gt;A</data>
+      <data key="d9">W3</data>
+      <data key="d10">2.211734849257767</data>
+      <data key="d11">-1.784999619</data>
+      <data key="d12">[1, 1, 0]</data>
+      <data key="d13">[-1.130999802, 0.65298304, 1.784999619]</data>
+      <data key="d14">W3
+Δs = -1.785</data>
+    </edge>
+    <edge source="1" target="0" id="2">
+      <data key="d7">3</data>
+      <data key="d8">B-&gt;A</data>
+      <data key="d9">W3</data>
+      <data key="d10">2.2117348492577666</data>
+      <data key="d11">1.784999619</data>
+      <data key="d12">[1, 0, 1]</data>
+      <data key="d13">[-0.0, -1.305966081, -1.784999619]</data>
+      <data key="d14">W3
+Δs = +1.785</data>
+    </edge>
+    <edge source="1" target="0" id="3">
+      <data key="d7">3</data>
+      <data key="d8">B-&gt;A</data>
+      <data key="d9">W3</data>
+      <data key="d10">2.2117348492577666</data>
+      <data key="d11">-1.784999619</data>
+      <data key="d12">[1, 0, 0]</data>
+      <data key="d13">[-0.0, -1.305966081, 1.784999619]</data>
+      <data key="d14">W3
+Δs = -1.785</data>
+    </edge>
+    <edge source="1" target="0" id="4">
+      <data key="d7">3</data>
+      <data key="d8">B-&gt;A</data>
+      <data key="d9">W3</data>
+      <data key="d10">2.211734849257767</data>
+      <data key="d11">1.784999619</data>
+      <data key="d12">[0, 0, 1]</data>
+      <data key="d13">[1.130999802, 0.65298304, -1.784999619]</data>
+      <data key="d14">W3
+Δs = +1.785</data>
+    </edge>
+    <edge source="1" target="0" id="5">
+      <data key="d7">3</data>
+      <data key="d8">B-&gt;A</data>
+      <data key="d9">W3</data>
+      <data key="d10">2.211734849257767</data>
+      <data key="d11">-1.784999619</data>
+      <data key="d12">[0, 0, 0]</data>
+      <data key="d13">[1.130999802, 0.65298304, 1.784999619]</data>
+      <data key="d14">W3
+Δs = -1.785</data>
+    </edge>
+    <data key="d0">[0, 0, 1]</data>
+    <data key="d1">[0, 0, 1]</data>
+    <data key="d2">[0.0, 0.0, -1.0]</data>
+    <data key="d3">3.569999238</data>
+    <data key="d4">Two sites are equivalent iff they share the same Wyckoff label and have equal projection (hkl . frac_coords) onto the transport axis within tolerance (JumpAxisEquivalenceAnalyzer.find_equiv_classes_for_axis).</data>
+    <data key="d5">oriented_unit_cell_for_axis(structure, hkl_structure): exact-integer extended-GCD plane basis + metric-aware 2-D Gauss/Lagrange reduction + brute-force minimal transverse vector, validated against area(u,v)*height(w) == primitive_cell_volume and |det([w,u,v])| == 1 (not pymatgen.core.surface.SlabGenerator, which was found to produce a non-minimal, non-primitive oriented cell for some {hkl} in body-centered tetragonal structures).</data>
+  </graph>
+</graphml>
