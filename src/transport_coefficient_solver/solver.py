@@ -2,6 +2,8 @@
 
 from __future__ import annotations
 
+import logging
+
 from typing import Mapping, Sequence
 
 import sympy as sp
@@ -67,37 +69,52 @@ def apply_jump_label_substitutions(
             w_str_to_labels[current_w_str] = []
         w_str_to_labels[current_w_str].append((global_idx, label))
 
-    # Now build substitutions for W symbols that appear in the expression
-    substitutions = {}
-    for w_symbol in w_symbols_in_expr:
-        w_str = str(w_symbol)
-        if w_str in w_str_to_labels:
-            labels_list = w_str_to_labels[w_str]
-            
-            # Separate identity and non-identity jumps
-            non_identity_labels = []
-            identity_labels = []
-            
-            for global_idx, label in labels_list:
-                if "->" in label:
-                    a, b = label.split("->")
-                    a, b = a.strip(), b.strip()
-                    if a != b:
-                        non_identity_labels.append(label)
-                    else:
-                        identity_labels.append(label)
-            
-            # Prefer non-identity labels (A->B over A->A)
-            # Sort alphabetically within each category for deterministic output
-            candidates = sorted(non_identity_labels) if non_identity_labels else sorted(identity_labels)
-            selected_label = candidates[0] if candidates else None
-            
-            if selected_label:
-                a, b = selected_label.split("->")
-                a_disp = jump_label_display_map.get(a.strip(), a.strip()) if jump_label_display_map else a.strip()
-                b_disp = jump_label_display_map.get(b.strip(), b.strip()) if jump_label_display_map else b.strip()
-                new_symbol = sp.Symbol(f"W_{{{a_disp}{b_disp}}}")
-                substitutions[w_symbol] = new_symbol
+    # Label name of every final W symbol of the network
+    label_names: dict[str, str] = {}
+    for w_str, labels_list in w_str_to_labels.items():
+        # Separate identity and non-identity jumps
+        non_identity_labels = []
+        identity_labels = []
+
+        for global_idx, label in labels_list:
+            if "->" in label:
+                a, b = label.split("->")
+                a, b = a.strip(), b.strip()
+                if a != b:
+                    non_identity_labels.append(label)
+                else:
+                    identity_labels.append(label)
+
+        # Prefer non-identity labels (A->B over A->A)
+        # Sort alphabetically within each category for deterministic output
+        candidates = sorted(non_identity_labels) if non_identity_labels else sorted(identity_labels)
+        selected_label = candidates[0] if candidates else None
+
+        if selected_label:
+            a, b = selected_label.split("->")
+            a_disp = jump_label_display_map.get(a.strip(), a.strip()) if jump_label_display_map else a.strip()
+            b_disp = jump_label_display_map.get(b.strip(), b.strip()) if jump_label_display_map else b.strip()
+            label_names[w_str] = f"W_{{{a_disp}{b_disp}}}"
+
+    # A label shared by several distinct W symbols of the network would merge
+    # unrelated rates into one symbol, so these symbols keep their numeric names
+    # in every expression.
+    by_name: dict[str, list[str]] = {}
+    for w_str, name in label_names.items():
+        by_name.setdefault(name, []).append(w_str)
+    for name, w_group in by_name.items():
+        if len(w_group) > 1:
+            logging.getLogger(__name__).warning(
+                "Label %s is shared by %s. The numeric symbols are kept for them.",
+                name, ", ".join(sorted(w_group)))
+            for w_str in w_group:
+                del label_names[w_str]
+
+    substitutions = {
+        w_symbol: sp.Symbol(label_names[str(w_symbol)])
+        for w_symbol in w_symbols_in_expr
+        if str(w_symbol) in label_names
+    }
 
     if substitutions:
         dc_expr = dc_expr.subs(substitutions)

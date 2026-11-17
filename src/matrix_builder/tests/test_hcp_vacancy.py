@@ -70,12 +70,17 @@ def test_default_keeps_sites_separate_along_prismatic_direction(default_run):
 
 def test_diffusion_coefficients(default_run):
     _, coeffs = default_run
-    w = next(s for s in coeffs[A_AXIS].free_symbols if s.name.startswith("W_"))
+    # The in-plane and the out-of-plane jumps keep separate rates, although both
+    # sites carry the same label.
+    rates = sorted((s for s in coeffs[A_AXIS].free_symbols if s.name.startswith("W")), key=str)
+    assert len(rates) == 2
     a = next(s for s in coeffs[A_AXIS].free_symbols if s.name == "a")
     c = next(s for s in coeffs[C_AXIS].free_symbols if s.name == "c")
+    w = sp.Symbol("w")
+    equal_rates = {r: w for r in rates}
     # W_a = W_b = W: D_11 = 2 (3 W_b + W_a) (a/2)^2 = 2 W a^2
-    assert sp.simplify(coeffs[A_AXIS] - 2 * w * a**2) == 0
-    assert sp.simplify(coeffs[C_AXIS] - sp.Rational(3, 4) * w * c**2) == 0
+    assert sp.simplify(coeffs[A_AXIS].subs(equal_rates) - 2 * w * a**2) == 0
+    assert sp.simplify(coeffs[C_AXIS].subs(equal_rates) - sp.Rational(3, 4) * w * c**2) == 0
     # in-plane isotropy of the rank-two tensor
     assert sp.simplify(coeffs[PRISM_AXIS] - coeffs[A_AXIS]) == 0
 

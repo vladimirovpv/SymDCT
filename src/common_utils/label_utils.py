@@ -120,9 +120,16 @@ def map_jump_label_to_id(
         Mapping ``{"W_AB": "W0", "W_BA": "W1", ...}``.
     """
     result: dict[str, str] = {}
+    ambiguous: set[str] = set()
     for jump_id, pair_key, *_rest in jump_info:
         compact_label = map_pair_key_to_jump_label(pair_key, alias_map)
-        result[f'W_{compact_label}'] = f'W{jump_id}'
+        name = f'W_{compact_label}'
+        if name in result and result[name] != f'W{jump_id}':
+            ambiguous.add(name)
+        result[name] = f'W{jump_id}'
+    # A label shared by several jump classes cannot be mapped to one jump ID.
+    for name in ambiguous:
+        del result[name]
     return result
 
 

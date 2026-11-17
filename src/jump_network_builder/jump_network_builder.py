@@ -67,6 +67,8 @@ def main(argv=None):
         str(output_dir),
         crystal_matrix,
         max_jump_length,
+        jump_classification=params.get("jump_classification", "orbit"),
+        structure_format=params.get("structure_format"),
     )
     print(
         f"Registered {jr.get_number_of_jumps()} jump types; "

@@ -16,21 +16,24 @@ standalone, lightweight component.
 from __future__ import annotations
 
 from dataclasses import dataclass
-from pathlib import Path
 from typing import List, Optional
 
 from pymatgen.core import Structure
-from pymatgen.io.vasp import Poscar
+
+from .structure_io import read_structure
 
 
 @dataclass
 class PoscarJumpStructureLoader:
-    """Load matrix and jump structures from a POSCAR file.
+    """Load matrix and jump structures from a structure file (POSCAR, CIF, ...).
 
     Parameters
     ----------
     filename
-        Path to a VASP POSCAR/CONTCAR file.
+        Path to a structure file in any format that pymatgen reads (POSCAR,
+        CIF, ...). See :mod:`structure_io`.
+    structure_format
+        Optional format override, passed as ``structure_format`` in the YAML.
     crystal_matrix
         Optional list of chemical symbols (e.g. ["Ti", "Be"]) that
         define the *matrix* species. If given, atoms of these species
@@ -41,6 +44,7 @@ class PoscarJumpStructureLoader:
 
     filename: str
     crystal_matrix: Optional[List[str]] = None
+    structure_format: Optional[str] = None
 
     def __post_init__(self) -> None:
         self._matrix_structure: Structure | None = None
@@ -52,23 +56,6 @@ class PoscarJumpStructureLoader:
     # ------------------------------------------------------------------
     # internal helpers
     # ------------------------------------------------------------------
-    def _read_raw_symbol_alias_map(self, canonical_symbols: list[str]) -> dict[str, str]:
-        """Read original POSCAR species symbols and map canonical symbols back."""
-
-        path = Path(self.filename)
-        lines = [line.strip() for line in path.read_text(encoding="utf-8").splitlines() if line.strip()]
-        if len(lines) < 7:
-            return {}
-
-        symbol_tokens = lines[5].split()
-        if not symbol_tokens or len(symbol_tokens) != len(canonical_symbols):
-            return {}
-
-        return {
-            str(canonical): str(raw)
-            for raw, canonical in zip(symbol_tokens, canonical_symbols)
-        }
-
     def _load(self) -> None:
         """Read POSCAR and build matrix / jump structures.
 
@@ -76,15 +63,7 @@ class PoscarJumpStructureLoader:
         process termination – errors are surfaced as Python exceptions.
         """
 
-        poscar = Poscar.from_file(
-            self.filename,
-            check_for_potcar=False,
-            read_velocities=False,
-            true_names=False,
-        )
-
-        base_struct = poscar.structure
-        self._raw_symbol_alias_map = self._read_raw_symbol_alias_map(list(poscar.site_symbols))
+        base_struct, self._raw_symbol_alias_map = read_structure(self.filename, self.structure_format)
 
         matrix_struct = base_struct.copy()
         jump_struct = base_struct.copy()

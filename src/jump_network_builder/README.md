@@ -12,6 +12,15 @@ For the full workflow and stage map, see `README.md`. For the YAML and artifact 
 
 If no explicit cutoffs file is provided, the stage auto-discovers a local `input/cutoffs.yaml` next to the main YAML. If that file is absent, it falls back to `max_jump_length`.
 
+## Jump classes
+
+Every directed jump belongs to a jump class, and each class carries one rate symbol `W<n>`. The key `jump_classification` selects the rule.
+
+- `orbit` (default): jumps related by a space-group operation of the jump structure form one class. The operations come from spglib, with the node labels acting as atom types. The reverse of a jump belongs to the class that the symmetry assigns to it, so a polar structure can give a jump and its reverse different classes.
+- `triplet`: jumps with equal start label, end label and length (within a tolerance) form one class. This is the rule of version 0.1.0.
+
+Both partitions are computed. If they differ, the log names the affected jumps. If the neighbour selection does not respect the symmetry (for example after a cutoff that keeps only some of the symmetry-equivalent neighbours), a warning reports the number of missing images.
+
 ## Typical CLI
 
 ```bash
@@ -72,7 +81,7 @@ ERROR: No neighbors found within the cutoff distance <max_jump_length>. Try to i
 ### Missing POSCAR referenced by `fname`
 
 ```text
-FileNotFoundError: POSCAR file '<path>' not found. Check the 'fname' parameter in <yaml>.
+FileNotFoundError: Structure file '<path>' not found. Check the 'fname' parameter in <yaml>.
 ```
 
 - Meaning: the structure path in the main YAML could not be resolved.

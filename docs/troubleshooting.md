@@ -17,10 +17,10 @@ stages of the public pipeline.
 - Fix: increase `max_jump_length`, check `fname`, and confirm the `matrix`
   species selection did not remove the intended jump sites.
 
-### `FileNotFoundError: POSCAR file '<path>' not found. Check the 'fname' parameter in <yaml>.`
+### `FileNotFoundError: structure file '<path>' not found. Check the 'fname' parameter in <yaml>.`
 
 - Meaning: the structure path in the main input YAML could not be resolved.
-- Fix: correct `fname` or move the POSCAR.
+- Fix: correct `fname` or move the structure file.
 
 ## Stage 2 - matrix builder
 

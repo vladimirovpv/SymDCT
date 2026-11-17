@@ -1,6 +1,6 @@
 [project]
 name = "symdct"
-version = "0.1.0"
+version = "0.1.1"
 description = "SymDCT: symbolic diffusion coefficient tensors for crystalline solids from jump networks."
 readme = "README.md"
 requires-python = ">=3.12"
@@ -13,6 +13,7 @@ maintainers = [
     { name = "Pavel Vladimirov", email = "pavel.vladimirov@kit.edu" },
 ]
 dependencies = [
+    "ase>=3.23.0",
     "matplotlib>=3.10.8",
     "networkx>=3.6.1",
     "numpy>=2.4.4",

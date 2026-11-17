@@ -3,7 +3,7 @@
 SymDCT computes diffusion coefficients in crystalline solids from a structure
 model and user-supplied energetics. The pipeline has four stages:
 
-- construct a jump network from a POSCAR and geometric cutoffs
+- construct a jump network from a crystal structure file (POSCAR, CIF, or any other format of pymatgen and ASE) and geometric cutoffs
 - build the symbolic transition-rate matrix and reduce it for each direction
 - solve for the symbolic diffusion coefficient
 - evaluate the expressions numerically and generate Arrhenius plots
@@ -15,7 +15,7 @@ also has its own command-line interface.
 
 | Stage | Role | Main inputs | Main outputs |
 |---|---|---|---|
-| 1. `src.jump_network_builder` | Build the jump network geometry | input YAML, POSCAR, optional `cutoffs.yaml` | `jump_structure.node_link.json`, `jump_sites.poscar`, `energetics_template.yaml` |
+| 1. `src.jump_network_builder` | Build the jump network geometry | input YAML, structure file (POSCAR, CIF, ...), optional `cutoffs.yaml` | `jump_structure.node_link.json`, `jump_sites.poscar`, `energetics_template.yaml` |
 | 2. `src.matrix_builder` | Build full and axis-reduced symbolic transition matrices | Stage-1 graph artifacts, input YAML axes/settings | `tp_matrix_axis_<h>_<k>_<l>.m`, `tc_axis_payload_<h>_<k>_<l>.pickle` |
 | 3. `src.transport_coefficient_solver` | Solve symbolic diffusion coefficients | Stage-2 payload pickles | `dc_symbolic_<h>_<k>_<l>.txt`, `dc_symbolic_<h>_<k>_<l>.m` |
 | 4. `src.transport_coefficient_evaluator` | Substitute energetics and plot Arrhenius curves | Stage-3 symbolic expression, `energetics.yaml`, Stage-1 template | `arrhenius_plot_<example>_<h>_<k>_<l>_freq<model>.png` |
@@ -61,7 +61,7 @@ uv run python main.py examples/hcp_vac/input/hcp_vac.yaml
 
 This route:
 
-1. loads the YAML and POSCAR
+1. loads the YAML and the structure file
 2. auto-discovers `input/cutoffs.yaml` when present
 3. runs Stages 1-3 in memory
 4. runs Stage 4 if `input/energetics.yaml` exists

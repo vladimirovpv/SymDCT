@@ -7,7 +7,8 @@ from src.common_utils.yaml_with_comments import CommentedData
 log = logging.getLogger(__name__)
 
 
-def prepare_energetics_template(graph: nx.Graph, length_tolerance: float = 0.01) -> dict:
+def prepare_energetics_template(graph: nx.Graph, length_tolerance: float = 0.01,
+                                reverse_ids: dict[int, int] | None = None) -> dict:
     """Prepare energetics template YAML structure from a jump graph.
 
     The template has the following (YAML) structure:
@@ -43,6 +44,11 @@ def prepare_energetics_template(graph: nx.Graph, length_tolerance: float = 0.01)
     * Distinct jumps between the same pair (short vs long A-A, etc.) are
       distinguished by their representative length and stored as separate
       list entries.
+    * With ``reverse_ids`` (jump class of the reversed jump for every jump
+      class, supplied by the orbit classification) the entries are formed from
+      the jump classes themselves.  Classes of equal length stay separate, and
+      a class whose reverse is a different class of the same pair, as in a polar
+      crystal, receives different forward and backward indices.
     """
     from src.common_utils.label_utils import sort_pair_key
 
@@ -56,6 +62,31 @@ def prepare_energetics_template(graph: nx.Graph, length_tolerance: float = 0.01)
                 seen_labels.append(lbl)
                 for a_property in site_properties:
                     a_property[lbl] = CommentedData(None, commented=True)  # user will provide configurational energy
+
+    def group_jumps_by_class(jn_graph: nx.Graph):
+        # Group jumps by jump class and the class of the reversed jump.
+        grouped: dict[str, list[dict]] = {}
+        seen: dict[tuple, dict] = {}
+        for start_node, end_node, _key, edge_data in jn_graph.edges(keys=True, data=True):
+            start_lbl = jn_graph.nodes[start_node]["lbl"]
+            end_lbl = jn_graph.nodes[end_node]["lbl"]
+            idx = int(edge_data["glob_jump_cnt"])
+            rev = int(reverse_ids.get(idx, idx))
+            pair_key = sort_pair_key(start_lbl, end_lbl)
+            group_key = (pair_key, frozenset((idx, rev)))
+            if group_key in seen:
+                continue
+            a, b = sorted([start_lbl, end_lbl])
+            if start_lbl == end_lbl:
+                forward, backward = min(idx, rev), max(idx, rev)
+            elif (start_lbl, end_lbl) == (a, b):
+                forward, backward = idx, rev
+            else:
+                forward, backward = rev, idx
+            group = {"length": float(edge_data["nn_dist"]), "forward": forward, "backward": backward}
+            seen[group_key] = group
+            grouped.setdefault(pair_key, []).append(group)
+        return grouped
 
     def group_jumps(jn_graph: nx.Graph):
         # Intermediate structure for grouping jumps
@@ -157,7 +188,7 @@ def prepare_energetics_template(graph: nx.Graph, length_tolerance: float = 0.01)
     fill_per_site_properties([site_energies, frequencies])
 
     # create intermediate grouped jumps structure
-    grouped_jumps = group_jumps(graph)
+    grouped_jumps = group_jumps_by_class(graph) if reverse_ids is not None else group_jumps(graph)
 
     # convert to YAML-ready structure
     jumps_yaml = get_yaml_ready(grouped_jumps)

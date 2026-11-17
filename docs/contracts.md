@@ -18,10 +18,12 @@ Common keys:
 
 | Key | Required | Type | Meaning |
 |---|---|---|---|
-| `fname` | yes | string | Path to the POSCAR, usually relative to the YAML file |
+| `fname` | yes | string | Path to the crystal structure file, usually relative to the YAML file. Any format that pymatgen reads is accepted, for example POSCAR/CONTCAR, CIF, mCIF, CSSR, XSF, SHELX `.res`, FHI-aims `geometry.in`, pymatgen JSON/YAML, and vasprun.xml. Formats of ASE such as extxyz are read through ASE. Partially occupied sites are rejected, and oxidation states are dropped |
+| `structure_format` | optional | string | Format of `fname`, if the file name does not identify it: `poscar`, `ase`, or any format string of `pymatgen.core.Structure.from_str` (`cif`, `cssr`, `xsf`, `json`, ...). Without it, names containing POSCAR or CONTCAR and the extension `.vasp` select POSCAR, other names go to pymatgen, then to ASE, and last to the POSCAR reader |
 | `axes` | usually | list of 3-component lists | Miller directions for transport analysis |
 | `matrix` | optional | list of strings | Species treated as host/matrix atoms and removed from the jump-site set |
 | `max_jump_length` | recommended | float | Global neighbour-search radius used when no better value is derived from `cutoffs.yaml` |
+| `jump_classification` | optional | `orbit` (default) or `triplet` | How directed jumps are grouped into jump classes, one rate symbol per class. `orbit` groups jumps that a space-group operation of the structure maps onto each other. `triplet` groups jumps with equal start label, end label and length, as in version 0.1.0. A warning lists the cases where the two partitions differ |
 | `tweak_transition_rates` | optional | mapping | Manual remapping/scaling hints for symbolic jump rates |
 
 Minimal example:

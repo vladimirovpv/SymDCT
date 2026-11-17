@@ -7,7 +7,7 @@ SymDCT does not copy or redistribute any third-party Python package. Users insta
 packages themselves from PyPI, for example with `uv sync`. The licenses below therefore
 apply to the packages as installed. They do not change the license of the SymDCT source code.
 
-Date of the audit: 2026-11-10.
+Date of the audit: 2026-11-10. Updated 2026-11-16 for release 0.1.1 (ase added).
 
 A machine-readable software bill of materials (SBOM) is provided in `sbom.cdx.json`
 (CycloneDX 1.5). It lists the same packages with name and version, as recorded in `uv.lock`,
@@ -20,11 +20,11 @@ uv export --format cyclonedx1.5 --output-file sbom.cdx.json
 
 ## Summary
 
-- Total: 10 direct runtime packages, 30 transitive runtime packages, 4 test packages
+- Total: 11 direct runtime packages, 30 transitive runtime packages, 4 test packages
   (pytest and its three dependencies).
 - No package under GPL, LGPL-only or AGPL terms is required.
 - No package conflicts with distributing SymDCT under MIT.
-- Four items need a remark (flags F1 to F4 below). None blocks the release.
+- Five items need a remark (flags F1 to F5 below). None blocks the release.
 - Two further packages appear in `uv.lock` only for Windows (colorama, tzdata). They were not
   installed in the audit environment. Their licenses are listed in the section "Platform-specific packages".
 
@@ -33,12 +33,12 @@ uv export --format cyclonedx1.5 --output-file sbom.cdx.json
 1. Direct dependencies: `[project].dependencies` and `[dependency-groups]` in `pyproject.toml`.
 2. Real imports: all `import` and `from ... import` lines in `src/`, `main.py`, `scripts/`,
    `tests/`, `examples/` and `conftest.py` were collected. Third-party top-level modules found:
-   matplotlib, networkx, numpy, pint, pymatgen, ruamel.yaml, scipy, spglib, sympy, tqdm, pytest.
+   ase, matplotlib, networkx, numpy, pint, pymatgen, ruamel.yaml, scipy, spglib, sympy, tqdm, pytest.
    Before this audit numpy, scipy, sympy and tqdm were imported but not declared in
    `pyproject.toml`. They are now declared.
 3. Transitive dependencies: the dependency graph was resolved from the installed package metadata
    (`Requires-Dist`, markers evaluated for Linux) in a Python 3.13 virtual environment built from `uv.lock`.
-   The result was compared with `uv.lock` (47 entries). The only differences are `colorama` and `tzdata`
+   The result was compared with `uv.lock` (47 entries; 48 since the addition of ase in 0.1.1). The only differences are `colorama` and `tzdata`
    (Windows-only markers) and the project itself.
 4. Licenses: read from the installed metadata of each package (`License`, `License-Expression`,
    trove classifiers) and from the license file shipped in the package. The metadata of
@@ -53,6 +53,7 @@ This list is a technical audit and not legal advice.
 
 | Package | Version | License | Source of license information | MIT compatible | Role | Note |
 |---|---|---|---|---|---|---|
+| ase | 3.29.0 | LGPL-2.1-or-later | METADATA (License-Expression); LICENSE file | OK, conditional | direct | Reads extxyz and other ASE formats of the structure file. See flag F5. Its own dependencies (matplotlib, numpy, scipy, typing_extensions) are listed elsewhere in this file. |
 | matplotlib | 3.10.8 | PSF-based matplotlib license | LICENSE file; classifier | OK | direct | Permissive. Notice must stay with copies of matplotlib. |
 | networkx | 3.6.1 | BSD-3-Clause | METADATA (License-Expression) | OK | direct |  |
 | numpy | 2.4.4 | BSD-3-Clause AND 0BSD AND MIT AND Zlib AND CC0-1.0 | METADATA (License-Expression) | OK | direct | Wheels bundle GCC runtime libraries under GPL-3.0 with GCC exception. See flag F4. |
@@ -140,6 +141,14 @@ Both options are permissive. No action is required.
 The `LICENSE` files of the numpy and scipy wheels list a bundled GCC runtime library under
 "GPL-3.0-or-later WITH GCC-exception-3.1". The GCC Runtime Library Exception allows linking with
 non-GPL software. This matters only to those who redistribute the binary wheels. SymDCT does not.
+
+**F5. ase 3.29.0 (LGPL-2.1-or-later).**
+ASE is a separate package that users install from PyPI. SymDCT imports it only to read structure files
+through `pymatgen.io.ase` and does not copy, modify or ship it. The LGPL obligations (license text, source
+availability, replaceability of the library) apply to those who redistribute ASE. Importing the package
+from MIT-licensed code does not change the license of SymDCT. If a future release bundles ASE (for example
+in a frozen executable or container image), the LGPL-2.1 text and a pointer to the ASE source must be
+provided, and the user must be able to replace the library.
 
 No license was found with status "UNKNOWN". Every package above has a license statement in its metadata.
 

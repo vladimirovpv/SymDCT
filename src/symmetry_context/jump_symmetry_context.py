@@ -3,7 +3,7 @@
 This module exposes :class:`JumpNetworkSymmetryContext`, a small façade
 tailored to the needs of ``build_jump_network_from_poscar``:
 
-* load a POSCAR file and separate matrix/jump structures,
+* load a structure file (POSCAR, CIF, ...) and separate matrix/jump structures,
 * perform symmetry analysis to build a symmetrized primitive structure,
 * provide per‑site labels based on spacegroup equivalent sites.
 
@@ -49,10 +49,13 @@ class JumpNetworkSymmetryContext:
     crystal_matrix: Optional[List[str]] = None
     symprec: float = 0.1
     check_symmetry_consistency: bool = True
+    structure_format: Optional[str] = None
 
     def __post_init__(self) -> None:
         # 1) Load POSCAR and separate matrix/jump structures
-        self._loader = PoscarJumpStructureLoader(self.poscar_file, self.crystal_matrix)
+        self._loader = PoscarJumpStructureLoader(
+            self.poscar_file, self.crystal_matrix, self.structure_format
+        )
 
         # 2) Analyse symmetry and build symmetrized primitive structure
         self._refiner = JumpStructureSymmetryRefiner(

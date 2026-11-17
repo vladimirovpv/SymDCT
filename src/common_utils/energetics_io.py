@@ -117,7 +117,7 @@ def get_jump_info(energetics: Dict[str, Any]) -> List[Tuple]:
                 j_id["forward"], pair_key, "forward",
                 e["length"], e_m_fwd, fixed_frequencies[start],
             ))
-            if start != end:
+            if start != end or j_id["backward"] != j_id["forward"]:
                 jump_info.append((
                     j_id["backward"], f"{end}-{start}", "backward",
                     e["length"], e_m_bkw, fixed_frequencies[end],

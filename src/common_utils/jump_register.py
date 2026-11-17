@@ -89,6 +89,12 @@ class JumpRegister:
 
         return self._jump_cnt
 
+    def set_number_of_jumps(self, count: int) -> None:
+        """Override the jump-type count when classes are defined outside the register
+        (for example by space-group orbits)."""
+
+        self._jump_cnt = int(count)
+
     # ------------------------------------------------------------------
     # Registration and bookkeeping
     # ------------------------------------------------------------------

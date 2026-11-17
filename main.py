@@ -85,6 +85,8 @@ def main() -> int:
         str(output_dir),
         crystal_matrix,
         max_jump_length,
+        jump_classification=params.get("jump_classification", "orbit"),
+        structure_format=params.get("structure_format"),
     )
 
     # Build a symmetry context compatible with the geometry stage and
@@ -92,7 +94,9 @@ def main() -> int:
     # implementation of ``build_matrices`` still reconstructs its own
     # internal JumpNetwork from ``params``, but the call signature makes
     # the intended "from memory" usage explicit.
-    symmetry_ctx = JumpNetworkSymmetryContext(poscar_fname, crystal_matrix)
+    symmetry_ctx = JumpNetworkSymmetryContext(
+        poscar_fname, crystal_matrix, structure_format=params.get("structure_format")
+    )
     print(f"Simulation cell is {'conventional' if symmetry_ctx.is_conventional_cell() else 'primitive'}")
     lattice_type = symmetry_ctx.get_lattice_type()
     print(f"Crystal lattice type: {lattice_type}")

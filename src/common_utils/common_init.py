@@ -53,7 +53,7 @@ def init_from_yaml() -> Tuple[str, Dict[str, Any], Path]:
                     resolved = yaml_path.parent / fname_path
             if not resolved.exists():
                 raise FileNotFoundError(
-                    f"POSCAR file '{resolved}' not found. "
+                    f"Structure file '{resolved}' not found. "
                     f"Check the 'fname' parameter in {yaml_path}."
                 )
             params["fname"] = str(resolved.resolve())
