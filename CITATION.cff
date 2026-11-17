@@ -26,6 +26,14 @@ keywords:
 
 version: 0.1.1
 date-released: 2026-11-17
+doi: 10.5281/zenodo.24322543
+identifiers:
+  - type: doi
+    value: 10.5281/zenodo.24322543
+    description: "Version 0.1.1"
+  - type: doi
+    value: 10.5281/zenodo.24322542
+    description: "All versions (resolves to the latest release)"
 
 preferred-citation:
   type: article

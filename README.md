@@ -7,6 +7,10 @@
   in crystals from atomic-scale kinetic data.
 </p>
 
+<p align="center">
+  <a href="https://doi.org/10.5281/zenodo.24322542"><img src="https://zenodo.org/badge/DOI/10.5281/zenodo.24322542.svg" alt="DOI"></a>
+</p>
+
 ---
 # Current Status
 > **Status:** Version 0.1.1. Active development.
@@ -97,7 +101,10 @@ If you use SymDCT in your research, please cite the software release:
 > P. V. Vladimirov, *SymDCT: Symbolic diffusion-tensor computation from
 > atomic-scale jump kinetics in anisotropic crystals*, version 0.1.1,
 > Karlsruhe Institute of Technology (KIT), 2026.
-> https://github.com/vladimirovpv/SymDCT
+> https://doi.org/10.5281/zenodo.24322543
+
+The DOI above refers to version 0.1.1. The DOI [10.5281/zenodo.24322542](https://doi.org/10.5281/zenodo.24322542)
+refers to all versions and resolves to the latest release.
 
 The method implemented in SymDCT is described in the accompanying paper:
 
