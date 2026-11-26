@@ -26,10 +26,10 @@ keywords:
 
 version: 0.1.2
 date-released: 2026-11-26
-doi: 10.5281/zenodo.24322542
+doi: 10.5281/zenodo.24561388
 identifiers:
   - type: doi
-    value: 10.5281/zenodo.24322542
+    value: 10.5281/zenodo.24561388
     description: "All versions (resolves to the latest release)"
 
 preferred-citation:
