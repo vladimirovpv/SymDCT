@@ -16,9 +16,6 @@ class _FakeJumpNetwork:
 class _FakeSymmetryContext:
     """Minimal stand-in exposing the methods main() actually calls on it."""
 
-    def is_conventional_cell(self) -> bool:
-        return True
-
     def get_lattice_type(self) -> str:
         return "cubic"
 

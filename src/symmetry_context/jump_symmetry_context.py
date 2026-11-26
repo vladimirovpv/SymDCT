@@ -100,19 +100,13 @@ class JumpNetworkSymmetryContext:
     # Miller‑index conversion helper
     # ------------------------------------------------------------------
     def convert_hkl(self, hkl):
-        """Convert Miller indices from the conventional cell to the primitive‑cell basis if required.
-        Delegates to :meth:`SMatrixHandler.convert_hkl_to_structure`.
+        """Convert Miller indices to the basis of the primitive structure.
+
+        The transport matrix is always built on the primitive cell, so the
+        conversion is applied for every input cell.  Delegates to
+        :meth:`to_structure_hkl`.
         """
-        if _is_conventional := self.is_conventional_cell():
-            # Conventional cell – use Miller indices directly.
-            hkl_converted= tuple(int(v) for v in hkl)
-        else:
-            # Primitive cell – convert to primitive basis using the symmetry context.
-            hkl_converted = self.to_structure_hkl(hkl)
-
-        # print(f"Simulation cell is {'conventional' if _is_conventional else 'primitive'}.")
-
-        return hkl_converted
+        return self.to_structure_hkl(hkl)
 
     def to_structure_hkl(self, hkl):
         """Convert Miller indices given for the conventional cell to the basis of the structure.
@@ -123,43 +117,27 @@ class JumpNetworkSymmetryContext:
         """
         return self._smatrix_handler.convert_hkl_to_structure(hkl)
 
-    # ------------------------------------------------------------------
-    # New helper: determine if the simulation cell is a conventional cell.
-    # ------------------------------------------------------------------
-    def is_conventional_cell(self) -> bool:
-        """Return ``True`` if the cell is conventional.
-
-        The original implementation used a two‑pass ``SpacegroupAnalyzer``
-        approach.  A cheaper and equivalent check is to examine the determinant
-        of the conventional→primitive transformation matrix (the S‑matrix).  If
-        ``|det(S)| > 1`` the cell contains a conventional supercell; otherwise it
-        is already primitive.
-        """
-        # The S‑matrix handler stores the matrix as a NumPy array.
-        smatrix = self._smatrix_handler.matrix()
-        det = np.linalg.det(smatrix)
-        return abs(det) > 1
-
     def get_lattice_type(self) -> str:
         """Return lattice type string ("cubic", "hexagonal", ...)."""
 
         return self._refiner.lattice_type
 
     def get_symbolic_lattice_vectors(self) -> sp.Matrix:
-        """Return the symbolic lattice‑vector matrix.
+        """Return the symbolic lattice-vector matrix of the primitive cell.
 
-        The matrix is expressed in the *conventional* cell basis.  If the
-        underlying structure is primitive, the matrix is automatically converted
-        to the primitive basis using the centralised :class:`SMatrixHandler`.
-        This provides a single source of truth for the conventional→primitive
-        transformation and hides the conversion from callers.
+        Rows are the primitive lattice vectors in Cartesian components. They are
+        the product of the S-matrix with the symbolic lattice vectors of the
+        standardised conventional cell. The symbols ``a``, ``b`` and ``c`` are
+        the lengths of the conventional vectors in the standardised setting,
+        which can differ from the input setting by an axis permutation.
         """
 
         a, b, c = sp.symbols("a b c", real=True, positive=True)
         lattice_type = self.get_lattice_type()
         if lattice_type in {"cubic"}:
             conventional = sp.matrices.diag(a, a, a)
-        elif lattice_type in {"hexagonal"}:
+        elif lattice_type in {"hexagonal", "rhombohedral"}:
+            # Rhombohedral lattices use the hexagonal setting of the conventional cell.
             conventional = sp.Matrix(
                 [
                     [a, 0, 0],
@@ -170,15 +148,15 @@ class JumpNetworkSymmetryContext:
         elif lattice_type in {"tetragonal"}:
             conventional = sp.matrices.diag(a, a, c)
         else:
+            if not np.allclose(self._refiner.conventional_lattice.angles, 90.0, atol=1e-3):
+                raise NotImplementedError(
+                    f"Symbolic lattice vectors are not implemented for a {lattice_type} "
+                    "conventional cell with non-right angles."
+                )
             conventional = sp.matrices.diag(a, b, c)
 
-        # If the cell is primitive, convert to the primitive basis.
-        if not self.is_conventional_cell():
-            # Use the handler to obtain the conversion matrix as a SymPy object.
-            conv2prim = self.get_smatrix_handler().as_sympy()
-            # Columns of ``conventional`` are the basis vectors; multiply on the left.
-            return conv2prim * conventional
-        return conventional
+        conv2prim = self.get_smatrix_handler().as_sympy()
+        return conv2prim * conventional
 
     # ------------------------------------------------------------------
     # advanced symmetry accessors

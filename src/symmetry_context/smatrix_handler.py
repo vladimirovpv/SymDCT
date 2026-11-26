@@ -27,10 +27,12 @@ class SMatrixHandler:
 
     refiner: JumpStructureSymmetryRefiner
     _convertion_matrix: np.ndarray | None = None
+    _input_matrix: np.ndarray | None = None
 
     def __post_init__(self) -> None:
         # Pull the matrix from the refiner once – it is a 3×3 NumPy array.
         self._convertion_matrix = np.array(self.refiner.s_matrix, dtype=float)
+        self._input_matrix = np.array(self.refiner.input_to_conventional_matrix, dtype=float)
 
     # ---------------------------------------------------------------------
     # Public accessors
@@ -62,21 +64,27 @@ class SMatrixHandler:
 
         This mirrors the logic previously implemented in
         ``axis_equivalence.convert_hkl_conventional_to_structure`` but routes
-        through the centralised handler.  The conversion uses the inverse‑
-        transpose of the conventional→primitive matrix because Miller indices
-        are reciprocal‑space vectors.
+        through the centralised handler.  The conversion multiplies by the
+        conventional→primitive matrix S (rows are the primitive lattice vectors
+        in the conventional basis), because Miller indices are the components of
+        a reciprocal-space vector along the lattice vectors: h'_i = sum_j S_ij h_j.
+        If the input cell is a conventional cell in a non-standard setting, the
+        indices are first brought to the standardised conventional setting with
+        the matrix M of the refiner, so that the total map is S M.
         """
         # Import locally to avoid circular imports.
         from .axis_equivalence import _reduce_hkl_vector
 
-        conv2prim = self.matrix()
+        assert self._input_matrix is not None
+        # Total map from the setting of the user's indices to the primitive basis.
+        conv2prim = self.matrix() @ self._input_matrix
         hkl_arr = np.asarray(hkl, dtype=float)
 
         # Identity or singular matrix – fall back to reduction only.
         if np.allclose(conv2prim, np.eye(3)) or abs(np.linalg.det(conv2prim)) < 1e-12:
             return _reduce_hkl_vector(hkl_arr)
 
-        hkl_struct = conv2prim.T @ hkl_arr
+        hkl_struct = conv2prim @ hkl_arr
         return _reduce_hkl_vector(hkl_struct)
 
     def pretty_print(self, tol: float = 1e-6) -> None:

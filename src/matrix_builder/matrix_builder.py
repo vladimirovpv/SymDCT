@@ -1,5 +1,7 @@
 from __future__ import annotations
 
+from fractions import Fraction
+
 import json
 import pickle
 import pathlib as pl
@@ -512,7 +514,7 @@ def print_equiv_coords(equiv_sites: list[int], hkl_structure: tuple[int, ...] | 
                     hkl_norm_sq) if hkl_norm_sq != 0 else sp.Integer(0)
             lines.append(
                 f"\n     {label} idx={site_idx}"
-                f" coord={[sp.nsimplify(fc) for fc in fcoords.tolist()]} proj={frac}"
+                f" coord={[sp.Rational(Fraction(fc).limit_denominator(1000)) for fc in fcoords.tolist()]} proj={frac}"
             )
         class_str = ", ".join(lines)
         print(f"  Class {cls_id}: {class_str}")

@@ -97,7 +97,6 @@ def main() -> int:
     symmetry_ctx = JumpNetworkSymmetryContext(
         poscar_fname, crystal_matrix, structure_format=params.get("structure_format")
     )
-    print(f"Simulation cell is {'conventional' if symmetry_ctx.is_conventional_cell() else 'primitive'}")
     lattice_type = symmetry_ctx.get_lattice_type()
     print(f"Crystal lattice type: {lattice_type}")
     if lattice_type == "cubic":

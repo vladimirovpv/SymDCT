@@ -99,12 +99,12 @@ with several orientation states (diplon in fcc). See [examples/README.md](exampl
 If you use SymDCT in your research, please cite the software release:
 
 > P. V. Vladimirov, *SymDCT: Symbolic diffusion-tensor computation from
-> atomic-scale jump kinetics in anisotropic crystals*, version 0.1.1,
+> atomic-scale jump kinetics in anisotropic crystals*, version 0.1.2,
 > Karlsruhe Institute of Technology (KIT), 2026.
-> https://doi.org/10.5281/zenodo.24322543
+> https://doi.org/10.5281/zenodo.24322542
 
-The DOI above refers to version 0.1.1. The DOI [10.5281/zenodo.24322542](https://doi.org/10.5281/zenodo.24322542)
-refers to all versions and resolves to the latest release.
+The DOI above refers to all versions and resolves to the latest release.
+The DOI of a particular version is listed on the Zenodo page of that release.
 
 The method implemented in SymDCT is described in the accompanying paper:
 

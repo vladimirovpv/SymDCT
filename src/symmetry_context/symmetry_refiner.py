@@ -17,6 +17,7 @@ jump‑network builder.
 from __future__ import annotations
 
 from dataclasses import dataclass
+from fractions import Fraction
 from typing import Optional
 
 import numpy as np
@@ -50,6 +51,8 @@ class JumpStructureSymmetryRefiner:
     def __post_init__(self) -> None:
         self._lattice_type: str | None = None
         self._s_matrix: np.ndarray | None = None
+        self._m_matrix: np.ndarray | None = None
+        self._conventional_lattice: pmg.core.Lattice | None = None
         self._symmetrized: pmg.core.Structure | None = None
         self._spg_analyzer: Optional[SpacegroupAnalyzer] = None
         self._analyse()
@@ -81,9 +84,30 @@ class JumpStructureSymmetryRefiner:
 
         # Reduce conventional to primitive cell
         primitive = spg_conv.find_primitive()
-        self._s_matrix = np.array(
-            spg_conv.get_conventional_to_primitive_transformation_matrix()
+        # Rows of the S-matrix are the primitive lattice vectors expressed in the
+        # conventional basis.  It is computed from the two lattices actually used,
+        # because find_primitive() returns spglib's own choice of primitive vectors,
+        # which differs from the tabulated conventional-to-primitive matrix for
+        # centred cells and can differ even for primitive cells (e.g. hcp).
+        s_raw = np.array(primitive.lattice.matrix) @ np.linalg.inv(
+            np.array(refined_conv.lattice.matrix)
         )
+        # The entries are rationals with small denominators.  Snapping removes
+        # floating-point noise that would otherwise leak into symbolic results.
+        s_snap = np.array(
+            [[float(Fraction(x).limit_denominator(12)) for x in row] for row in s_raw]
+        )
+        self._s_matrix = s_snap if np.allclose(s_snap, s_raw, atol=1e-6) else s_raw
+        self._conventional_lattice = refined_conv.lattice
+
+        # Setting of the Miller indices supplied by the user.  If the input cell
+        # has the volume of a conventional cell, hkl refer to the input setting,
+        # which can differ from the standardised conventional setting by an axis
+        # permutation or a change of basis.  Otherwise (e.g. a primitive input
+        # cell) hkl refer to the standardised conventional cell.  The matrix M
+        # gives the standardised conventional vectors (rows) in the input basis,
+        # and the indices transform as h_std = M h_input.
+        self._m_matrix = self._input_to_conventional_matrix(spg_jump)
 
         # Symmetrized structure for primitive cell
         spg_prim = SpacegroupAnalyzer(primitive, symprec=self.symprec)
@@ -94,6 +118,24 @@ class JumpStructureSymmetryRefiner:
         # graph construction in the jump‑network builder).
         sym_struct.add_site_property("site_idx", list(range(sym_struct.num_sites)))
         self._symmetrized = sym_struct
+
+    def _input_to_conventional_matrix(self, spg_jump: SpacegroupAnalyzer) -> np.ndarray:
+        """Matrix M with ``h_std = M @ h_input`` (identity unless the input cell is conventional)."""
+        dataset = spg_jump.get_symmetry_dataset()
+        if dataset is None:
+            return np.eye(3)
+        if isinstance(dataset, dict):
+            trans = dataset.get("transformation_matrix")
+        else:
+            trans = getattr(dataset, "transformation_matrix", None)
+        if trans is None:
+            return np.eye(3)
+        trans = np.array(trans, dtype=float)
+        if abs(abs(np.linalg.det(trans)) - 1.0) > 1e-6:
+            return np.eye(3)
+        m_raw = np.linalg.inv(trans).T
+        m_snap = np.rint(m_raw)
+        return m_snap if np.allclose(m_snap, m_raw, atol=1e-6) else m_raw
 
     # ------------------------------------------------------------------
     # public API
@@ -111,6 +153,20 @@ class JumpStructureSymmetryRefiner:
 
         assert self._s_matrix is not None
         return self._s_matrix
+
+    @property
+    def conventional_lattice(self) -> pmg.core.Lattice:
+        """Lattice of the standardised conventional cell (same frame as ``s_matrix``)."""
+
+        assert self._conventional_lattice is not None
+        return self._conventional_lattice
+
+    @property
+    def input_to_conventional_matrix(self) -> np.ndarray:
+        """Matrix M with ``h_conv = M @ h_input`` for Miller indices (3×3 array)."""
+
+        assert self._m_matrix is not None
+        return self._m_matrix
 
     @property
     def symmetrized_structure(self) -> pmg.core.Structure:

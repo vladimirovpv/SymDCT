@@ -1,0 +1,11 @@
+max_jump_length: 1.7
+fname: examples/Be12Ti_intH/input/Be12Ti_AG.poscar
+matrix: ["Be","Ti"]
+axes:
+- [0.0, 0.0, 1.0]
+- [1.0, 0.0, 0.0]
+tweak_transition_rates: {"B->G:length=1.468": null, "G->B:length=1.468": null}
+filename_export_results: Be12Ti_intH_results
+if_subst_min_arg: False
+if_calc_diffcoeff: False
+if_replace_W_with_subscript: False
